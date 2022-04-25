@@ -1,0 +1,85 @@
+footer {
+    background: linear-gradient(0deg, #000, #222);
+    background: $brand-gold;
+    padding: 5vh 3vw;
+    position: relative;
+    // height: 50vh;
+    .footer-logo {
+        position: relative;
+        width: 50%;
+        height: 30vh;
+        // float: right;
+        // border: 2px solid red;
+        overflow: hidden;
+        margin-bottom: 5vh;
+        isolation: isolate;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: left;
+        }
+        @media (min-width: 768px){
+            height: 100%;
+            width: 15rem;
+            float: right;
+
+        }
+        
+        
+    }
+    .copyright {
+        p {
+            &:nth-child(1){
+                font-weight: 900;
+            }
+            text-transform: capitalize;
+            font-family: $font-ubuntu;
+            color: #000;
+            line-height: 1.5;
+
+            &.shakex-link {
+                color: #000a;
+                a {
+                    font-family:inherit;
+                    color: #000a;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+        .date {
+            color: #000a;
+            font-family: $font-ubuntu;
+        }
+    }
+    .home-btn {
+        position: absolute;
+        top: 5vh;
+        right: 50%;
+        // border: 1px solid yellow;
+        @media (max-width: 768px){
+            right: 3vw;
+        }
+        a {
+            color: #000;
+            display: block;
+            // border: 1px solid blue;
+            i {
+                border: 2px solid #000;
+                padding: .5rem;
+                border-radius: 50%;
+                transition: .2s;
+            }
+            &:hover {
+                i {
+                    background: #000;
+                color: #ead2a1;
+                }
+            }
+        }
+    }
+}

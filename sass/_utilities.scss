@@ -1,0 +1,302 @@
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid $toggle;
+    border-radius: 50%;
+    isolation: isolate;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    .bar {
+        width: 70%;
+        height: .2rem;
+        background-color: $bar;
+        z-index: 2;
+        position: relative;
+        transition: .3s;
+
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: $bar;
+            transition: .3s;
+        }
+        &::before {
+            bottom: 6px;
+            // background-color: #fff000;
+        }
+        &::after {
+            top: 6px;
+            // background-color: blue;
+        }
+    }
+
+    &.active {
+        border-color: $toggle-active;
+        .bar {
+            transform: translateX(-.3rem) rotate(90deg);
+            background: $toggle-active;
+            &::before {
+                transform: rotate(-50deg) translateY(.3rem) translateX(.25rem);
+                width: 75%;
+                background: $toggle-active;
+            }
+            &::after {
+                width: 75%;
+                background: $toggle-active;
+                transform: rotate(50deg) translateY(-.4rem) translateX(-.6rem);
+            }
+        }
+    }
+}
+
+.arrow {
+    @media (max-width: 768px) {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10vh;
+    }
+    position: absolute;
+    left: 5vw;
+    bottom: 10vh;
+    z-index: 10;
+    border: none;
+    outline: 2px solid #000;
+    background-color: $brand-gold;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+    a {
+        width: 2rem;
+        height: 2rem;
+        color: #000;
+        display: grid;
+        place-items: center;
+        font-size: 1rem;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: .2s;
+        opacity: 1;
+        animation: arrow 3s infinite;
+        transform: translateY(0);
+        @keyframes arrow {
+            50% {
+                transform: translateY(2rem);
+                opacity: 0;
+            }
+            55% {
+                transform: translateY(-1.5rem);
+                opacity: 0;
+            }
+            75% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            
+            // 30%, 70% {
+            //     opacity: 0;
+            //     transform: translateY(-1.5rem);
+            // }
+
+            // 100% {
+            //     opacity: 1;
+            //     transform: translateY(2rem);
+            // }
+        }
+    }   
+    &:hover {
+        background-color: #000;
+        a {
+            animation: none;
+            border: none;
+            outline: none;
+            color: #ead2a1;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    // HERO PAD 2 ARROW
+    &.gold-arrow {
+        bottom: 15vh;
+        left: 5vw;
+        @media (max-width: 1024px) {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 15vh;
+        }
+
+        outline: 2px solid #ead2a1;
+        background: #000;
+        border-radius: 50%;
+        z-index: 1;
+        overflow: hidden;
+        a {
+            overflow: hidden;
+            color: #ead2a1;
+        }
+        &:hover {
+            background-color: #ead2a1;
+            a {
+                color: #000;
+            }
+        }
+    }
+    // DESKTOP PAD ARROW
+    &.pad-arrow {
+        left: 50%;
+        bottom: 50%;
+        outline: 2px solid #ead2a1;
+        background: #000;
+        border-radius: 50%;
+        z-index: 1;
+        overflow: hidden;
+        a {
+            overflow: hidden;
+            color: #ead2a1;
+        }
+    }
+}
+
+// TOP-BTN
+.top-btn {
+    position: fixed;
+    right: 5vw;
+    @media (max-width: 768px) {
+        right: 3vw;
+    }
+    bottom: 10vh;
+    bottom: 1rem;
+    // bottom: 0;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+    transition: 1s;
+    z-index: 5;
+    // INDEX PAGE HOME BTN WITH INTERSECTION OBSERVER STYLE
+    &.index-top-btn {
+        transform: translateY(15vh);
+        a {
+            i {
+                opacity: 1;
+                // transform: translateY(150%);
+            }
+        }
+        // TOP BTN VISIBLE AFTER HERO
+    &.active-btn {
+        // transition-delay: 2s;
+        transform: translateY(0);
+        opacity: 1;
+        a {
+            i {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        &:hover {
+            transition: .2s;
+            transform: scale(.98);
+            a {
+                transition: .2s;
+                i {
+                    transition: .2s;
+                }
+            }
+        }
+        &:active {
+            transition: .2s;
+            transform: scale(.9) translateY(.2rem);
+        }
+    }
+    }
+    // PAGE HOME BTN 
+    &.page-top-btn {
+        opacity: 1;
+        width: 2rem;
+        height: 2rem;
+        display: grid;
+        place-items: center;
+        a {
+            i {
+                font-size: 1rem;
+            }
+        }
+    }
+    a { 
+        height: 100%;
+        width: 100%;
+        background: transparent;
+        transition: .2s;
+        // border: 2px solid $brand;
+        // border-top-right-radius: 10px;
+        // border-top-left-radius: 10px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        outline: 2px solid $brand-gold;
+
+        padding: .3rem;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        overflow: hidden;
+        position: relative;
+        isolation: isolate;
+        // BTN BG AND SHADOWS
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .3s;
+            border-radius: 50%;
+            // border-top-left-radius: 10px;
+            // border-top-right-radius: 10px;
+            // box-shadow: $box-shadow-top-btn;
+            border: none;
+            outline: none;
+            z-index: -1;
+        }
+        &::before {
+            background: $top-btn;
+            background: #000;
+        }
+        &::after {
+            opacity: 0;
+            background: $top-btn-hover;
+            background: $btn-gold;
+        }
+        i {
+            font-size: 1.2rem;
+            transition: 1s;
+            color: #ead2a1;
+        }
+        // BTN HOVER STATE
+        &:hover {
+            outline: 2px solid #000;
+            &::before {
+                opacity: 0;
+            } 
+            &::after {
+                opacity: 1;
+            }
+
+            i {
+                color: #000;
+            }
+        }
+    }
+    
+
+    &:hover {
+        cursor: pointer;
+    }
+    &:active {
+        transform: scale(.96);
+    }
+}

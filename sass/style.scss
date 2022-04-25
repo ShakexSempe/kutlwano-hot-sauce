@@ -1,0 +1,128 @@
+
+@import 'header';
+@import 'hero';
+@import 'sectionPads';
+@import 'about';
+@import 'contact';
+@import 'products';
+@import 'services';
+@import 'utilities';
+@import 'variables';
+@import 'footer';
+
+// @font-face{
+//     font-family: font-header;
+//     src:url(/fonts/UniversalIgnorance.ttf);
+// }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7vh;
+    @media (min-width: 768px){
+        scroll-padding-top: 6vh;
+    }
+    // font-family: $font-header;
+    // font-family: $font-header;
+    // font-family: $font-brand;
+    font-family: $font-content;
+    font-family: $font-title;
+    font-family: $font-ubuntu;
+}
+
+// BODY 
+body {
+    background: #f4f4f4;
+    background: #000;
+    background: $brand-gold;
+    width: 100%;
+    
+}
+
+.container {
+    background: hsl(0, 0%, 96%);
+    background: $brand-dark-overlay;
+    background: #000;
+    max-width: 100vw;
+    // overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 5;
+    position: relative;
+    // ACTIVE OVERLAY
+    @media (max-width: 768px){
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        background: $brand-dark-overlay;
+        opacity: .6;
+        display: none;
+    }
+    &.active-overlay {
+        &::after {
+            display: block;
+        }
+    }
+}
+
+    main {
+        // border: 2px solid $brand;
+        width: 100%;
+        // overflow-x: none;
+        padding: 0;
+        min-height: 200vh;
+        background: hsl(0, 0%, 96%);
+        background: #000;
+        background-color: $brand-gold;
+        // margin-top: 5vh;
+
+        section {
+            background-color: $brand-gold;
+            min-height: 100vh;
+            // border: 2px solid $brand;
+            margin: 0 5vw 10vh;
+            @media (max-width: 768px) {
+                margin: 0vh 3vw;
+            }
+            // padding: 5vh 0;
+            // INTERSECTION STYLE
+            // opacity: 1;
+            // transition: 2s;
+            // &.active {
+            //     opacity: 1;
+            // }
+
+            .section-title {
+                text-align: center;
+                text-transform: uppercase;
+                color: $brand;
+                color: $text-light;
+                // font-family: $font-bodoni-mutant;
+                // font-family: $font-bodoni-hand;
+                font-family: $font-title;
+                letter-spacing: .15rem;
+                font-size: 2rem;
+                font-weight: 500;
+                &.active {
+                    color: pink;
+                }
+
+            }
+            // DESKTOP SECTION STYLE
+            @media (min-width: 768px) {
+                .section-title {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+
+        
+    }
+    
+}
