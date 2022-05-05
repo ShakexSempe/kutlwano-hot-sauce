@@ -1423,7 +1423,8 @@
 .contact .contact-form .form-title {
   font-size: 1.7rem;
   font-family: "Ubuntu", sans-serif;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   text-align: center;
   margin-bottom: 5vh;
   color: #f4f4f4;
