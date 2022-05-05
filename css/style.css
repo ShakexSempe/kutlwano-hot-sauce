@@ -683,7 +683,7 @@
   line-height: 1.5;
   margin-top: 1rem;
   opacity: 0;
-  transform: translateY(-1rem);
+  transform: translateY(-5vh);
   transition: 1.5s;
   transform-style: preserve-3d;
 }
