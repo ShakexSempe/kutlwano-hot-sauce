@@ -94,6 +94,7 @@
                 justify-content: space-evenly;
             }
             border: 1px solid #ead2a1;
+            border: 1px solid #fffa;
             padding: .5rem;
             border-radius: 5px;
             width: 40%;
@@ -113,12 +114,13 @@
                     height: 60px;
                     background: #161616;
                     border: 1px solid hsla(40, 63%, 77%, .3);
+                    border: 1px solid #fffa;
                     display: grid;
                     place-items: center;
                     border-radius: 50%;
                     font-size: 2rem;
-                    color: $brand;
                     color: #ead2a1;
+                    color: #fffa;
                     position: relative;
                     transition: .2s;
                     // PSEUDO ICONS
@@ -129,6 +131,7 @@
                         font-family: 'Font Awesome 5 Free';
                         font-weight: 900;
                         font-size: 1.5rem;
+                        color: #f4f4f4;
                         display: grid;
                         place-items: center;
                         width: 100%;
@@ -192,9 +195,10 @@
 
                     h3 {
                         text-transform: capitalize;
+                        text-transform: uppercase;
                         font-weight: 500;
-                        color: $brand;
                         color: #ead2a1;
+                        color: #f4f4f4;
                         transition: 1.5s;
                         transform: translateX(1.5rem);
                         opacity: 0;
@@ -202,6 +206,7 @@
 
                     p, a {
                         color: #f4f4f4;
+                        color: #ead2a1;
                         font-family: $font-ubuntu;
                         letter-spacing: .05rem;
                         transition: 1.5s;

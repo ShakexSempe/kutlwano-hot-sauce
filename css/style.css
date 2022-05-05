@@ -1261,6 +1261,7 @@
 }
 .contact .container .contact-info {
   border: 1px solid #ead2a1;
+  border: 1px solid #fffa;
   padding: 0.5rem;
   border-radius: 5px;
   width: 40%;
@@ -1287,12 +1288,13 @@
   height: 60px;
   background: #161616;
   border: 1px solid rgba(233, 209, 159, 0.3);
+  border: 1px solid #fffa;
   display: grid;
   place-items: center;
   border-radius: 50%;
   font-size: 2rem;
-  color: #dc143c;
   color: #ead2a1;
+  color: #fffa;
   position: relative;
   transition: 0.2s;
 }
@@ -1302,6 +1304,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1.5rem;
+  color: #f4f4f4;
   display: grid;
   place-items: center;
   width: 100%;
@@ -1355,15 +1358,17 @@
 }
 .contact .container .contact-info .box .text h3 {
   text-transform: capitalize;
+  text-transform: uppercase;
   font-weight: 500;
-  color: #dc143c;
   color: #ead2a1;
+  color: #f4f4f4;
   transition: 1.5s;
   transform: translateX(1.5rem);
   opacity: 0;
 }
 .contact .container .contact-info .box .text p, .contact .container .contact-info .box .text a {
   color: #f4f4f4;
+  color: #ead2a1;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 0.05rem;
   transition: 1.5s;
