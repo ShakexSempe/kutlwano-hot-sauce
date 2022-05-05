@@ -945,7 +945,7 @@
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
-  height: 50vh;
+  height: 60vh;
   opacity: 0;
   transition: 1.5s;
 }
@@ -956,9 +956,6 @@
   object-fit: cover;
 }
 @media (min-width: 768px) {
-  .about.about-page .content-section .about-article-pad figure {
-    height: 60vh;
-  }
   .about.about-page .content-section .about-article-pad figure img {
     object-fit: contain;
     object-position: left;
