@@ -945,7 +945,7 @@
   overflow: hidden;
   width: 100%;
   border-radius: 5px;
-  height: 40vh;
+  height: 50vh;
   opacity: 0;
   transition: 1.5s;
 }
