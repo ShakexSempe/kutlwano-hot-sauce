@@ -171,7 +171,7 @@
         }
     }
 
-    .hero-pad-img-2, .hero-pad-img-3 {
+    .hero-pad-img-2, .hero-pad-img-3, .hero-pad-img-4 {
         background: #000;
         height: 100vh;
         overflow: hidden;
@@ -229,8 +229,23 @@
                 transform: translateY(-5vh);
                 transition: 1.5s;
                 transform-style: preserve-3d;
-
-                
+            }
+            
+            a {
+                display: block;
+                color: #ead2a1;
+                color: #000;
+                text-decoration: none;
+                text-transform: capitalize;
+                text-align: center;
+                border-radius: 5px;
+                margin: 1rem auto;
+                padding: .2rem 0;
+                background: $btn-gold;
+                width: 10rem;
+                transform: translateY(5vh);
+                opacity: 0;
+                transition: 1.5s;
             }
             @media (min-width: 768px) {
                 width: 40%;
@@ -262,6 +277,12 @@
                     transition-delay: 1s;
                     opacity: 1;
                     transform: translateY(0);
+                }
+
+                a {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: 1.5s ;
                 }
             }
         }
