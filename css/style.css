@@ -254,6 +254,7 @@
   #header nav .desktop-nav .desktop-nav-links li a {
     color: #161616;
     font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
     position: relative;
     transition: 0.2s;
   }
@@ -1234,6 +1235,7 @@
   font-weight: 500;
 }
 .contact .content p {
+  display: none;
   color: #f4f4f4;
   margin: 5vh auto;
 }
