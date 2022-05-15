@@ -25,11 +25,6 @@
   z-index: 10;
   transition: 0.5s;
 }
-@media (max-width: 768px) {
-  #header {
-    padding: 0 3vw;
-  }
-}
 #header.index-header {
   background-color: #161616a4;
   background-color: transparent;
@@ -917,7 +912,7 @@
   }
 }
 .about.about-page {
-  padding: 15vh 3vw;
+  padding: 15vh 5vw;
 }
 @media (min-width: 768px) {
   .about.about-page {
@@ -1210,7 +1205,7 @@
 
 .contact {
   min-height: 100vh;
-  padding: 5vh 3vw;
+  padding: 5vh 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2049,7 +2044,7 @@
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
-  padding: 5vh 3vw;
+  padding: 5vh 5vw;
   position: relative;
 }
 footer .footer-logo {
@@ -2105,7 +2100,7 @@ footer .home-btn {
 }
 @media (max-width: 768px) {
   footer .home-btn {
-    right: 3vw;
+    right: 5vw;
   }
 }
 footer .home-btn a {
@@ -2188,7 +2183,7 @@ body {
 }
 @media (max-width: 768px) {
   .container main section {
-    margin: 0vh 3vw;
+    margin: 0vh 5vw;
   }
 }
 .container main section .section-title {

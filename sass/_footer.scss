@@ -1,7 +1,7 @@
 footer {
     background: linear-gradient(0deg, #000, #222);
     background: $brand-gold;
-    padding: 5vh 3vw;
+    padding: 5vh 5vw;
     position: relative;
     // height: 50vh;
     .footer-logo {
@@ -62,7 +62,7 @@ footer {
         right: 50%;
         // border: 1px solid yellow;
         @media (max-width: 768px){
-            right: 3vw;
+            right: 5vw;
         }
         a {
             color: #000;
