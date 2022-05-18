@@ -3,14 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Reggae+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Raleway:wght@100;300;500;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Reggae+One&display=swap");
-@font-face {
-  font-family: bodoni-hand;
-  src: url(../fonts/Bodoni_Hand.otf);
-}
-@font-face {
-  font-family: bodoni-mutant;
-  src: url(../fonts/BODOM___.TTF);
-}
 #header {
   background-color: transparent;
   background-color: #f3e1a5;
@@ -508,7 +500,7 @@
 .mobile-hero-pad .hero-pad-img-1 {
   height: 100vh;
   border: 1px solid #000;
-  background-image: url("../imgs/hero-1-min.jpg");
+  background-image: url("../imgs/hero1-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2033,14 +2025,6 @@
   transform: scale(0.96);
 }
 
-@font-face {
-  font-family: bodoni-hand;
-  src: url(../fonts/Bodoni_Hand.otf);
-}
-@font-face {
-  font-family: bodoni-mutant;
-  src: url(../fonts/BODOM___.TTF);
-}
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
