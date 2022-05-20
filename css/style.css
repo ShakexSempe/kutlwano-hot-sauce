@@ -1475,18 +1475,31 @@
   font-size: 16px;
   margin: 10px 0;
   border: none;
-  color: #fff;
+  color: #ead2a1;
   resize: none;
-  border-radius: 5px;
-  border: 1px solid rgba(234, 210, 161, 0.2);
+  border-bottom-right-radius: 15px;
+  border: 1px solid rgba(234, 210, 161, 0.1);
   border-bottom: 2px solid #f3e1a5;
   background: #000;
+  transition: 0.3s;
   outline: none;
 }
 .contact .contact-form .input-box input::placeholder,
 .contact .contact-form .input-box textarea::placeholder {
   opacity: 0;
   transition: 0.5s;
+}
+.contact .contact-form .input-box input:invalid,
+.contact .contact-form .input-box textarea:invalid {
+  border-radius: 0px;
+}
+.contact .contact-form .input-box input:invalid:focus,
+.contact .contact-form .input-box textarea:invalid:focus {
+  border-bottom-right-radius: 5px;
+}
+.contact .contact-form .input-box input:focus,
+.contact .contact-form .input-box textarea:focus {
+  color: #ffff;
 }
 .contact .contact-form .input-box:hover label {
   transform: translateX(1rem);

@@ -319,12 +319,13 @@
                 font-size: 16px;
                 margin: 10px 0;
                 border: none;
-                color: #fff;
+                color: #ead2a1;
                 resize: none;
-                border-radius: 5px;
-                border: 1px solid rgba(234, 210, 161, .2);
+                border-bottom-right-radius: 15px;
+                border: 1px solid rgba(234, 210, 161, .1);
                 border-bottom: 2px solid $brand-gold;
                 background: #000;
+                transition: .3s;
                 // border: 2px solid $brand;
                 outline: none;
                 // resize: none;
@@ -332,8 +333,15 @@
                     opacity: 0;
                     transition: .5s;
                 }
-
-                
+                &:invalid {
+                    border-radius: 0px;
+                    &:focus {
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+                &:focus {
+                    color: #ffff;
+                }
             }
             // INPUT BOX HOVER STATE
             &:hover {
