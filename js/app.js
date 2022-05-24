@@ -71,24 +71,24 @@ box.forEach(box => {
 });
 
 // ABOUT SECTION IO
-const aboutSection = document.querySelector(".about");
-const aboutSectionOptions = {
-    rootMargin: "0px 0px -20% 0px",   
-}
-aboutSectionObserver = new IntersectionObserver(
-    function(entries, aboutSectionObserver) {
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log("about section NOT intersect");
-                aboutSection.classList.remove("active-about");
-            } else {
-                console.log("about section IS intersecting");
-                aboutSection.classList.add("active-about");
-            }
-        })
-    }, aboutSectionOptions
-);
-aboutSectionObserver.observe(aboutSection);
+// const aboutSection = document.querySelector(".about");
+// const aboutSectionOptions = {
+//     rootMargin: "0px 0px -20% 0px",   
+// }
+// aboutSectionObserver = new IntersectionObserver(
+//     function(entries, aboutSectionObserver) {
+//         entries.forEach(entry => {
+//             if(!entry.isIntersecting) {
+//                 console.log("about section NOT intersect");
+//                 aboutSection.classList.remove("active-about");
+//             } else {
+//                 console.log("about section IS intersecting");
+//                 aboutSection.classList.add("active-about");
+//             }
+//         })
+//     }, aboutSectionOptions
+// );
+// aboutSectionObserver.observe(aboutSection);
 
 // HERO INTERSECTION OBSERVER
 const heroTitle = document.querySelector('.hero-title');

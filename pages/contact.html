@@ -96,16 +96,48 @@
                 </div>
             </nav>
         </header>
-
+        <!-- HERO  -->
+        <div class="hero">
+            <div class="arrow">
+                <a href="#contact" class="fas fa-arrow-down"></a>
+            </div>
+            <p class="hero-p">Need sauce? <span>place order here</span></p>
+        </div>
         <main class="main">
             <section id="contact" class="section contact contact-page">
                 <div class="content">
-                    <h2>contact</h2>
+                    <!-- <h2>contact</h2> -->
                     <!-- <p><a href="pages/contact.html" class="page-link">contact page</a></p> -->
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores facere incidunt, voluptate
                         ratione iusto dolorum repellendus sint in repellat doloremque?</p>
                 </div>
                 <div class="container">
+                <!-- ORDER FORM -->
+                    <div id="order-form" class="contact-form">
+                        <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
+                            <h2 class="form-title">Order Form</h2>
+                            <div class="input-box">
+                                <label for="name">name</label>
+                                <input type="text" name="name" placeholder="your name an surname..." required="required">
+                            </div>
+                            <div class="input-box">
+                                <label id="email" for="email">email</label>
+                                <input type="email" name="email" placeholder="your email address..." required="required">
+                            </div>
+                            <div class="input-box">
+                                <label id="message" for="message">leave a message..</label>
+                                <textarea id="message" name="message" placeholder="leave your message..." required="required"></textarea>
+                            </div>
+                                <!-- <input type="submit" value="send email"> -->
+                                <button class="submit-btn" type="submit">submit order</button>
+                                <input type="hidden" name="_subject" value="K'Sauce received an email !">
+                                <input type="hidden" name="_cc" value="another@email.com">
+                                <input type="hidden" name="_autoresponse" value="Thank you for reaching out to K'SAUCE">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://shakexsempe.netlify.app/thanks.html">
+                            </form>
+                    </div>
+                    <!-- CONTACT INFO -->
                     <div class="contact-info">
                         <!-- PHONE -->
                         <div class="box">
@@ -138,30 +170,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="order-form" class="contact-form">
-                        <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
-                            <h2 class="form-title">Order Form</h2>
-                            <div class="input-box">
-                                <label for="name">name</label>
-                                <input type="text" name="name" placeholder="your name an surname..." required="required">
-                            </div>
-                            <div class="input-box">
-                                <label id="email" for="email">email</label>
-                                <input type="email" name="email" placeholder="your email address..." required="required">
-                            </div>
-                            <div class="input-box">
-                                <label id="message" for="message">leave a message..</label>
-                                <textarea id="message" name="message" placeholder="leave your message..." required="required"></textarea>
-                            </div>
-                                <!-- <input type="submit" value="send email"> -->
-                                <button class="submit-btn" type="submit">submit order</button>
-                                <input type="hidden" name="_subject" value="K'Sauce received an email !">
-                                <input type="hidden" name="_cc" value="another@email.com">
-                                <input type="hidden" name="_autoresponse" value="Thank you for reaching out to K'SAUCE">
-                                <input type="hidden" name="_template" value="table">
-                                <input type="hidden" name="_next" value="https://shakexsempe.netlify.app/thanks.html">
-                            </form>
-                    </div>
+                    
                 </div>
             </section>
             <div class="top-btn page-top-btn">

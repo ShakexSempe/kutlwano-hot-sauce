@@ -13,6 +13,10 @@
     &.contact-page {
         margin: 10vh 0;
         z-index: 1;
+
+        #order-form {
+            margin: 0 auto;
+        }
     }
     .content {
         // max-width: 800px;
