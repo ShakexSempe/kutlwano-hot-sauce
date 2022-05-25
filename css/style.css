@@ -1452,6 +1452,7 @@
   text-align: center;
   margin-bottom: 5vh;
   color: #f4f4f4;
+  letter-spacing: 0.1rem;
 }
 @media (max-width: 768px) {
   .contact .contact-form .form-title {
@@ -1461,7 +1462,7 @@
 .contact .contact-form .input-box {
   position: relative;
   width: 100%;
-  margin: 10vh 0;
+  margin: 10vh 0 5vh;
 }
 .contact .contact-form .input-box label {
   font-family: "Ubuntu", sans-serif;
