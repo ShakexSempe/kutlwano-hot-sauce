@@ -15,7 +15,7 @@
         z-index: 1;
 
         #order-form {
-            margin: 0 auto;
+            margin: 0 auto 15vh;
         }
     }
     .content {
@@ -407,16 +407,37 @@
                 box-shadow: $box-shadow-hover;
             }
 
-            &:active {
-                transform: scale(.9);
-                letter-spacing: .05rem;
-                transition: .3s;
+            @media (min-width: 1024px) {
+                &:hover {
+                    transform: scale(.98);
+                    letter-spacing: .05rem;
+
+                    &::before {
+                        opacity: 0;
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &:active {
+                    transform: scale(.97);
+                }
             }
-            &:hover {
-                transform: scale(.95);
-                letter-spacing: .05rem;
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
+
+            @media (max-width: 1024px) {
+                &:active {
+                    transform: scale(.95);
+                    letter-spacing: .05rem;
+
+                    &::before {
+                        opacity: 0;
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }

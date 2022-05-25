@@ -1214,7 +1214,7 @@
   z-index: 1;
 }
 .contact.contact-page #order-form {
-  margin: 0 auto;
+  margin: 0 auto 15vh;
 }
 .contact .content {
   text-align: center;
@@ -1552,20 +1552,32 @@
   background: linear-gradient(0deg, #e3c382, #9a7223);
   box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px rgba(255, 255, 255, 0.5), 2px 3px 3px rgba(0, 0, 0, 0.35);
 }
-.contact .contact-form .submit-btn:active {
-  transform: scale(0.9);
-  letter-spacing: 0.05rem;
-  transition: 0.3s;
+@media (min-width: 1024px) {
+  .contact .contact-form .submit-btn:hover {
+    transform: scale(0.98);
+    letter-spacing: 0.05rem;
+  }
+  .contact .contact-form .submit-btn:hover::before {
+    opacity: 0;
+  }
+  .contact .contact-form .submit-btn:hover::after {
+    opacity: 1;
+  }
+  .contact .contact-form .submit-btn:active {
+    transform: scale(0.97);
+  }
 }
-.contact .contact-form .submit-btn:hover {
-  transform: scale(0.95);
-  letter-spacing: 0.05rem;
-}
-.contact .contact-form .submit-btn:hover::before {
-  opacity: 0;
-}
-.contact .contact-form .submit-btn:hover::after {
-  opacity: 1;
+@media (max-width: 1024px) {
+  .contact .contact-form .submit-btn:active {
+    transform: scale(0.95);
+    letter-spacing: 0.05rem;
+  }
+  .contact .contact-form .submit-btn:active::before {
+    opacity: 0;
+  }
+  .contact .contact-form .submit-btn:active::after {
+    opacity: 1;
+  }
 }
 
 .products {
