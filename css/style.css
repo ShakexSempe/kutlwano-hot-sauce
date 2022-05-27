@@ -179,7 +179,7 @@
   opacity: 0;
   padding: 0.5rem 0;
   display: flex;
-  transition: 1s;
+  transition: 0.5s;
 }
 #header nav .hamburger .mobile-links .contact-links .contact-link i {
   color: #f3e1a5;
@@ -215,13 +215,13 @@
   opacity: 1;
 }
 #header nav .hamburger .mobile-links.active .contact-links .contact-link:nth-child(1) {
-  transition-delay: 0.6s;
+  transition-delay: 0.45s;
 }
 #header nav .hamburger .mobile-links.active .contact-links .contact-link:nth-child(2) {
-  transition-delay: 0.8s;
+  transition-delay: 0.55s;
 }
 #header nav .hamburger .mobile-links.active .contact-links .contact-link:nth-child(3) {
-  transition-delay: 1s;
+  transition-delay: 0.66s;
 }
 #header nav .hamburger .mobile-links.active .contact-links .contact-link:nth-child(4) {
   transition-delay: 1.2s;
