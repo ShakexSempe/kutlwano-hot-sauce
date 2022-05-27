@@ -16,6 +16,30 @@
 
         #order-form {
             margin: 0 auto 15vh;
+
+            fieldset {
+                border: 1px solid $brand-gold;
+                border-radius: 5px;
+                padding: .5rem;
+
+                legend {
+                    color: $brand-gold;
+                    text-transform: uppercase;
+                    // margin-left: .5rem;
+                    margin: 0 auto;
+                    i {
+                        margin-right: .25rem;
+                        opacity: .5;
+                    }
+                }
+
+                .input-box {
+                    // border: 1px solid red;
+                    margin: 5vh 0;
+                }
+
+
+            }
         }
     }
     .content {

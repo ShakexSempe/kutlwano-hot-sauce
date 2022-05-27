@@ -116,14 +116,24 @@
                     <div id="order-form" class="contact-form">
                         <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                             <h2 class="form-title">Order Form</h2>
-                            <div class="input-box">
-                                <label for="name">name</label>
-                                <input type="text" name="name" placeholder="your name an surname..." required="required">
-                            </div>
-                            <div class="input-box">
-                                <label id="email" for="email">email</label>
-                                <input type="email" name="email" placeholder="your email address..." required="required">
-                            </div>
+
+                            <fieldset>
+                                <legend><i class="fas fa-user"></i>Basic Info</legend>
+                                <div class="input-box">
+                                    <label for="name">name:</label>
+                                    <input type="text" name="name" placeholder="your name an surname..." required="required">
+                                </div>
+                                <div class="input-box">
+                                    <label id="email" for="email">email:</label>
+                                    <input type="email" name="email" placeholder="your email address..." required="required">
+                                </div>
+                                <div class="input-box">
+                                    <label id="tel" for="tel">phone:</label>
+                                    <input type="tel" name="tel" placeholder="your phone number..." required="required">
+                                </div>
+                            </fieldset>
+
+                            
                             <div class="input-box">
                                 <label id="message" for="message">Place order here..</label>
                                 <textarea id="message" name="message" placeholder="eg. mild Hot sause.." required="required"></textarea>
