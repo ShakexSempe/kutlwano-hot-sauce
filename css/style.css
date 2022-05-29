@@ -1235,8 +1235,6 @@
   padding: 1rem 0.5rem;
   margin-bottom: 5vh;
   overflow: hidden;
-  height: 3vh;
-  height: 50vh;
   transition: 0.5s;
 }
 .contact.contact-page #order-form fieldset legend {
