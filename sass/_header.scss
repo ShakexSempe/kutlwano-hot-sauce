@@ -31,14 +31,16 @@
             // }
             &.active {
                 background: $header-active;
-                background: $brand-gold;
+                // background: $brand-gold;
 
                 .hamburger {
                     border: 2px solid #000;
+                    border: 2px solid $brand-gold;
                     .bar {
                         background: #000;
+                        background: $brand-gold;
                         &::after, &::before {
-                            background: #000;
+                            background: $brand-gold;
                         }
                     }
                 }
