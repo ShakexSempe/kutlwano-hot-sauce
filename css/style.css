@@ -1213,6 +1213,19 @@
   margin: 10vh 0;
   z-index: 1;
 }
+.contact.contact-page .container .contact-info {
+  position: sticky;
+  top: 10vh;
+  justify-content: flex-start;
+}
+@media (min-width: 1024px) {
+  .contact.contact-page .container .contact-info {
+    height: 90vh;
+  }
+}
+.contact.contact-page .container .contact-info .box {
+  margin-bottom: 1rem;
+}
 .contact.contact-page #order-form {
   margin: 0 auto 15vh;
 }
@@ -1291,7 +1304,7 @@
   align-items: center;
   margin: 5vh auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact .container {
     flex-direction: column;
   }
@@ -1310,7 +1323,7 @@
   background: #000a;
   background: radial-gradient(#111, #161417);
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact .container .contact-info {
     width: 100%;
     height: 60vh;
@@ -1402,6 +1415,7 @@
   font-weight: 500;
   color: #ead2a1;
   color: #f4f4f4;
+  margin-bottom: 0.5rem;
   transition: 1.5s;
   transform: translateX(1.5rem);
   opacity: 0;
@@ -1415,6 +1429,9 @@
   transform: translateY(2rem);
   opacity: 0;
   text-decoration: none;
+}
+.contact .container .contact-info .box .text a i {
+  margin-right: 0.5rem;
 }
 .contact .container .contact-info .box.active-box .icon::before {
   opacity: 0;
@@ -1452,7 +1469,7 @@
   border-radius: 5px;
   font-family: "Ubuntu", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact .contact-form {
     width: 100%;
     min-height: 100vh;
@@ -1471,7 +1488,7 @@
   color: #f4f4f4;
   letter-spacing: 0.1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact .contact-form .form-title {
     margin-bottom: 15vh;
   }
