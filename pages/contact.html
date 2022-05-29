@@ -117,7 +117,7 @@
                         <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                             <h2 class="form-title">Order Form</h2>
 
-                            <fieldset>
+                            <fieldset id="basic-info">
                                 <legend><i class="fas fa-user"></i>Basic Info</legend>
                                 <div class="input-box">
                                     <label for="name">name:</label>
@@ -133,7 +133,12 @@
                                 </div>
                             </fieldset>
 
-                            
+                            <fieldset id="sauce-order" class="product-field">
+                                <legend>Hot Sauce</legend>
+                            </fieldset>
+                            <fieldset id="brand-order" class="product-field">
+                                <legend>Kitchen accessories</legend>
+                            </fieldset>
                             <div class="input-box">
                                 <label id="message" for="message">Place order here..</label>
                                 <textarea id="message" name="message" placeholder="eg. mild Hot sause.." required="required"></textarea>
