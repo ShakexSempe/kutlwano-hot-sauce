@@ -126,7 +126,10 @@
         @media (max-width: 1024px) {
             left: 50%;
             transform: translateX(-50%);
-            bottom: 20vh;
+            bottom: 10vh;
+            &.intro-arrow {
+                bottom: 15vh;
+            }
         }
 
         outline: 2px solid #ead2a1;
