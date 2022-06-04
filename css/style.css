@@ -499,7 +499,7 @@
   isolation: isolate;
 }
 .mobile-hero-pad .hero-pad-img-1 {
-  height: 100vh;
+  min-height: 100vh;
   border: 1px solid #000;
   background-image: url("../imgs/hero1-1.jpg");
   background-repeat: no-repeat;
@@ -507,7 +507,6 @@
   background-size: cover;
   position: sticky;
   display: grid;
-  padding: 10vh 0;
   top: 0vh;
   z-index: -1;
 }
@@ -530,6 +529,7 @@
 .mobile-hero-pad .hero-pad-img-1 .hero-title {
   border-radius: 5px;
   color: #fff;
+  padding: 5vh 0;
   text-align: center;
   overflow: hidden;
 }
@@ -1995,7 +1995,7 @@
     bottom: 10vh;
   }
   .arrow.gold-arrow.intro-arrow {
-    bottom: 15vh;
+    bottom: 20vh;
   }
 }
 .arrow.gold-arrow a {
