@@ -734,7 +734,7 @@
   z-index: 5;
 }
 .mobile-hero-pad .hero-pad-img-2 .pad-links a, .mobile-hero-pad .hero-pad-img-3 .pad-links a, .mobile-hero-pad .hero-pad-img-4 .pad-links a {
-  border: 2px solid pink;
+  border: 2px solid #f3e1a5;
   padding: 0.5rem;
   margin: 0.5rem 0;
   text-align: center;
