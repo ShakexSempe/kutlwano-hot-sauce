@@ -499,7 +499,7 @@
   isolation: isolate;
 }
 .mobile-hero-pad .hero-pad-img-1 {
-  min-height: 100vh;
+  height: 100vh;
   border: 1px solid #000;
   background-image: url("../imgs/hero1-1.jpg");
   background-repeat: no-repeat;
@@ -529,7 +529,7 @@
 .mobile-hero-pad .hero-pad-img-1 .hero-title {
   border-radius: 5px;
   color: #fff;
-  padding: 5vh 0;
+  margin-top: 7vh;
   text-align: center;
   overflow: hidden;
 }
@@ -642,11 +642,14 @@
   text-align: center;
   top: 20vh;
   top: 0vh;
-  background: linear-gradient(0deg, #000a, rgba(0, 0, 0, 0.1));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1));
   padding: 10vh 1rem;
   transition: 1.5s;
   overflow: hidden;
   transform-style: preserve-3d;
+}
+.mobile-hero-pad .hero-pad-img-2 .hero-pad-content.dark-content-overlay, .mobile-hero-pad .hero-pad-img-3 .hero-pad-content.dark-content-overlay, .mobile-hero-pad .hero-pad-img-4 .hero-pad-content.dark-content-overlay {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8));
 }
 .mobile-hero-pad .hero-pad-img-2 .hero-pad-content h2, .mobile-hero-pad .hero-pad-img-3 .hero-pad-content h2, .mobile-hero-pad .hero-pad-img-4 .hero-pad-content h2 {
   font-family: "Reggae One", cursive;
@@ -742,6 +745,7 @@
   text-transform: uppercase;
   border-radius: 20px;
   color: #fff;
+  width: 100%;
 }
 .mobile-hero-pad .hero-pad-img-2 .pad-links a.view-link, .mobile-hero-pad .hero-pad-img-3 .pad-links a.view-link, .mobile-hero-pad .hero-pad-img-4 .pad-links a.view-link {
   background: linear-gradient(0deg, #9a7223, #e3c382);
@@ -1982,8 +1986,10 @@
 .arrow.gold-arrow {
   bottom: 15vh;
   left: 5vw;
-  outline: 2px solid #ead2a1;
-  background: #000;
+  z-index: 10;
+  background: #000a;
+  border: none;
+  outline: none;
   border-radius: 50%;
   z-index: 1;
   overflow: hidden;
@@ -1991,11 +1997,13 @@
 @media (max-width: 1024px) {
   .arrow.gold-arrow {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.8);
     bottom: 10vh;
   }
   .arrow.gold-arrow.intro-arrow {
+    outline: 2px solid #ead2a1;
     bottom: 20vh;
+    background: #000;
   }
 }
 .arrow.gold-arrow a {
