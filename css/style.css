@@ -630,6 +630,9 @@
   position: sticky;
   top: 0vh;
 }
+.mobile-hero-pad .hero-pad.pad-img-3 img {
+  object-position: left;
+}
 .mobile-hero-pad .hero-pad img {
   width: 100%;
   height: 100%;
