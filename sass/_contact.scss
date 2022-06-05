@@ -356,7 +356,7 @@
         .input-box {
             position: relative;
             width: 100%;
-            margin: 10vh 0 5vh;
+            margin: 1rem 0;
             // border: 1px solid yellow;
 
             label {
@@ -380,7 +380,7 @@
                 color: #ead2a1;
                 resize: none;
                 border-bottom-right-radius: 15px;
-                border: 1px solid rgba(234, 210, 161, .05);
+                // border: 1px solid rgba(234, 210, 161, .05);
                 border-bottom: 2px solid $brand-gold;
                 background: #000;
                 transition: .3s;

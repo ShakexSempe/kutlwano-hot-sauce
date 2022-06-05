@@ -1595,7 +1595,7 @@
 .contact .contact-form .input-box {
   position: relative;
   width: 100%;
-  margin: 10vh 0 5vh;
+  margin: 1rem 0;
 }
 .contact .contact-form .input-box label {
   font-family: "Ubuntu", sans-serif;
@@ -1617,7 +1617,6 @@
   color: #ead2a1;
   resize: none;
   border-bottom-right-radius: 15px;
-  border: 1px solid rgba(234, 210, 161, 0.05);
   border-bottom: 2px solid #f3e1a5;
   background: #000;
   transition: 0.3s;
