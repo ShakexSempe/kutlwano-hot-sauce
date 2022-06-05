@@ -182,7 +182,7 @@
             height: 100%;
             text-align: center;
             top: 0vh;
-            background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.250), rgba(0,0,0,.100));
+            background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.200), rgba(0,0,0,.050));
             padding: 10vh 1rem;
             transition: 1.5s;
             overflow: hidden;
@@ -332,7 +332,7 @@
                     }
                 }
                 &.order-link {
-                    background: rgba(0, 0, 0, 0.500);
+                    background-color: rgba(0, 0, 0, 0.250);
                     color: $brand-gold;
                 }
                 
