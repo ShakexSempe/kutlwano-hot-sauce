@@ -332,7 +332,7 @@
                     }
                 }
                 &.order-link {
-                    background: #000a;
+                    background: rgba(0, 0, 0, 0.500);
                     color: $brand-gold;
                 }
                 
@@ -362,7 +362,7 @@
 
             @media (max-width: 820px) {
                 position: absolute;
-            bottom: 15vh;
+            bottom: 17vh;
             left: 50%;
             transform: translateX(-50%);
             width: 80%;
