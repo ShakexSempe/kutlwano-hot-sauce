@@ -1332,9 +1332,10 @@
 }
 .contact.contact-page .details ul {
   margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.267);
 }
 .contact.contact-page .details ul li {
-  border: 1px solid rgba(255, 255, 255, 0.267);
   display: flex;
   justify-content: space-between;
   padding-left: 0.3rem;
@@ -1357,18 +1358,8 @@
   font-weight: 300;
   text-transform: capitalize;
 }
-.contact.contact-page .details[open] {
-  transition: 0.2s;
-}
-.contact.contact-page .details[open] summary {
-  color: #fffa;
-}
-.contact.contact-page .details[open] summary::marker {
-  color: #fffa;
-}
 .contact.contact-page summary {
   text-transform: capitalize;
-  transition: 0.2s;
 }
 .contact.contact-page summary::marker {
   color: #f3e1a5;

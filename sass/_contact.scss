@@ -35,8 +35,9 @@
             cursor: pointer;
             ul {
                 margin-top: .5rem;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.267);
                 li {
-                    border: 1px solid rgba(255, 255, 255, 0.267);
                     display: flex;
                     justify-content: space-between;
                     padding-left: .3rem;
@@ -63,19 +64,9 @@
                     }
                 }
             }
-            &[open]{
-                transition: .2s;
-                summary {
-                    color: #fffa;
-                    &::marker {
-                        color: #fffa;
-                    }
-                }
-            }
         }
         summary {
             text-transform: capitalize;
-            transition: .2s;
             &::marker {
                 color: $brand-gold;
             }
