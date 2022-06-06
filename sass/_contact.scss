@@ -28,6 +28,46 @@
                 }
             }
         }
+        .details {
+            // border: 2px solid yellow;
+            color: #fff;
+        }
+        summary {
+            text-transform: capitalize;
+        }
+        
+        ul {
+            // border: 2px solid red;
+            margin-top: .5rem;
+            li {
+            border: 2px solid rgba(0,0,0,.2);
+                display: flex;
+                justify-content: space-between;
+                &:nth-child(even) {
+                    background: #161616;
+                }
+
+                p {
+                    // border: 2px solid pink;
+                    padding: .2rem 0;
+                    text-align: left;
+                    flex-basis: 50%;
+
+                    &.detail-title {
+                        font-weight: 700;
+                        color: #f4f4f4;
+                        text-transform: capitalize;
+                        font-size: .9rem;
+                    }
+                    &.detail-data {
+                        font-weight: 300;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+        
         #order-form {
             margin: 0 auto 15vh;
 

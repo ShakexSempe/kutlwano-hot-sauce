@@ -1325,6 +1325,38 @@
 .contact.contact-page .container .contact-info .box {
   margin-bottom: 1rem;
 }
+.contact.contact-page .details {
+  color: #fff;
+}
+.contact.contact-page summary {
+  text-transform: capitalize;
+}
+.contact.contact-page ul {
+  margin-top: 0.5rem;
+}
+.contact.contact-page ul li {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+}
+.contact.contact-page ul li:nth-child(even) {
+  background: #161616;
+}
+.contact.contact-page ul li p {
+  padding: 0.2rem 0;
+  text-align: left;
+  flex-basis: 50%;
+}
+.contact.contact-page ul li p.detail-title {
+  font-weight: 700;
+  color: #f4f4f4;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.contact.contact-page ul li p.detail-data {
+  font-weight: 300;
+  text-transform: capitalize;
+}
 .contact.contact-page #order-form {
   margin: 0 auto 15vh;
 }
