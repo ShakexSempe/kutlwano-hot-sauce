@@ -35,7 +35,8 @@
             transition: 2s;
             cursor: pointer;
             ul {
-                margin-top: .5rem;
+                // margin-top: .5rem;
+                margin: .5rem 0;
                 padding: .5rem 0;
                 border-radius: 5px;
                 border: 1px solid rgba(255, 255, 255, 0.267);
@@ -43,7 +44,8 @@
                 li {
                     display: flex;
                     justify-content: space-between;
-                    padding-left: .3rem;
+                    // padding-left: .3rem;
+                    padding: .5rem .3rem;
                     &:nth-child(even) {
                         background: #161616;
                     }

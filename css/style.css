@@ -1332,7 +1332,7 @@
   cursor: pointer;
 }
 .contact.contact-page details ul {
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
   padding: 0.5rem 0;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.267);
@@ -1341,7 +1341,7 @@
 .contact.contact-page details ul li {
   display: flex;
   justify-content: space-between;
-  padding-left: 0.3rem;
+  padding: 0.5rem 0.3rem;
 }
 .contact.contact-page details ul li:nth-child(even) {
   background: #161616;
