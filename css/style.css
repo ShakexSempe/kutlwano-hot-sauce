@@ -1388,6 +1388,21 @@
 .contact.contact-page #order-form fieldset .input-box {
   margin: 5vh 0;
 }
+.contact.contact-page #order-form fieldset.product-field {
+  display: flex;
+  flex-direction: column;
+}
+.contact.contact-page #order-form fieldset.product-field label {
+  color: #f4f4f4;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+.contact.contact-page #order-form fieldset.product-field select {
+  margin-bottom: 1rem;
+}
+.contact.contact-page #order-form fieldset.product-field select optgroup[label] {
+  text-transform: capitalize;
+}
 .contact .content {
   text-align: center;
 }

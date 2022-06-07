@@ -116,6 +116,7 @@
                     <div id="order-form" class="contact-form">
                         <form action="https://formsubmit.co/bshakex@gmail.com" method="POST">
                             <h2 class="form-title">Order Form</h2>
+                            <!-- ORDER DETAILS -->
                             <fieldset>
                                 <legend>Order Details</legend>
                                 <!-- HOW TO -->
@@ -151,6 +152,7 @@
                                 </details>
                                 
                             </fieldset>
+                            <!-- CUSTOMER DETAILS -->
                             <fieldset id="basic-info">
                                 <legend><i class="fas fa-user"></i>Basic Info</legend>
                                 <div class="input-box">
@@ -166,10 +168,25 @@
                                     <input type="tel" name="tel" placeholder="your phone number..." required="required">
                                 </div>
                             </fieldset>
-
+                            <!-- HOT SAUCE -->
                             <fieldset id="sauce-order" class="product-field">
-                                <legend>Hot Sauce</legend>
-                                
+                                <legend>Hot sauce</legend>
+                                <label for="hot-sauce">pick a flavor</label>
+                                <select name="hot-sauce" id="hot-sauce">
+                                    <optgroup label="flavor">
+                                        <option>Mild</option>
+                                        <option>Hot</option>
+                                        <option>extreme</option>
+                                    </optgroup>
+                                </select>
+                                <label for="hot-sauce">size</label>
+                                <select name="sauce-size" id="sauce-size">
+                                    <optgroup label="sauce size">
+                                        <option>small</option>
+                                        <option>medium</option>
+                                        <option>large</option>
+                                    </optgroup>
+                                </select>
                             </fieldset>
                             <fieldset id="brand-order" class="product-field">
                                 <legend>Kitchen accessories</legend>

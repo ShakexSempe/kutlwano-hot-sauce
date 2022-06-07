@@ -102,10 +102,25 @@
                     margin: 5vh 0;
                 }
 
-                // ACTIVE FIELDSET
-                // &:hover {
-                //     height: 60vh;
-                // }
+                // PRODUCTS FIELDS
+                &.product-field {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        color: #f4f4f4;
+                        text-transform: capitalize;
+                        margin-bottom: .5rem;
+                    }
+
+                    select {
+                        margin-bottom: 1rem;
+                        optgroup {
+                            &[label] {
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
