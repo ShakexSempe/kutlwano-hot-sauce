@@ -1325,36 +1325,37 @@
 .contact.contact-page .container .contact-info .box {
   margin-bottom: 1rem;
 }
-.contact.contact-page .details {
+.contact.contact-page details {
   color: #fff;
   transition: 2s;
   cursor: pointer;
 }
-.contact.contact-page .details ul {
+.contact.contact-page details ul {
   margin-top: 0.5rem;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.267);
 }
-.contact.contact-page .details ul li {
+.contact.contact-page details ul li {
   display: flex;
   justify-content: space-between;
   padding-left: 0.3rem;
 }
-.contact.contact-page .details ul li:nth-child(even) {
+.contact.contact-page details ul li:nth-child(even) {
   background: #161616;
 }
-.contact.contact-page .details ul li p {
+.contact.contact-page details ul li p {
   padding: 0.2rem 0;
   text-align: left;
   flex-basis: 50%;
+  color: #f4f4f4;
 }
-.contact.contact-page .details ul li p.detail-title {
+.contact.contact-page details ul li p.detail-title {
   font-weight: 700;
   color: #f4f4f4;
   text-transform: capitalize;
   font-size: 0.9rem;
 }
-.contact.contact-page .details ul li p.detail-data {
+.contact.contact-page details ul li p.detail-data {
   font-weight: 300;
   text-transform: capitalize;
 }

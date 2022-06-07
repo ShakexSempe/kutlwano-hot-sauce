@@ -28,7 +28,7 @@
                 }
             }
         }
-        .details {
+        details {
             // border: 2px solid yellow;
             color: #fff;
             transition: 2s;
@@ -50,6 +50,7 @@
                         padding: .2rem 0;
                         text-align: left;
                         flex-basis: 50%;
+                        color: #f4f4f4;
     
                         &.detail-title {
                             font-weight: 700;
