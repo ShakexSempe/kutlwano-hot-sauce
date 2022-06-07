@@ -1330,6 +1330,7 @@
   color: #fff;
   transition: 2s;
   cursor: pointer;
+  display: block;
 }
 .contact.contact-page details ul {
   margin: 0.5rem 0;
@@ -1340,7 +1341,6 @@
 }
 .contact.contact-page details ul li {
   display: flex;
-  justify-content: space-between;
   padding: 0.5rem 0.3rem;
 }
 .contact.contact-page details ul li:nth-child(even) {
@@ -1361,6 +1361,9 @@
 .contact.contact-page details ul li p.detail-data {
   font-weight: 300;
   text-transform: capitalize;
+}
+.contact.contact-page details ul li a {
+  color: #f3e1a5;
 }
 .contact.contact-page details summary {
   transition: 0.2s;
@@ -1410,6 +1413,10 @@
   font-size: 1rem;
   padding: 0.5rem 0;
   border-radius: 5px;
+}
+.contact.contact-page #order-form fieldset.product-field input {
+  padding: 0.5rem;
+  width: 50%;
 }
 .contact .content {
   text-align: center;

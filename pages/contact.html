@@ -123,10 +123,10 @@
                                 <details class="details" open>
                                     <summary>how to order</summary>
                                     <ul>
-                                        <li>1. Fill out your basic info</li>
-                                        <li>2. Select items from respective fields</li>
-                                        <li>3. Submit form & wait for confirmation email</li>
-                                        <li>4. Wait for invoice & confirmation email</li>
+                                        <li><p>1. Fill out your <a href="#basic-info">basic info</p></a></li>
+                                        <li><p>2. Select items from respective fields</p></li>
+                                        <li><p>3. Submit form & wait for confirmation email</p></li>
+                                        <li><p>4. Wait for invoice & confirmation email</p></li>
                                     </ul>
                                 </details>
                                 <!-- BANKING DETAILS -->
@@ -158,48 +158,71 @@
                                 <legend><i class="fas fa-user"></i>Basic Info</legend>
                                 <div class="input-box">
                                     <label for="name">name:</label>
-                                    <input type="text" name="name" placeholder="your name an surname..." required="required">
+                                    <input tabindex="1" type="text" name="name" placeholder="your name an surname..." required="required">
                                 </div>
                                 <div class="input-box">
                                     <label id="email" for="email">email:</label>
-                                    <input type="email" name="email" placeholder="your email address..." required="required">
+                                    <input tabindex="2" type="email" name="email" placeholder="your email address..." required="required">
                                 </div>
                                 <div class="input-box">
                                     <label id="tel" for="tel">phone:</label>
-                                    <input type="tel" name="tel" placeholder="your phone number..." required="required">
+                                    <input tabindex="3" type="tel" name="tel" placeholder="your phone number..." required="required">
                                 </div>
                             </fieldset>
                             <!-- HOT SAUCE -->
                             <fieldset id="sauce-order" class="product-field">
                                 <legend>Hot sauce</legend>
+                                <!-- FLAVOR -->
                                 <label for="hot-sauce">pick a flavor</label>
-                                <select name="hot-sauce" id="hot-sauce">
+                                <select tabindex="5" name="hot-sauce" id="hot-sauce">
                                     <optgroup label="flavor">
-                                        <option disabled="disabled" selected="selected">hot or mild?</option>
-                                        <option>Mild</option>
-                                        <option>Hot</option>
-                                        <option>extreme</option>
+                                        <option disabled="disabled" selected="selected">how do you like your sauce?</option>
+                                        <option>sweet</option>
+                                        <option>mild</option>
+                                        <option>hot</option>
                                     </optgroup>
                                 </select>
+                                <!-- SIZE -->
                                 <label for="hot-sauce">size</label>
-                                <select name="sauce-size" id="sauce-size">
+                                <select tabindex="6" name="sauce-size" id="sauce-size">
                                     <optgroup label="sauce size">
-                                        <option>small</option>
-                                        <option>medium</option>
-                                        <option>large</option>
+                                        <option disabled="disabled" selected="selected">choose bottle size</option>
+                                        <option>small (340ml)</option>
+                                        <option>medium (2litre) </option>
+                                        <option>large (5litre)</option>
                                     </optgroup>
                                 </select>
+                                <!-- QUANTITY -->
+                                <label for="quantity">quantity</label>
+                                <input 
+                                    tabindex="7"
+                                    name="quantity" 
+                                    id="sauce-quantity" 
+                                    type="number" maxlength="2" min="1" max="10"
+                                    placeholder="eg. 2"
+                                    required>
                             </fieldset>
                             <!-- ACCESSORIES -->
                             <fieldset id="brand-order" class="product-field">
-                                <legend>Kitchen accessories</legend>
+                                <legend>Brand & Kitchen accessories</legend>
+                                <!-- KITCHEN ACCESSORIES -->
                                 <label for="brand-items">pick item</label>
-                                <select name="brand-items" id="brand-items">
-                                    <optgroup label="Item">
+                                <select tabindex="10" name="accessories" id="accessories">
+                                    <optgroup label="Kitchen accessories">
+                                        <option disabled="disabled" selected="selected">K'Sauce Kitchen Accessories</option>
                                         <option>Kitchen Item 1</option>
                                         <option>Kitchen Item 2</option>
                                         <option>Kitchen Item 3</option>
-                                        <option>Brand Accessory</option>
+                                    </optgroup>
+                                </select>
+                                <!-- BRAND ITEMS -->
+                                <label for="brand-items">pick item</label>
+                                <select tabindex="11" name="brand-items" id="brand-items">
+                                    <optgroup label="brand Items">
+                                        <option disabled="disabled" selected="selected">k'Sauce branded items</option>
+                                        <option>brand item 1</option>
+                                        <option>brand item 2</option>
+                                        <option>brand item 3</option>
                                     </optgroup>
                                 </select>
                             </fieldset>
@@ -208,7 +231,7 @@
                                 <textarea id="message" name="message" placeholder="eg. mild Hot sause.." required="required"></textarea>
                             </div> -->
                                 <!-- <input type="submit" value="send email"> -->
-                                <button class="submit-btn" type="submit">submit order</button>
+                                <button tabindex="20" class="submit-btn" type="submit">submit order</button>
                                 <input type="hidden" name="_subject" value="K'Sauce received an email !">
                                 <input type="hidden" name="_cc" value="another@email.com">
                                 <input type="hidden" name="_autoresponse" value="Thank you for reaching out to K'SAUCE">

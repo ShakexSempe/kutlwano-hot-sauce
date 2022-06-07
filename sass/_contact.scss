@@ -34,6 +34,7 @@
             color: #fff;
             transition: 2s;
             cursor: pointer;
+            display: block;
             ul {
                 // margin-top: .5rem;
                 margin: .5rem 0;
@@ -43,7 +44,7 @@
                 border: 1px solid $brand-gold;
                 li {
                     display: flex;
-                    justify-content: space-between;
+                    // justify-content: space-between;
                     // padding-left: .3rem;
                     padding: .5rem .3rem;
                     &:nth-child(even) {
@@ -67,6 +68,10 @@
                             font-weight: 300;
                             text-transform: capitalize;
                         }
+                    }
+
+                    a {
+                        color: $brand-gold;
                     }
                 }
             }
@@ -134,6 +139,11 @@
                             option {
                             }
                         }
+                    }
+
+                    input {
+                        padding: .5rem;
+                        width: 50%;
                     }
                 }
             }
