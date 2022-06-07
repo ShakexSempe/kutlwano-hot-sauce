@@ -30,13 +30,16 @@
         }
         details {
             // border: 2px solid yellow;
+            margin-bottom: 1rem;
             color: #fff;
             transition: 2s;
             cursor: pointer;
             ul {
                 margin-top: .5rem;
+                padding: .5rem 0;
                 border-radius: 5px;
                 border: 1px solid rgba(255, 255, 255, 0.267);
+                border: 1px solid $brand-gold;
                 li {
                     display: flex;
                     justify-content: space-between;
@@ -65,16 +68,20 @@
                     }
                 }
             }
-        }
-        summary {
-            text-transform: capitalize;
-            &::marker {
-                color: $brand-gold;
+            summary {
+                transition: .2s;
+                text-transform: capitalize;
+                &::marker {
+                    color: $brand-gold;
+                }
+            }
+
+            &[open]{
+                summary {
+                    color: #fffa;
+                }
             }
         }
-        
-        
-
         
         #order-form {
             margin: 0 auto 15vh;
@@ -114,9 +121,14 @@
 
                     select {
                         margin-bottom: 1rem;
+                        text-transform: capitalize;
+                        font-size: 1rem;
                         optgroup {
                             &[label] {
-                                text-transform: capitalize;
+                            }
+
+                            option {
+                                // text-transform: capitalize;
                             }
                         }
                     }

@@ -1326,14 +1326,17 @@
   margin-bottom: 1rem;
 }
 .contact.contact-page details {
+  margin-bottom: 1rem;
   color: #fff;
   transition: 2s;
   cursor: pointer;
 }
 .contact.contact-page details ul {
   margin-top: 0.5rem;
+  padding: 0.5rem 0;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.267);
+  border: 1px solid #f3e1a5;
 }
 .contact.contact-page details ul li {
   display: flex;
@@ -1359,11 +1362,15 @@
   font-weight: 300;
   text-transform: capitalize;
 }
-.contact.contact-page summary {
+.contact.contact-page details summary {
+  transition: 0.2s;
   text-transform: capitalize;
 }
-.contact.contact-page summary::marker {
+.contact.contact-page details summary::marker {
   color: #f3e1a5;
+}
+.contact.contact-page details[open] summary {
+  color: #fffa;
 }
 .contact.contact-page #order-form {
   margin: 0 auto 15vh;
@@ -1399,9 +1406,8 @@
 }
 .contact.contact-page #order-form fieldset.product-field select {
   margin-bottom: 1rem;
-}
-.contact.contact-page #order-form fieldset.product-field select optgroup[label] {
   text-transform: capitalize;
+  font-size: 1rem;
 }
 .contact .content {
   text-align: center;
