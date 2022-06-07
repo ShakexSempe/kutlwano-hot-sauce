@@ -1339,8 +1339,13 @@
   border: 1px solid rgba(255, 255, 255, 0.267);
   border: 1px solid #f3e1a5;
 }
-.contact.contact-page details ul li {
+.contact.contact-page details ul.bank-details li {
   display: flex;
+}
+.contact.contact-page details ul.bank-details li p {
+  flex-basis: 50%;
+}
+.contact.contact-page details ul li {
   padding: 0.5rem 0.3rem;
 }
 .contact.contact-page details ul li:nth-child(even) {
@@ -1349,7 +1354,6 @@
 .contact.contact-page details ul li p {
   padding: 0.2rem 0;
   text-align: left;
-  flex-basis: 50%;
   color: #f4f4f4;
 }
 .contact.contact-page details ul li p.detail-title {
