@@ -644,7 +644,7 @@
   height: 100%;
   text-align: center;
   top: 0vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.05));
+  background: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.05) 50%);
   padding: 10vh 1rem;
   transition: 1.5s;
   overflow: hidden;
@@ -652,6 +652,7 @@
 }
 .mobile-hero-pad .hero-pad .hero-pad-content.dark-content-overlay {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8));
+  background: radial-gradient(transparent 20%, rgba(0, 0, 0, 0.55) 50%);
 }
 .mobile-hero-pad .hero-pad .hero-pad-content h2 {
   font-family: "Reggae One", cursive;

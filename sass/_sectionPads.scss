@@ -182,13 +182,17 @@
             height: 100%;
             text-align: center;
             top: 0vh;
-            background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.200), rgba(0,0,0,.050));
+            // background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.200), rgba(0,0,0,.050));
+            // background: radial-gradient(transparent 20%, #000 90%);
+            background: radial-gradient(transparent 30%, rgba(0,0,0,.050) 50%);
             padding: 10vh 1rem;
             transition: 1.5s;
             overflow: hidden;
             transform-style: preserve-3d;
             &.dark-content-overlay {
             background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.050), rgba(0,0,0,.800));
+            background: radial-gradient(transparent 20%, rgba(0,0,0, .550) 50%);
+
             }
             h2 {
                 font-family: $font-title;
