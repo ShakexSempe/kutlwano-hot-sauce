@@ -1437,7 +1437,7 @@
 }
 .contact.contact-page #order-form fieldset legend i {
   margin-right: 0.25rem;
-  opacity: 0.5;
+  color: #f3e1a5;
 }
 @media (min-width: 820px) {
   .contact.contact-page #order-form fieldset legend {
