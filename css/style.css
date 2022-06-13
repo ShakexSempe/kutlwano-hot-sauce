@@ -1354,10 +1354,24 @@
   border: 2px solid #f3e1a5;
   border: 2px solid rgba(255, 255, 255, 0.267);
 }
-.contact.contact-page details ul.bank-details li {
+.contact.contact-page details ul.details-grid {
+  height: 20vh;
+  overflow-y: scroll;
+}
+.contact.contact-page details ul.details-grid::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.contact.contact-page details ul.details-grid::-webkit-scrollbar-track {
+  border-radius: 3px;
+}
+.contact.contact-page details ul.details-grid::-webkit-scrollbar-thumb {
+  background-color: #f3e1a5;
+  border-radius: 5px;
+}
+.contact.contact-page details ul.details-grid li {
   display: flex;
 }
-.contact.contact-page details ul.bank-details li p {
+.contact.contact-page details ul.details-grid li p {
   flex-basis: 50%;
 }
 .contact.contact-page details ul li {
@@ -1417,7 +1431,8 @@
 .contact.contact-page #order-form fieldset legend {
   color: #f3e1a5;
   color: #f4f4f4;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 1.3rem;
   margin: 0 auto;
 }
 .contact.contact-page #order-form fieldset legend i {
