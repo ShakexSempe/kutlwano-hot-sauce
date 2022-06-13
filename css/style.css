@@ -1498,7 +1498,7 @@
   padding: 0.5rem 1rem;
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   outline-offset: -4px;
   transition: 0.2s;
 }
@@ -1797,10 +1797,11 @@
   cursor: pointer;
   font-size: 1.3rem;
   text-transform: capitalize;
-  border-radius: 5px;
+  border-radius: 20px;
   letter-spacing: 0.13rem;
   color: #ead2a1;
   color: #000;
+  color: #f4f4f4;
   transition: 0.2s;
   position: relative;
   isolation: isolate;
@@ -1813,7 +1814,7 @@
   width: 100%;
   height: 100%;
   transition: 0.2s;
-  border-radius: 5px;
+  border-radius: 20px;
   z-index: -1;
 }
 .contact .contact-form .submit-btn::before {
@@ -2025,10 +2026,10 @@
   opacity: 1;
 }
 .products .page-link {
-  background-color: #000;
-  outline: 2px solid #ead2a1;
+  background: linear-gradient(0deg, #000, #161616);
+  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
   outline-offset: -4px;
-  border-radius: 5px;
+  border-radius: 25px;
   width: 65%;
   margin: 5vh 0;
   text-align: center;
@@ -2205,7 +2206,7 @@
   color: #000;
 }
 .arrow.pad-arrow {
-  left: 50%;
+  right: 50%;
   bottom: 50%;
   outline: 2px solid #ead2a1;
   background: #000;

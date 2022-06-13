@@ -214,10 +214,12 @@
     // PAGE LINK
     .page-link {
         // border: 2px solid blue;
-        background-color: #000;
-        outline: 2px solid $span-gold;
+        // background-color: #000;
+        background: linear-gradient(0deg, #000, #161616);
+        // outline: 1px solid $span-gold;
+        box-shadow: $box-shadow;
         outline-offset: -4px;
-        border-radius: 5px;
+        border-radius: 25px;
         width: 65%;
         margin: 5vh 0;
         text-align: center;
