@@ -147,18 +147,11 @@
             form {
                 width: 100%;
             }
-            // .form-title {
-            //     position: sticky;
-            //     top: 7vh;
-            //     background-color: #000;
-            //     padding: .5rem 0;
-            //     z-index: 5;
-            // }
 
             fieldset {
                 border: 1px solid #f4f4f47e;
                 border-radius: 5px;
-                padding: 1rem;
+                padding: 5vh 1rem;
                 margin-bottom: 5vh;
                 overflow: hidden;
                 transition: .5s;
@@ -167,7 +160,7 @@
                     color: $brand-gold;
                     color: #f4f4f4;
                     text-transform: capitalize;
-                    font-size: 1.3rem;
+                    font-size: 1.15rem;
                     // margin-left: .5rem;
                     margin: 0 auto;
 

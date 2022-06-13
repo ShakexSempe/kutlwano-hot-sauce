@@ -1423,7 +1423,7 @@
 .contact.contact-page #order-form fieldset {
   border: 1px solid #f4f4f47e;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 5vh 1rem;
   margin-bottom: 5vh;
   overflow: hidden;
   transition: 0.5s;
@@ -1432,7 +1432,7 @@
   color: #f3e1a5;
   color: #f4f4f4;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   margin: 0 auto;
 }
 .contact.contact-page #order-form fieldset legend i {
