@@ -55,12 +55,12 @@
 
 .arrow {
     @media (max-width: 768px) {
-        left: 50%;
-        transform: translateX(-50%);
+        right: 50%;
+        transform: translateX(50%);
         bottom: 15vh;
     }
     position: absolute;
-    left: 5vw;
+    right: 5vw;
     bottom: 10vh;
     z-index: 10;
     border: none;
@@ -122,11 +122,11 @@
     // HERO PAD 2 ARROW
     &.gold-arrow {
         bottom: 15vh;
-        left: 5vw;
+        right: 5vw;
         z-index: 10;
         @media (max-width: 1024px) {
-            left: 50%;
-            transform: translateX(-50%) scale(.9);
+            right: 50%;
+            transform: translateX(50%) scale(.9);
             bottom: 10vh;
             &.intro-arrow {
                 outline: 2px solid #ead2a1;

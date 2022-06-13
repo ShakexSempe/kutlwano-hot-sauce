@@ -2100,7 +2100,7 @@
 
 .arrow {
   position: absolute;
-  left: 5vw;
+  right: 5vw;
   bottom: 10vh;
   z-index: 10;
   border: none;
@@ -2112,8 +2112,8 @@
 }
 @media (max-width: 768px) {
   .arrow {
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     bottom: 15vh;
   }
 }
@@ -2158,7 +2158,7 @@
 }
 .arrow.gold-arrow {
   bottom: 15vh;
-  left: 5vw;
+  right: 5vw;
   z-index: 10;
   background: #000a;
   border: none;
@@ -2169,8 +2169,8 @@
 }
 @media (max-width: 1024px) {
   .arrow.gold-arrow {
-    left: 50%;
-    transform: translateX(-50%) scale(0.9);
+    right: 50%;
+    transform: translateX(50%) scale(0.9);
     bottom: 10vh;
   }
   .arrow.gold-arrow.intro-arrow {
