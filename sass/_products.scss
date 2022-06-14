@@ -221,17 +221,18 @@
         // border: 2px solid blue;
         // background-color: #000;
         background: linear-gradient(0deg, #000, #161616);
-        outline: 2px solid $span-gold;
         // box-shadow: $box-shadow;
+        outline: 2px solid $span-gold;
         outline-offset: -4px;
         border-radius: 25px;
         width: 15rem;
+        width: 100%;
         margin: 5vh 0;
         text-align: center;
         transition: .3s;
         margin: 5vh auto;
         @media (min-width: 768px){
-            width: 10rem;
+            width: 25rem;
         }
         a {
             padding: .8rem 0;
