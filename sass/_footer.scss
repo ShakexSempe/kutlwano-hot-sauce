@@ -30,19 +30,21 @@ footer {
     }
     .copyright {
         p {
-            &:nth-child(1){
-                font-weight: 900;
-            }
+            // &:nth-child(1){
+            //     font-weight: 900;
+            // }
             text-transform: capitalize;
             font-family: $font-ubuntu;
             color: #000;
+            font-weight: 600;
             line-height: 1.5;
 
             &.shakex-link {
-                color: #000a;
+                color: #000;
+                font-weight: 300;
                 a {
                     font-family:inherit;
-                    color: #000a;
+                    color: #000;
                     text-decoration: none;
                     &:hover {
                         text-decoration: underline;

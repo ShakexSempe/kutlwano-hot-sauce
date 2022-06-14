@@ -2037,10 +2037,10 @@
 }
 .products .page-link {
   background: linear-gradient(0deg, #000, #161616);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #ead2a1;
   outline-offset: -4px;
   border-radius: 25px;
-  width: 65%;
+  width: 15rem;
   margin: 5vh 0;
   text-align: center;
   transition: 0.3s;
@@ -2154,19 +2154,19 @@
   border-radius: 50%;
   transition: 0.2s;
   opacity: 1;
-  animation: arrow 3s infinite;
+  animation: arrow 4s infinite;
   transform: translateY(0);
 }
 @keyframes arrow {
-  50% {
+  20% {
     transform: translateY(2rem);
     opacity: 0;
   }
-  55% {
+  21% {
     transform: translateY(-1.5rem);
     opacity: 0;
   }
-  75% {
+  0%, 35% {
     transform: translateY(0);
     opacity: 1;
   }
@@ -2377,17 +2377,16 @@ footer .copyright p {
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
   color: #000;
+  font-weight: 600;
   line-height: 1.5;
 }
-footer .copyright p:nth-child(1) {
-  font-weight: 900;
-}
 footer .copyright p.shakex-link {
-  color: #000a;
+  color: #000;
+  font-weight: 300;
 }
 footer .copyright p.shakex-link a {
   font-family: inherit;
-  color: #000a;
+  color: #000;
   text-decoration: none;
 }
 footer .copyright p.shakex-link a:hover {

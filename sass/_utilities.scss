@@ -80,32 +80,21 @@
         border-radius: 50%;
         transition: .2s;
         opacity: 1;
-        animation: arrow 3s infinite;
+        animation: arrow 4s infinite;
         transform: translateY(0);
         @keyframes arrow {
-            50% {
+            20% {
                 transform: translateY(2rem);
                 opacity: 0;
             }
-            55% {
+            21% {
                 transform: translateY(-1.5rem);
                 opacity: 0;
             }
-            75% {
+            0%,35% {
                 transform: translateY(0);
                 opacity: 1;
             }
-
-            
-            // 30%, 70% {
-            //     opacity: 0;
-            //     transform: translateY(-1.5rem);
-            // }
-
-            // 100% {
-            //     opacity: 1;
-            //     transform: translateY(2rem);
-            // }
         }
     }   
     &:hover {
