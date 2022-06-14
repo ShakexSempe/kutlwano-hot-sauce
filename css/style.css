@@ -1902,17 +1902,24 @@
 }
 .products .products-container {
   margin-top: 5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
   gap: 0.5rem;
   background-color: #f3e1a5;
   text-transform: capitalize;
   transition: all 0.4s cubic-bezier(0, 1.57, 0.67, 1.18);
 }
+@media (min-width: 768px) {
+  .products .products-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .products .products-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .products .products-container .box {
-  flex: 1 1 300px;
+  width: 100%;
   background: #ead2a1;
   position: relative;
   overflow: hidden;
@@ -2041,7 +2048,7 @@
 }
 @media (min-width: 768px) {
   .products .page-link {
-    width: 40%;
+    width: 10rem;
   }
 }
 .products .page-link a {
@@ -2050,7 +2057,7 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
   color: #ead2a1;
   letter-spacing: 0.05rem;
