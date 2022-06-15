@@ -54,14 +54,14 @@
 }
 
 .arrow {
+    right: 50%;
+    transform: translateX(50%);
     @media (max-width: 768px) {
-        right: 50%;
-        transform: translateX(50%);
         bottom: 15vh;
     }
     position: absolute;
-    right: 5vw;
-    bottom: 10vh;
+    // right: 5;
+    bottom: 20vh;
     z-index: 10;
     border: none;
     outline: 2px solid #000;
@@ -159,12 +159,12 @@
 // TOP-BTN
 .top-btn {
     position: fixed;
-    right: 5vw;
     @media (max-width: 768px) {
         right: 3vw;
+        bottom: 10vh;
     }
+    right: 5vw;
     bottom: 1rem;
-    bottom: 10vh;
     // bottom: 0;
     width: 2rem;
     height: 2rem;
