@@ -48,7 +48,14 @@
 <body>
     <!-- PRELOADER -->
     <div class="loader_bg">
-        <div class="loader"></div>
+        <div class="loader">
+            <ul>
+                <li style="--i:1"></li>
+                <li data-li style="--i:2"></li>
+                <li data-li style="--i:3"></li>
+                <li data-li style="--i:4"></li>
+            </ul>
+        </div>
     </div>
     <!-- CONTAINER: WRAPS EVERY PAGE -->
     <div id="container" class="container">
@@ -458,11 +465,11 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- PRELOADER SCRIPT -->
-    <script>
+    <!-- <script>
         setTimeout(function () {
             $('.loader_bg').fadeToggle();
         }, 5000);
-    </script>
+    </script> -->
     <script src="js/app.js"></script>
     <script src="js/indexIO.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>

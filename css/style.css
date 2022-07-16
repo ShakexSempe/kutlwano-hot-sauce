@@ -2357,43 +2357,34 @@
   background: #000;
   overflow: hidden;
   z-index: 999;
+  display: grid;
+  place-items: center;
 }
 .loader_bg .loader {
-  border: 0.5rem solid #f3e1a5;
-  border: none;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: auto;
+  width: auto;
 }
-.loader_bg .loader::after, .loader_bg .loader::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
+.loader_bg .loader ul {
   width: 100%;
   height: 100%;
-  border: 0.25rem solid #f3e1a5;
+  display: flex;
+  list-style: none;
+}
+.loader_bg .loader ul li {
+  width: 2rem;
+  height: 2rem;
+  background-color: #f3e1a5;
   border-radius: 50%;
+  transform: scale(0);
   opacity: 0;
-  animation: pulse 2s linear infinite;
+  animation: loader 2s infinite linear;
+  animation-delay: calc(.25s + .25s * var(--i));
 }
-.loader_bg .loader::before {
-  animation-delay: 0.5s;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(0);
-  }
+@keyframes loader {
   50% {
+    transform: scale(1.1);
     opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
+    box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
   }
 }
 
