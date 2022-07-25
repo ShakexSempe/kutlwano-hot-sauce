@@ -2351,43 +2351,74 @@
 
 .loader_bg {
   position: fixed;
-  top: 0;
   width: 100vw;
   height: 100vh;
+  background: #f3e1a5;
   background: #000;
+  z-index: 99;
+  display: grid;
+  place-items: center;
   overflow: hidden;
-  z-index: 999;
+}
+.loader_bg .loader {
+  /* border: 2px solid red; */
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.loader_bg .loader .loader-logo {
+  border: 1px solid #000;
+  border: 0.15rem solid #ead2a1;
+  background: linear-gradient(0deg, #111, #222);
+  background: linear-gradient(0deg, #000, #161616);
+  box-shadow: var(--box-shadow);
+  color: #f4f4f4;
+  color: #ead2a1;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
   display: grid;
   place-items: center;
 }
-.loader_bg .loader {
-  height: auto;
-  width: auto;
+.loader_bg .loader .loader-logo p {
+  font-size: 1.7rem;
+  padding: 0.5rem;
+  font-weight: 700;
 }
-.loader_bg .loader ul {
+.loader_bg .loader .bar {
+  border: 0.2rem solid #000;
+  border: none;
   width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+}
+.loader_bg .loader .bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
   height: 100%;
-  display: flex;
-  list-style: none;
-}
-.loader_bg .loader ul li {
-  width: 2rem;
-  height: 2rem;
-  background-color: #f3e1a5;
-  border-radius: 50%;
-  transform: scale(0);
-  opacity: 0;
-  animation: loader 2s infinite linear;
-  animation-delay: calc(.25s + .25s * var(--i));
-}
-@keyframes loader {
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-    box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
-  }
+  background: linear-gradient(0deg, #000, #222);
+  background: linear-gradient(0deg, #000, #ead2a1);
+  border-radius: 1rem;
+  animation: loader 2s infinite;
 }
 
+@keyframes loader {
+  0%, 100% {
+    transform: translateX(-50%);
+    transition-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateX(150%);
+  }
+}
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
