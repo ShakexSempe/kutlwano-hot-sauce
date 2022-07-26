@@ -2382,6 +2382,12 @@
   height: 50%;
   display: grid;
   place-items: center;
+  animation: logo 2s infinite;
+}
+@keyframes logo {
+  50% {
+    transform: scale(1.1);
+  }
 }
 .loader_bg .loader .loader-logo p {
   font-size: 1.7rem;
