@@ -70,7 +70,6 @@
   background-color: #000;
 }
 #header.index-header.scroll .desktop-nav ul:hover li:hover {
-  transform: scale(1.1);
   opacity: 1;
 }
 #header .logo {
@@ -242,20 +241,20 @@
   #header nav .desktop-nav .desktop-nav-links li a {
     color: #161616;
     font-family: "Ubuntu", sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: relative;
     transition: 0.2s;
   }
   #header nav .desktop-nav .desktop-nav-links li a::after {
     content: "";
     position: absolute;
-    bottom: 0rem;
+    bottom: -0.25rem;
     left: 50%;
     transform: translateX(-50%) scale(0);
     transition: 0.3s ease;
     opacity: 1;
     width: 70%;
-    height: 1px;
+    height: 0.125rem;
     background: #dc143c;
     background: #000;
   }
