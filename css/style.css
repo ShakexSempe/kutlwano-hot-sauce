@@ -747,6 +747,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 20px;
+  font-weight: 500;
   color: #fff;
   width: 100%;
   position: relative;
@@ -755,6 +756,7 @@
 }
 .mobile-hero-pad .hero-pad .pad-links a.view-link {
   color: #fff;
+  color: #000;
   border: none;
   isolation: isolate;
 }

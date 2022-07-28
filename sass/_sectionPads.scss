@@ -301,6 +301,7 @@
                 text-decoration: none;
                 text-transform: uppercase;
                 border-radius: 20px;
+                font-weight: 500;
                 color: #fff;
                 width: 100%;
                 position: relative;
@@ -311,6 +312,7 @@
                     // background: $btn-gold;
                     // background-color: $brand-gold;
                     color: #fff;
+                    color: #000;
                     border: none;
                     isolation: isolate;
                     &::after , &::before {
