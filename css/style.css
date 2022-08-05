@@ -148,7 +148,7 @@
   overflow: hidden;
 }
 #header nav .hamburger .mobile-links ul li a {
-  color: #ead2a1;
+  color: #fff;
   width: 100%;
   height: 100%;
   display: block;
@@ -191,6 +191,7 @@
 }
 #header nav .hamburger .mobile-links .contact-links .contact-link i {
   color: #f3e1a5;
+  color: #fff;
   margin-right: 0.5rem;
   opacity: 0.8;
 }
