@@ -19,10 +19,11 @@
     
     .hero-p {
         // border: 1px solid red;
-        font-size: 1rem;
+        font-size: 1.05rem;
         padding: 1rem 0;
         position: absolute;
-        width: 100%;
+        width: 99%;
+        margin: 0 auto;
         bottom: 5vh;
         left: 50%;
         transform: translateX(-50%);

@@ -46,7 +46,7 @@
                 }
             }
             .hamburger {
-                transition: .25s;
+                transition: .5s;
                 // border: 2px solid #ead2a1;
                 // border: 2px solid #000;
                 .bar {
@@ -57,7 +57,7 @@
 
                     &::after,
                     &::before {
-                        transition: .25s;
+                        transition: .5s;
 
                         background: #ead2a1;
                         background: #000;

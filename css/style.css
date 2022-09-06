@@ -36,7 +36,7 @@
   background: #f3e1a5;
 }
 #header.index-header.scroll .hamburger {
-  transition: 0.25s;
+  transition: 0.5s;
 }
 #header.index-header.scroll .hamburger .bar {
   transition: 0.5s;
@@ -44,7 +44,7 @@
   background: #000;
 }
 #header.index-header.scroll .hamburger .bar::after, #header.index-header.scroll .hamburger .bar::before {
-  transition: 0.25s;
+  transition: 0.5s;
   background: #ead2a1;
   background: #000;
 }
@@ -305,10 +305,11 @@
   isolation: isolate;
 }
 .hero .hero-p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   padding: 1rem 0;
   position: absolute;
-  width: 100%;
+  width: 99%;
+  margin: 0 auto;
   bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
@@ -2098,7 +2099,7 @@
   z-index: 2;
   position: relative;
   border-radius: 10px;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 .hamburger .bar::before, .hamburger .bar::after {
   position: absolute;
@@ -2106,7 +2107,7 @@
   width: 100%;
   height: 0.125rem;
   background-color: #000;
-  transition: 0.25s;
+  transition: 0.5s;
   border-radius: 10px;
 }
 .hamburger .bar::before {
@@ -2123,11 +2124,11 @@
 }
 .hamburger.active .bar::before {
   transform: translateX(0.25rem);
-  background: #fff5;
+  background: #fff7;
 }
 .hamburger.active .bar::after {
   transform: translateX(-0.25rem);
-  background: #fff5;
+  background: #fff7;
 }
 
 .arrow {
