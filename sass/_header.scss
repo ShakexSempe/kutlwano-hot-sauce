@@ -34,8 +34,8 @@
                 // background: $brand-gold;
 
                 .hamburger {
-                    border: 2px solid #000;
-                    border: 2px solid $brand-gold;
+                    // border: 2px solid #000;
+                    // border: 2px solid $brand-gold;
                     .bar {
                         background: #000;
                         background: $brand-gold;
@@ -46,9 +46,9 @@
                 }
             }
             .hamburger {
-                transition: .5s;
-                border: 2px solid #ead2a1;
-                border: 2px solid #000;
+                transition: .25s;
+                // border: 2px solid #ead2a1;
+                // border: 2px solid #000;
                 .bar {
                     transition: .5s;
 
@@ -57,7 +57,7 @@
 
                     &::after,
                     &::before {
-                        transition: .5s;
+                        transition: .25s;
 
                         background: #ead2a1;
                         background: #000;

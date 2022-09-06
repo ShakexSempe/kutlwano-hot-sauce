@@ -28,10 +28,6 @@
 #header.index-header.scroll.active {
   background: #000;
 }
-#header.index-header.scroll.active .hamburger {
-  border: 2px solid #000;
-  border: 2px solid #f3e1a5;
-}
 #header.index-header.scroll.active .hamburger .bar {
   background: #000;
   background: #f3e1a5;
@@ -40,9 +36,7 @@
   background: #f3e1a5;
 }
 #header.index-header.scroll .hamburger {
-  transition: 0.5s;
-  border: 2px solid #ead2a1;
-  border: 2px solid #000;
+  transition: 0.25s;
 }
 #header.index-header.scroll .hamburger .bar {
   transition: 0.5s;
@@ -50,7 +44,7 @@
   background: #000;
 }
 #header.index-header.scroll .hamburger .bar::after, #header.index-header.scroll .hamburger .bar::before {
-  transition: 0.5s;
+  transition: 0.25s;
   background: #ead2a1;
   background: #000;
 }
@@ -2091,7 +2085,6 @@
 .hamburger {
   width: 2rem;
   height: 2rem;
-  border: 0.125rem solid #000;
   border-radius: 50%;
   isolation: isolate;
   display: grid;
@@ -2104,7 +2097,8 @@
   background-color: #000;
   z-index: 2;
   position: relative;
-  transition: 0.3s;
+  border-radius: 10px;
+  transition: 0.25s;
 }
 .hamburger .bar::before, .hamburger .bar::after {
   position: absolute;
@@ -2112,7 +2106,8 @@
   width: 100%;
   height: 0.125rem;
   background-color: #000;
-  transition: 0.3s;
+  transition: 0.25s;
+  border-radius: 10px;
 }
 .hamburger .bar::before {
   bottom: 6px;
@@ -2124,18 +2119,15 @@
   border-color: #f3e1a5;
 }
 .hamburger.active .bar {
-  transform: translateX(-0.3rem) rotate(90deg);
   background: #f3e1a5;
 }
 .hamburger.active .bar::before {
-  transform: rotate(-50deg) translateY(0.3rem) translateX(0.25rem);
-  width: 75%;
-  background: #f3e1a5;
+  transform: translateX(0.25rem);
+  background: #fff5;
 }
 .hamburger.active .bar::after {
-  width: 75%;
-  background: #f3e1a5;
-  transform: rotate(50deg) translateY(-0.4rem) translateX(-0.6rem);
+  transform: translateX(-0.25rem);
+  background: #fff5;
 }
 
 .arrow {
