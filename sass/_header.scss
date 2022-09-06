@@ -220,11 +220,6 @@
                             opacity: 0;
                             transform: translateY(1rem);
                             letter-spacing: .05rem;
-                            // margin-left: 5rem;
-                            &:hover {
-                                    letter-spacing: .2rem;
-                                
-                            }
                         }
                         &:hover {
                             border-color: $brand-gold;

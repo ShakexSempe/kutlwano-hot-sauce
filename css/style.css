@@ -154,9 +154,6 @@
   transform: translateY(1rem);
   letter-spacing: 0.05rem;
 }
-#header nav .hamburger .mobile-links ul li a:hover {
-  letter-spacing: 0.2rem;
-}
 #header nav .hamburger .mobile-links ul li:hover {
   border-color: #f3e1a5;
 }
