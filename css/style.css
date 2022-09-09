@@ -332,12 +332,12 @@
 .hero::after {
   position: absolute;
   content: "";
-  top: 20%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   width: 15rem;
   height: 15rem;
-  border: 2px solid #ead2a1;
+  border: 2px solid rgba(0, 0, 0, 0.05);
   background: rgba(0, 0, 0, 0.015);
 }
 @media (min-width: 768px) {
