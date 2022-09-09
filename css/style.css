@@ -793,11 +793,11 @@
 }
 .mobile-hero-pad .hero-pad .pad-links a.view-link::before {
   background: linear-gradient(0deg, #9a7223, #e3c382);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.3), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .mobile-hero-pad .hero-pad .pad-links a.view-link::after {
   background: linear-gradient(0deg, #e3c382, #9a7223);
-  box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px rgba(255, 255, 255, 0.5), 2px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.3), 2px 3px 3px rgba(0, 0, 0, 0.35);
   opacity: 0;
 }
 .mobile-hero-pad .hero-pad .pad-links a.order-link {
@@ -1841,12 +1841,12 @@
 }
 .contact .contact-form .submit-btn::before {
   background: linear-gradient(0deg, #9a7223, #e3c382);
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.3), inset -2px -2px 2px rgba(0, 0, 0, 0.3), 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .contact .contact-form .submit-btn::after {
   opacity: 0;
   background: linear-gradient(0deg, #e3c382, #9a7223);
-  box-shadow: inset 2px 2px 2px #000a, inset -2px -2px 2px rgba(255, 255, 255, 0.5), 2px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.3), 2px 3px 3px rgba(0, 0, 0, 0.35);
 }
 @media (min-width: 1024px) {
   .contact .contact-form .submit-btn:hover {

@@ -62,12 +62,12 @@ $bar: #f4f4f4;
 $bar: #000;
 $bar-active: #ead2a1;
 
-$box-shadow: inset 2px 2px 2px #fffa,
-                inset -2px -2px 2px #000a,
+$box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.300),
+                inset -2px -2px 2px rgba(0, 0, 0, 0.300),
                 5px 5px 5px rgba(0, 0, 0, .400);
 
-$box-shadow-hover: inset 2px 2px 2px #000a,
-                inset -2px -2px 2px rgba(255, 255, 255, .500),
+$box-shadow-hover: inset 2px 2px 2px rgba(0, 0, 0, 0.300),
+                inset -2px -2px 2px rgba(255, 255, 255, .300),
                 2px 3px 3px rgba(0, 0, 0, .350);
 
 $box-shadow-top-btn: inset 2px 2px 2px #eeea,
