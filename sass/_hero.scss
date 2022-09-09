@@ -45,7 +45,22 @@
             font-weight: 300;
         }
     }
-
+    // HERO DECORATION
+    &::after {
+        position: absolute;
+        content: '';
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        width: 15rem;
+        height: 15rem;
+        border: 2px solid $span-gold;
+        background: rgba(0, 0, 0, 0.015);
+        @media (min-width: 768px) {
+            width: 20rem;
+            height: 20rem;
+        }
+    }
     // MOBILE HERO FLEX
     @media (max-width: 1024px) {
         display: grid;
