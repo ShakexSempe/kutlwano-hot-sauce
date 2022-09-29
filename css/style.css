@@ -1652,8 +1652,8 @@
   flex-direction: column;
 }
 .contact .container .contact-info .box .text h3 {
-  text-transform: capitalize;
   text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
   color: #ead2a1;
   color: #f4f4f4;
@@ -1715,7 +1715,7 @@
   .contact .contact-form {
     width: 100%;
     min-height: 100vh;
-    padding: 5vh 0.2rem;
+    padding: 10vh 0.2rem 5vh;
     margin: 5vh auto;
     overflow: hidden;
   }
@@ -2521,7 +2521,7 @@
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 10vh;
   position: relative;
 }
 footer .footer-logo {

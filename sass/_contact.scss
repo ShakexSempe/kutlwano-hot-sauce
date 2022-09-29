@@ -396,8 +396,8 @@
                     flex-direction: column;
 
                     h3 {
-                        text-transform: capitalize;
                         text-transform: uppercase;
+                        text-transform: capitalize;
                         font-weight: 500;
                         color: #ead2a1;
                         color: #f4f4f4;
@@ -479,7 +479,7 @@
         @media (max-width: 1024px) {
             width: 100%;
             min-height: 100vh;
-            padding: 5vh .2rem;
+            padding: 10vh .2rem 5vh;
             margin: 5vh auto;
             overflow: hidden;
             // border: 1px solid $brand;
