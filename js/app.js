@@ -5,6 +5,7 @@ const container = document.getElementById("container");
 const hamburger = document.querySelector(".hamburger");
 const topBtn = document.querySelector(".index-top-btn");
 const sidebar = document.querySelector(".mobile-links");
+const footerNav = document.querySelector(".footer-nav");
 const navLinks = document.querySelectorAll(".mobile-links ul li");
 console.log(topBtn);
 // INTERSECTION OBSERVER VARIABLES
@@ -102,12 +103,14 @@ const heroObserver = new IntersectionObserver(
                 console.log('HERO NOT intersecting');
                 header.classList.add("scroll");
                 logo.classList.remove("active-logo");
+                footerNav.classList.add("active-footer");
                 // header.style.backgroundColor = "yellow";
             } else {
                 console.log('HERO intersecting')
                 header.classList.remove("scroll");
                 // heroTitle.classList.remove("active-title");
                 logo.classList.add("active-logo");
+                footerNav.classList.remove("active-footer");
 
                 // header.style.backgroundColor = "green";
             }

@@ -255,11 +255,11 @@
     opacity: 1;
     width: 70%;
     height: 0.125rem;
-    background: #dc143c;
+    background: #ead2a1;
     background: #000;
   }
   #header nav .desktop-nav .desktop-nav-links li a:hover {
-    color: #dc143c;
+    color: #ead2a1;
     color: #000;
   }
   #header nav .desktop-nav .desktop-nav-links li a:hover::after {
@@ -1115,7 +1115,7 @@
   font-size: 1.5rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  color: #dc143c;
+  color: #ead2a1;
   color: #000;
 }
 .about .content-section .title h2 {
@@ -2442,6 +2442,82 @@
     transform: translateX(150%);
   }
 }
+.footer-nav {
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  padding: 0.5rem 5vw;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  transform: translateY(8vh);
+  transition: 0.5s;
+}
+.footer-nav .item {
+  width: 100%;
+}
+.footer-nav .item a {
+  transition: 1s;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #f4f4f4;
+  display: grid;
+  place-items: center;
+}
+.footer-nav .item a i {
+  font-size: 1.05rem;
+  color: #fff7;
+  opacity: 0.5;
+  transition: 1s;
+}
+@media (min-width: 820px) {
+  .footer-nav .item a i {
+    font-size: 1rem;
+  }
+  .footer-nav .item:hover a {
+    transition: 0.25s;
+  }
+  .footer-nav .item:hover a i {
+    opacity: 1;
+    transition: 0.25s;
+  }
+}
+.footer-nav .item:hover a i {
+  opacity: 1;
+  transition: 0.25s;
+}
+@media (min-width: 820px) {
+  .footer-nav {
+    padding: 0.5rem 5vw;
+  }
+}
+.footer-nav.active-footer {
+  transform: translateY(0);
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 5vw;
+  background: #fff;
+  color: #333;
+  z-index: 99;
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateY(-10vh);
+  transition: 0.5s;
+}
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
@@ -2589,7 +2665,7 @@ body {
 .container main section .section-title {
   text-align: center;
   text-transform: uppercase;
-  color: #dc143c;
+  color: #ead2a1;
   color: #ddd;
   font-family: "Reggae One", cursive;
   letter-spacing: 0.15rem;
