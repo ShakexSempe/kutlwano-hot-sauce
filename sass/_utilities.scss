@@ -451,7 +451,23 @@
     }
     // DESKTOP NAV STYLE
     @media (min-width: 820px) {
-        padding: .5rem 5vw;
+        // padding: .5rem 5vw;
+        // height: 100vh;
+        // width: 5vw;
+        // overflow: hidden;
+        // flex-direction: column;
+        // padding: .5rem;
+        // border: 1px solid red;
+        // transform: translateY(0) translateX(-10vw);
+        // background: transparent;
+        // .item {
+        //     background-color: #000;
+        //     height: 3rem;
+        //     width: 5vw;
+        //     a {
+        //         padding: .5rem;
+        //     }
+        // }
     }
     // FOOTER NAV IO
     &.active-footer {
@@ -472,7 +488,7 @@
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
-    // transform: translateY(-10vh);
+    transform: translateY(-10vh);
     transition: .5s;
 
     &:focus-visible {

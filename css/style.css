@@ -2491,11 +2491,6 @@
   opacity: 1;
   transition: 0.25s;
 }
-@media (min-width: 820px) {
-  .footer-nav {
-    padding: 0.5rem 5vw;
-  }
-}
 .footer-nav.active-footer {
   transform: translateY(0);
 }
@@ -2512,6 +2507,7 @@
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  transform: translateY(-10vh);
   transition: 0.5s;
 }
 .skip-link:focus-visible {

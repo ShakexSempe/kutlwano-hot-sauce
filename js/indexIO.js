@@ -1,15 +1,8 @@
 
-// const sectionOptions = {
-//     rootMargin: "0% 0px 0px 0px"
-// };
-
 const titleOptions = {
     rootMargin: "0% 0px 50% 0px",
     
 }
-
-
-
 const heroPadOptions = {
     rootMargin: "0% 0px -70% 0px",
     
@@ -31,10 +24,12 @@ const mainObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("main IS NOT intersecting");
-                topBtn.classList.remove("active-btn");
+                // topBtn.classList.remove("active-btn");
+                footerNav.classList.remove('active-footer');
             } else {
                 console.log("main IS intersecting");
-                topBtn.classList.add("active-btn");
+                // topBtn.classList.add("active-btn");
+                footerNav.classList.add('active-footer');
             }
         })
     }, mainOptions
@@ -104,54 +99,5 @@ const mobileSectionObserver = new IntersectionObserver(
     }, mobileSectionOptions
 );
 mobileSectionObserver.observe(mobileSectionPad);
-
-
-// PRODUCTS SECTION IO
-const productSection = document.querySelector('.products');
-console.log(productSection);
-const productsSectionOptions = {
-    rootMargin: "0% 0px -30% 0px",
-    
-}
-const productSectionObserver = new IntersectionObserver(
-    function(entries, productSectionObserver) {
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log("products section NOT intersection");
-                productSection.classList.remove('active-products');
-            } else {
-                console.log("products section IS intersection");
-                productSection.classList.add('active-products');
-
-            }
-        })
-    }, productsSectionOptions
-);
-productSectionObserver.observe(productSection);
-
-
-
-
-// SECTION INTERSECTION OBSERVER
-// section.forEach(section => {
-// // SECTION INTERSECTION OBSERVER
-// const aboutSection = document.getElementById("about");
-// const sectionObserver = new IntersectionObserver(
-//     function(entries, sectionObserver) {
-//         entries.forEach(entry => {
-//             if(!entry.isIntersecting) {
-//                 console.log('SECTION NOT intersecting');
-//                 section.classList.remove("active");
-//                 // header.style.backgroundColor = "yellow";
-//             } else {
-//                 console.log('SECTION intersecting')
-//                 section.classList.add("active");
-//                 // header.style.backgroundColor = "green";
-//             }
-//         });
-//     }, sectionOptions
-// );
-// sectionObserver.observe(section);
-// });
 
 
