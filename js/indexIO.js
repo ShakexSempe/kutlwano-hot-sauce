@@ -11,30 +11,7 @@ const mobileSectionOptions = {
     rootMargin: "0% 0px -70% 0px",
     
 }
-// MAIN SECTION INTERSECTION OBSERVER
-const main = document.getElementById("main");
-const mainOptions = {
-    rootMargin: "0px 0px -30% 0px",
-    
-}
-const mainObserver = new IntersectionObserver(
-    function(
-        entries, mainObserver
-    ){
-        entries.forEach(entry => {
-            if(!entry.isIntersecting) {
-                console.log("main IS NOT intersecting");
-                // topBtn.classList.remove("active-btn");
-                footerNav.classList.remove('active-footer');
-            } else {
-                console.log("main IS intersecting");
-                // topBtn.classList.add("active-btn");
-                footerNav.classList.add('active-footer');
-            }
-        })
-    }, mainOptions
-);
-mainObserver.observe(main);
+
 
 
 

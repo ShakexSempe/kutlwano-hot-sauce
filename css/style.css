@@ -1015,7 +1015,7 @@
 }
 
 .about#about {
-  padding: 10vh 0;
+  padding: 10vh 5vw;
   background: #000;
   background: #f3e1a5;
 }
@@ -2518,8 +2518,10 @@
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
+  padding: 5vh 0;
   padding: 5vh 5vw 10vh;
   position: relative;
+  width: 100%;
 }
 footer .footer-logo {
   position: relative;
@@ -2656,7 +2658,8 @@ body {
 }
 @media (max-width: 768px) {
   .container main section {
-    margin: 0vh 5vw;
+    margin: 0vh 0vw;
+    padding: 5vh 5vw;
   }
 }
 .container main section .section-title {
