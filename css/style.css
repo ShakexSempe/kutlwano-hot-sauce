@@ -301,7 +301,7 @@
   position: relative;
   isolation: isolate;
 }
-.hero .hero-p {
+.hero .hero-title {
   font-size: 1.05rem;
   padding: 1rem 0;
   position: absolute;
@@ -317,15 +317,15 @@
   background: #f3e1a5;
 }
 @media (max-width: 768px) {
-  .hero .hero-p {
+  .hero .hero-title {
     bottom: 20vh;
   }
 }
-.hero .hero-p a {
+.hero .hero-title a {
   color: #000;
   text-decoration: none;
 }
-.hero .hero-p span {
+.hero .hero-title span {
   display: block;
   font-weight: 300;
 }
@@ -544,14 +544,14 @@
     background-position: right;
   }
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title {
+.mobile-hero-pad .hero-pad-img-1 .menu-title {
   border-radius: 5px;
   color: #fff;
   margin-top: 7vh;
   text-align: center;
   overflow: hidden;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title h1 {
+.mobile-hero-pad .hero-pad-img-1 .menu-title h2 {
   font-size: 2.5rem;
   font-family: "Reggae One", cursive;
   transition: 1.5s;
@@ -559,7 +559,7 @@
   letter-spacing: normal;
   text-transform: uppercase;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title h2 {
+.mobile-hero-pad .hero-pad-img-1 .menu-title h3 {
   transform: translateY(-2rem);
   opacity: 0;
   font-size: 1.5rem;
@@ -569,18 +569,18 @@
   text-transform: capitalize;
   transition: 1.5s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title p {
+.mobile-hero-pad .hero-pad-img-1 .menu-title p {
   text-transform: uppercase;
   margin: 0 3vw;
   opacity: 0;
   transform: translateY(2rem);
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title ul {
+.mobile-hero-pad .hero-pad-img-1 .menu-title ul {
   margin: 5vh auto;
   overflow: hidden;
   transition: 1s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title ul li {
+.mobile-hero-pad .hero-pad-img-1 .menu-title ul li {
   font-family: "Ubuntu", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
@@ -590,51 +590,51 @@
   opacity: 0;
   cursor: pointer;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title ul li a {
+.mobile-hero-pad .hero-pad-img-1 .menu-title ul li a {
   text-decoration: none;
   color: #ead2a1;
 }
 @media (min-width: 820px) {
-  .mobile-hero-pad .hero-pad-img-1 .hero-title {
+  .mobile-hero-pad .hero-pad-img-1 .menu-title {
     width: 40%;
     float: left;
     margin: 20vh 5vw 5vh;
   }
-  .mobile-hero-pad .hero-pad-img-1 .hero-title h1 {
+  .mobile-hero-pad .hero-pad-img-1 .menu-title h1 {
     font-size: 4rem;
   }
-  .mobile-hero-pad .hero-pad-img-1 .hero-title p {
+  .mobile-hero-pad .hero-pad-img-1 .menu-title p {
     font-size: 2rem;
   }
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title h1 {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title h2 {
   transform: scale(0.5);
   letter-spacing: normal;
   letter-spacing: 0.25rem;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title h2 {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title h3 {
   opacity: 1;
   letter-spacing: normal;
   transform: translateY(0);
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li {
   transform: translateY(0);
   opacity: 1;
   transition: 1.5s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li:nth-child(1) {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li:nth-child(1) {
   transition-delay: 0.6s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li:nth-child(2) {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li:nth-child(2) {
   transition-delay: 0.8s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li:nth-child(3) {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li:nth-child(3) {
   transition-delay: 1s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li:nth-child(4) {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li:nth-child(4) {
   transition-delay: 1.2s;
 }
-.mobile-hero-pad .hero-pad-img-1 .hero-title.active-title ul li:hover {
+.mobile-hero-pad .hero-pad-img-1 .menu-title.active-title ul li:hover {
   color: #ead2a1;
   letter-spacing: 0.15rem;
   transition: 0.2s;
@@ -2161,7 +2161,7 @@
 }
 @media (max-width: 768px) {
   .arrow {
-    bottom: 15vh;
+    bottom: 10vh;
   }
 }
 .arrow a {

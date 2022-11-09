@@ -39,7 +39,7 @@
         }
 
         // TITLE 
-        .hero-title {
+        .menu-title {
             // border: 3px solid red;
             border-radius: 5px;
             color: #fff;
@@ -49,7 +49,7 @@
             overflow: hidden;
 
             // background: linear-gradient(0deg, rgba(255, 68, 0, 0.508), rgba(255, 166, 0, 0.216));
-            h1 {
+            h2 {
                 font-size: 2.5rem;
                 font-family: $font-title;
                 transition: 1.5s;
@@ -58,7 +58,7 @@
                 text-transform: uppercase;
             }
 
-            h2 {
+            h3 {
                 transform: translateY(-2rem);
                 opacity: 0;
                 font-size: 1.5rem;
@@ -113,7 +113,7 @@
             }
 
             &.active-title {
-                h1 {
+                h2 {
                     // opacity: .5;
                     // color: $brand-gold;
                     transform: scale(.5);
@@ -121,7 +121,7 @@
                     letter-spacing: .25rem;
                 }
 
-                h2 {
+                h3 {
                     opacity: 1;
                     letter-spacing: normal;
                     transform: translateY(0);

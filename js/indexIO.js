@@ -48,10 +48,10 @@ const heroPadObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log("heroPAd NOT Inter");
-                heroTitle.classList.remove("active-title");
+                menuTitle.classList.remove("active-title");
             } else {
                 console.log("heroPAd IS Inter");
-                heroTitle.classList.add("active-title");
+                menuTitle.classList.add("active-title");
             }
         })
     }, heroPadOptions
