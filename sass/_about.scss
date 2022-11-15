@@ -5,7 +5,7 @@
         background: #000;
         background: $brand-gold;
         @media (min-width: 768px) {
-            padding: 10vh 0;
+            padding: 15vh 0 0;
         } 
     }
     &.about-page {
@@ -115,9 +115,7 @@
             color: #000;
             h2 {
                 // font-family: $font-title;
-                opacity: 0;
-                letter-spacing: 2.5rem;
-                transition: 1.5s;
+                
 
             }
         }
@@ -140,25 +138,20 @@
                 margin: 1.5rem 0;
                 font-family: $font-ubuntu;
                 color: #000;
-                font-size: 1rem;
+                font-size: 1.1rem;
                 font-weight: 500;
-                opacity: 0;
-                transform: translateY(-4rem);
-                transition: 1.5s;
+                
                 
             }
 
             p {
                 margin: 1rem 0;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 1rem;
                 font-family: $font-ubuntu;
                 color: $text-light;
                 color: #111;
                 line-height: 1.5;
-                transition: 1.5s;
-                opacity: 0;
-                transform: translateY(2rem);
                 strong {
                     font-weight: 300;
                     font-family: $font-ubuntu;
@@ -170,7 +163,7 @@
                     letter-spacing: .05rem;
                     transition: .2s;
                     font-family: $font-ubuntu;
-                    font-weight: 400;
+                    font-weight: 600;
                     text-decoration: none;
                     position: relative;
 
@@ -208,10 +201,6 @@
                     }
 
                     
-                }
-                &.active-box {
-                    opacity: 1;
-                    transform: translateY(0);
                 }
             }
             // FOUNDER STATEMENT
@@ -251,6 +240,46 @@
             }
         }
 
+
+        // IO CLASS
+        &.box {
+            .title {
+                opacity: 0;
+                letter-spacing: .5rem;
+                transition: 1.5s;
+            }
+            .content {
+                .content-description {
+                    opacity: 0;
+                    transform: translateY(-1.5rem);
+                    transition: 1.5s;
+                }
+                p {
+                    opacity: 0;
+                    transform: translateY(1rem);
+                    transition: 1.5s;
+                }
+            }
+        }
+
+        &.active-box {
+            .title {
+                opacity: 1;
+                letter-spacing: normal;
+            }
+            .content {
+                .content-description {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: .5s;
+                }
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                    transition-delay: 1s;
+                }
+            }
+        }
     }
 
     
@@ -321,24 +350,29 @@
                 border-radius: 10px;
                 transition: 1.8s;
                 // border: 2px solid #000;
-                
-                &.IO-img {
-                    opacity: 0;
-                    transform: scaleX(.5);
-                    &.active {
-                        opacity: 1;
-                        transform: scaleX(1);
-                    }
-                    // &:hover {
-                    //     transform: scale(1.2);
-                    // }
-                }
 
             }
             &:hover {
                 img {
                     transition: .5s;
-                    transform: scale(1.3);
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &.box {
+            figure {
+                img {
+                    opacity: 0;
+                    transform: scale(1.1);
+                }
+            }
+        }
+        &.active-box {
+            figure {
+                img {
+                    opacity: 1;
+                    transform: scale(1);
                 }
             }
         }

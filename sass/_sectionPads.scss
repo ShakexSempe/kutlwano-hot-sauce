@@ -1,5 +1,5 @@
 // HERO PAD 
-.mobile-hero-pad {
+.menu {
     @media (min-width: 820px) {
         // display: none;
     }
@@ -9,7 +9,7 @@
     position: relative;
     isolation: isolate;
 
-    .hero-pad-img-1 {
+    .menu-intro {
         height: 100vh;
         border: 1px solid #000;
         background-image: url('../imgs/hero1-1.jpg');
@@ -62,7 +62,6 @@
 
             h3 {
                 transform: translateY(-2rem);
-                opacity: 0;
                 font-size: 1.5rem;
                 font-weight: 900;
                 // font-family: $font-title;
@@ -114,8 +113,37 @@
                 }
             }
 
-
-            &.active-title {
+            &.box {
+                h2 {
+                    transition: 1.5s;
+                    letter-spacing: normal;
+                    letter-spacing: .25rem;
+                    opacity: 0;
+                }
+    
+                h3 {
+                    transform: translateY(-2rem);
+                    opacity: 0;
+                    transition: 1.5s;
+                }
+                p {
+                    opacity: 0;
+                    transform: translateY(2rem);
+                }
+                ul {
+                    transition: 1s;
+    
+                    li {
+                        letter-spacing: .1rem;
+                        transform: translateY(100%);
+                        opacity: 0;
+    
+                        a {
+                        }
+                    }
+                }
+            }
+            &.active-box {
                 h2 {
                     color: $brand-gold;
                     opacity: .8;
