@@ -109,12 +109,12 @@
 
         .title {
             font-size: 1.5rem;
-            letter-spacing: .15rem;
+            letter-spacing: .05rem;
             text-transform: uppercase;
             color: $brand;
             color: #000;
             h2 {
-                font-family: $font-title;
+                // font-family: $font-title;
                 opacity: 0;
                 letter-spacing: 2.5rem;
                 transition: 1.5s;

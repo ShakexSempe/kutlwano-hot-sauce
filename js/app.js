@@ -44,7 +44,6 @@ date.innerHTML = new Date().getFullYear();
 const main = document.querySelector(".main");
 const mainOptions = {
     rootMargin: "0px 0px -30% 0px",
-    
 }
 const mainObserver = new IntersectionObserver(
     function(
