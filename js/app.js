@@ -100,13 +100,13 @@ const heroObserver = new IntersectionObserver(
         entries.forEach(entry => {
             if(!entry.isIntersecting) {
                 console.log('HERO NOT intersecting');
-                header.classList.add("scroll");
+                header.classList.remove("hero-header");
                 logo.classList.remove("active-logo");
                 // footerNav.classList.add("active-footer");
                 // header.style.backgroundColor = "yellow";
             } else {
                 console.log('HERO intersecting')
-                header.classList.remove("scroll");
+                header.classList.add("hero-header");
                 // heroTitle.classList.remove("active-title");
                 logo.classList.add("active-logo");
                 // footerNav.classList.remove("active-footer");
