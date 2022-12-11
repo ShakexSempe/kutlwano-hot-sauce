@@ -146,14 +146,14 @@
             &.active-box {
                 h2 {
                     color: $text-light;
-                    opacity: .8;
+                    opacity: 1;
                     transform: scale(.9);
                     letter-spacing: normal;
                 }
 
                 h3 {
                     color: $text-light;
-                    opacity: 1;
+                    opacity: .8;
                     letter-spacing: normal;
                     transform: translateY(0);
                 }
