@@ -280,7 +280,9 @@
         justify-content: center;
         justify-content: space-between;
         align-items: center;
-        margin: 5vh auto;
+        min-height: unset;
+        // height: auto;
+        // margin: 5vh auto;
         // border: 2px solid green;
         @media (max-width: 1024px) {
             flex-direction: column;
@@ -536,12 +538,11 @@
             label {
                 font-family: $font-ubuntu;
                 text-transform: capitalize;
-                color: #f4f4f4;
                 position: absolute;
                 top: -1rem;
                 transition: .5s;
-                color: #fff;
                 color: $brand-gold;
+                color: #fff;
             }
 
             input,
@@ -612,7 +613,7 @@
                 width: 100%;
                 height: 100%;
                 transition: .2s;
-                border-radius: 20px;
+                border-radius: 1rem;
                 z-index: -1;
             }
             &::before {
