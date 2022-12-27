@@ -107,18 +107,29 @@ body {
                 // font-family: $font-bodoni-mutant;
                 // font-family: $font-bodoni-hand;
                 // font-family: $font-title;
-                letter-spacing: .15rem;
+                // letter-spacing: .15rem;
+                font-weight: 600;
                 font-size: 2rem;
-                font-weight: 500;
-                &.active {
-                    color: pink;
+                &.box {
+                    letter-spacing: .05rem;
+                    text-transform: uppercase;
+                    color: #000;
+                    opacity: 0;
+                    transition: 1.5s;
+                }
+                &.active-box {
+                    opacity: 1;
+                    letter-spacing: normal;
+                    &.light-title {
+                        color: #fff;
+                    }
                 }
 
             }
             // DESKTOP SECTION STYLE
             @media (min-width: 768px) {
                 .section-title {
-                    font-size: 2.5rem;
+                    // font-size: 1.5rem;
                 }
             }
         }

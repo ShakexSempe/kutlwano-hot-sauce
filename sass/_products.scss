@@ -31,24 +31,7 @@
     background: $brand-gold;
     overflow: hidden;
 
-    // background: #fff;
-    .section-title {
-        transition: 1.5s;
-        letter-spacing: 1rem;
-        opacity: 0;
-        color: #000;
-        font-weight: 600;
-        background-color: $brand-gold;
-
-        &#products-title {
-            opacity: 1;
-            color: #000;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: normal;
-
-        }
-    }
+    
     
     .products-container {
         // border: 2px solid blue;
