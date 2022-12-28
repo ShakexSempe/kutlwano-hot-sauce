@@ -2502,7 +2502,8 @@
   place-items: center;
 }
 .footer-nav .item a i {
-  font-size: 1.05rem;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
   color: #fff7;
   opacity: 0.5;
   transition: 1s;

@@ -417,7 +417,9 @@
             display: grid;
             place-items: center;
             i {
-                font-size: 1.05rem;
+                font-size: 1rem;
+                // border: 1px solid red;
+                margin-bottom: .15rem;
                 color: #fff7;
                 opacity: .5;
                 transition: 1s;
