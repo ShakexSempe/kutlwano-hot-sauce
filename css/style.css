@@ -246,12 +246,12 @@
     background-color: transparent;
   }
   #header nav .desktop-nav {
-    width: 25rem;
     padding: 0.2rem 0;
   }
   #header nav .desktop-nav .desktop-nav-links {
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
   }
   #header nav .desktop-nav .desktop-nav-links li a {
     color: #161616;
@@ -558,6 +558,7 @@
   .menu .menu-intro {
     background-size: 50%;
     background-position: right;
+    background-attachment: fixed;
   }
 }
 .menu .menu-intro .menu-title {
@@ -1064,7 +1065,7 @@
 }
 @media (min-width: 768px) {
   .about#about {
-    padding: 15vh 0 0;
+    padding: 15vh 5vw 5vh;
   }
 }
 .about.about-page {
@@ -1381,6 +1382,11 @@
   background-color: #000;
   margin: 0;
 }
+@media (min-width: 768px) {
+  .contact {
+    padding: 15vh 5vw;
+  }
+}
 .contact#contact {
   background-color: #000;
 }
@@ -1604,8 +1610,6 @@
   }
 }
 .contact .container .contact-info {
-  border: 1px solid #ead2a1;
-  border: 1px solid #fffa;
   padding: 0.5rem;
   border-radius: 5px;
   width: 40%;
@@ -1821,16 +1825,15 @@
   font-family: "Ubuntu", sans-serif;
   width: 100%;
   padding: 0.5rem 0.5rem;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
+  font-size: 1rem;
+  margin: 1rem 0;
+  background: #000;
   color: #ead2a1;
   resize: none;
-  border-bottom-right-radius: 15px;
-  border-bottom: 2px solid #f3e1a5;
-  background: #000;
-  transition: 0.3s;
-  outline: none;
+  border: none;
+  outline: 1px solid rgba(234, 210, 161, 0.5);
+  border-radius: 0.25rem;
+  transition: 0.25s;
 }
 .contact .contact-form .input-box input::placeholder,
 .contact .contact-form .input-box textarea::placeholder {
@@ -1840,11 +1843,11 @@
 }
 .contact .contact-form .input-box input:invalid,
 .contact .contact-form .input-box textarea:invalid {
-  border-radius: 0px;
+  outline-color: #ddd;
 }
 .contact .contact-form .input-box input:invalid:focus,
 .contact .contact-form .input-box textarea:invalid:focus {
-  border-bottom-right-radius: 5px;
+  outline-color: #ead2a1;
 }
 .contact .contact-form .input-box input:focus,
 .contact .contact-form .input-box textarea:focus {
@@ -1869,9 +1872,7 @@
   text-transform: capitalize;
   border-radius: 20px;
   letter-spacing: 0.13rem;
-  color: #ead2a1;
   color: #000;
-  color: #f4f4f4;
   transition: 0.2s;
   position: relative;
   isolation: isolate;
@@ -1926,7 +1927,7 @@
 
 .products {
   margin: 10vh 0;
-  padding: 10vh 0 0;
+  padding: 10vh 5vw 0;
   background: #f3e1a5;
   overflow: hidden;
 }
@@ -2556,6 +2557,15 @@ footer {
   position: relative;
   width: 100%;
 }
+@media (min-width: 768px) {
+  footer {
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 footer .footer-logo {
   position: relative;
   width: 50%;
@@ -2687,7 +2697,6 @@ body {
 .container main section {
   background-color: #f3e1a5;
   min-height: 100vh;
-  margin: 0 5vw 10vh;
 }
 @media (max-width: 768px) {
   .container main section {

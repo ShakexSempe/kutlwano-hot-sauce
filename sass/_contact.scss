@@ -7,6 +7,9 @@
     flex-direction: column;
     background-color: #000;
     margin: 0;
+    @media (min-width: 768px){
+        padding: 15vh 5vw;
+    }
     &#contact {
         background-color: #000;
     }
@@ -288,8 +291,8 @@
                 height: 60vh;
                 justify-content: space-evenly;
             }
-            border: 1px solid #ead2a1;
-            border: 1px solid #fffa;
+            // border: 1px solid #ead2a1;
+            // border: 1px solid #fffa;
             padding: .5rem;
             border-radius: 5px;
             width: 40%;
@@ -541,18 +544,15 @@
                 font-family: $font-ubuntu;
                 width: 100%;
                 padding: .5rem .5rem;
-                font-size: 16px;
-                margin: 10px 0;
-                border: none;
+                font-size: 1rem;
+                margin: 1rem 0;
+                background: #000;
                 color: #ead2a1;
                 resize: none;
-                border-bottom-right-radius: 15px;
-                // border: 1px solid rgba(234, 210, 161, .05);
-                border-bottom: 2px solid $brand-gold;
-                background: #000;
-                transition: .3s;
-                // border: 2px solid $brand;
-                outline: none;
+                border: none;
+                outline: 1px solid rgba(234, 210, 161, .5);
+                border-radius: .25rem;
+                transition: .25s;
                 // resize: none;
                 &::placeholder {
                     opacity: 0;
@@ -560,9 +560,9 @@
                     transition: .5s;
                 }
                 &:invalid {
-                    border-radius: 0px;
+                    outline-color: $text-light;
                     &:focus {
-                        border-bottom-right-radius: 5px;
+                        outline-color: $brand;
                     }
                 }
                 &:focus {
@@ -590,9 +590,7 @@
             text-transform: capitalize;
             border-radius: 20px;
             letter-spacing: .13rem;
-            color: #ead2a1;
             color: #000;
-            color: #f4f4f4;
             transition: .2s;
             position: relative;
             isolation: isolate;

@@ -346,13 +346,15 @@
             background-color: transparent;
             .desktop-nav {
                 // border: 1px solid #000;
-                width: 25rem;
+                // width: 25rem;
                 padding: .2rem 0;
 
                 .desktop-nav-links {
                     display: flex;
                     justify-content: space-between;
-                    
+                    // border: 1px solid #000;
+                    gap: 1rem;
+                
                     li {
                         a {
                             color: $navLinks;
