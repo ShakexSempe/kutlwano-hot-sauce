@@ -580,7 +580,7 @@
         .submit-btn {
             font-family: $font-ubuntu;
             display: block;
-            width: 50%;
+            width: max-content;
             padding: .5rem 1rem;
             // margin: .5rem auto;
             background: $brand-dark;
@@ -594,6 +594,9 @@
             transition: .2s;
             position: relative;
             isolation: isolate;
+            i {
+                margin-left: .5rem;
+            }
             &::before, &::after {
                 position: absolute;
                 content: '';

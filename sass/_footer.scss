@@ -1,26 +1,28 @@
 footer {
     background: linear-gradient(0deg, #000, #222);
     background: $brand-gold;
-    padding: 5vh 0;
     padding: 5vh 5vw 10vh;
     position: relative;
-    @media (min-width: 768px){
-        padding: 5vh 5vw;
-        display: flex;
-        flex-direction: row-reverse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
+    @media (min-width: 820px){
+        padding: 10vh 5vw;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 1rem;
+        
     }
     // height: 50vh;
     width: 100%;
     .footer-logo {
-        position: relative;
-        width: 50%;
-        height: 30vh;
-        // float: right;
         // border: 2px solid red;
+        position: relative;
+        width: 15rem;
+        height: auto;
         overflow: hidden;
-        margin-bottom: 5vh;
         isolation: isolate;
         img {
             width: 100%;
@@ -34,63 +36,66 @@ footer {
             float: right;
 
         }
-        
-        
     }
-    .copyright {
-        p {
-            // &:nth-child(1){
-            //     font-weight: 900;
-            // }
+    .footer-item {
+        h3 {
             text-transform: capitalize;
-            font-family: $font-ubuntu;
-            color: #000;
-            font-weight: 600;
-            line-height: 1.5;
-
-            &.shakex-link {
-                color: #000;
-                font-weight: 300;
+            // margin-bottom: .5rem;
+        }
+        line-height: 1.8;
+        ul {
+            list-style: none;
+            li {
+                display: flex;
+                align-items: center;
+                // margin-bottom: .15rem;
+                @media (min-width: 768px){
+                    // margin-bottom: .5rem;
+                }
                 a {
-                    font-family:inherit;
                     color: #000;
                     text-decoration: none;
-                    &:hover {
-                        text-decoration: underline;
-                        transition: .2s;
+                }
+            }
+
+            &.browse-list {
+                // border: 2px solid red;
+
+                li {
+                    a {
+                        text-transform: capitalize;
+                        flex-basis: 20%;
+                        @media (min-width: 768px){
+                            flex-basis: 100%;
+                        }
+                    }
+                    i {
+                        margin-left: .25rem;
+                        @media (min-width: 768px){
+                            margin-left: 1rem;
+                        }
+                        // border: 2px solid blue;
+                    }
+                }
+            }
+            &.contact-list {
+                li {
+                    i {
+                        width: 1rem;
+                        margin-right: .5rem;
                     }
                 }
             }
         }
+        p {
+            text-transform: capitalize;
+
+            a {
+                color: #000;
+            }
+        }
         .date {
-            color: #000a;
-            font-family: $font-ubuntu;
-        }
-    }
-    .home-btn {
-        position: absolute;
-        top: 5vh;
-        right: 50%;
-        // border: 1px solid yellow;
-        @media (max-width: 768px){
-            right: 5vw;
-        }
-        a {
             color: #000;
-            display: block;
-            // border: 1px solid blue;
-            i {
-                border: 2px solid #000;
-                padding: .5rem;
-                border-radius: 50%;
-                transition: .2s;
-            }
-            &:hover {
-                i {
-                    background: #000;
-                color: #ead2a1;
-                }
-            }
         }
     }
 }

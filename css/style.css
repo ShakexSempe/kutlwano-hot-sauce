@@ -1862,7 +1862,7 @@
 .contact .contact-form .submit-btn {
   font-family: "Ubuntu", sans-serif;
   display: block;
-  width: 50%;
+  width: max-content;
   padding: 0.5rem 1rem;
   background: #161417;
   border: none;
@@ -1875,6 +1875,9 @@
   transition: 0.2s;
   position: relative;
   isolation: isolate;
+}
+.contact .contact-form .submit-btn i {
+  margin-left: 0.5rem;
 }
 .contact .contact-form .submit-btn::before, .contact .contact-form .submit-btn::after {
   position: absolute;
@@ -2091,39 +2094,23 @@
   opacity: 1;
 }
 .products .page-link {
-  background: linear-gradient(0deg, #000, #161616);
-  outline: 2px solid #ead2a1;
-  outline-offset: -4px;
-  border-radius: 0.5rem;
-  width: 15rem;
-  width: 100%;
-  margin: 5vh 0;
-  text-align: center;
-  transition: 0.3s;
-  margin: 5vh auto;
-}
-@media (min-width: 768px) {
-  .products .page-link {
-    width: 25rem;
-  }
-}
-.products .page-link a {
-  padding: 0.8rem 0;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: max-content;
+  background: linear-gradient(0deg, #000, #161616);
+  margin: 5vh 0;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   text-transform: capitalize;
   font-family: "Ubuntu", sans-serif;
   color: #ead2a1;
-  letter-spacing: 0.05rem;
   transition: 0.3s;
+}
+.products .page-link i {
+  margin-left: 0.5rem;
 }
 .products .page-link:hover {
   transform: scale(0.98);
-}
-.products .page-link:hover a {
-  letter-spacing: normal;
 }
 .products.active-products#products .section-title {
   opacity: 1;
@@ -2524,6 +2511,11 @@
   opacity: 1;
   transition: 0.25s;
 }
+@media (min-width: 820px) {
+  .footer-nav {
+    display: none;
+  }
+}
 .footer-nav.active-footer {
   transform: translateY(0);
 }
@@ -2551,26 +2543,28 @@
 footer {
   background: linear-gradient(0deg, #000, #222);
   background: #f3e1a5;
-  padding: 5vh 0;
   padding: 5vh 5vw 10vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5vh;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   footer {
-    padding: 5vh 5vw;
-    display: flex;
-    flex-direction: row-reverse;
+    padding: 10vh 5vw;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
   }
 }
 footer .footer-logo {
   position: relative;
-  width: 50%;
-  height: 30vh;
+  width: 15rem;
+  height: auto;
   overflow: hidden;
-  margin-bottom: 5vh;
   isolation: isolate;
 }
 footer .footer-logo img {
@@ -2586,53 +2580,52 @@ footer .footer-logo img {
     float: right;
   }
 }
-footer .copyright p {
+footer .footer-item {
+  line-height: 1.8;
+}
+footer .footer-item h3 {
   text-transform: capitalize;
-  font-family: "Ubuntu", sans-serif;
-  color: #000;
-  font-weight: 600;
-  line-height: 1.5;
 }
-footer .copyright p.shakex-link {
-  color: #000;
-  font-weight: 300;
+footer .footer-item ul {
+  list-style: none;
 }
-footer .copyright p.shakex-link a {
-  font-family: inherit;
+footer .footer-item ul li {
+  display: flex;
+  align-items: center;
+}
+footer .footer-item ul li a {
   color: #000;
   text-decoration: none;
 }
-footer .copyright p.shakex-link a:hover {
-  text-decoration: underline;
-  transition: 0.2s;
+footer .footer-item ul.browse-list li a {
+  text-transform: capitalize;
+  flex-basis: 20%;
 }
-footer .copyright .date {
-  color: #000a;
-  font-family: "Ubuntu", sans-serif;
-}
-footer .home-btn {
-  position: absolute;
-  top: 5vh;
-  right: 50%;
-}
-@media (max-width: 768px) {
-  footer .home-btn {
-    right: 5vw;
+@media (min-width: 768px) {
+  footer .footer-item ul.browse-list li a {
+    flex-basis: 100%;
   }
 }
-footer .home-btn a {
+footer .footer-item ul.browse-list li i {
+  margin-left: 0.25rem;
+}
+@media (min-width: 768px) {
+  footer .footer-item ul.browse-list li i {
+    margin-left: 1rem;
+  }
+}
+footer .footer-item ul.contact-list li i {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+footer .footer-item p {
+  text-transform: capitalize;
+}
+footer .footer-item p a {
   color: #000;
-  display: block;
 }
-footer .home-btn a i {
-  border: 2px solid #000;
-  padding: 0.5rem;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-footer .home-btn a:hover i {
-  background: #000;
-  color: #ead2a1;
+footer .footer-item .date {
+  color: #000;
 }
 
 * {
