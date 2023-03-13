@@ -10,8 +10,8 @@
     isolation: isolate;
 
     .menu-intro {
-        height: 100vh;
-        border: 1px solid #000;
+        height: 95vh;
+        border: 3px solid #000;
         background-image: url('../imgs/hero1-1.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -171,13 +171,13 @@
                             transition-delay: .6s;
                         }
                         &:nth-child(2){
-                            transition-delay: .8s;
+                            transition-delay: .65s;
                         }
                         &:nth-child(3){
-                            transition-delay: 1s;
+                            transition-delay: .7s;
                         }
                         &:nth-child(4){
-                            transition-delay: 1.2s;
+                            transition-delay: .75s;
                         }
                         &:hover {
                             color: $text-light;
@@ -197,6 +197,7 @@
         overflow: hidden;
         position: sticky;
         top: 0vh;
+        border: 2px solid #0005;
         // SPICE IMAGE OBJECT POSITION TO CENTER SPICE
         &.pad-img-3 {
             img {

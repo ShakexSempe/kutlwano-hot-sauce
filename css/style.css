@@ -309,9 +309,8 @@
   border: none;
   margin: 0;
   padding: 5vh 0;
-  min-height: 100vh;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background: #f3e1a5;
   position: relative;
   isolation: isolate;
@@ -533,8 +532,8 @@
   isolation: isolate;
 }
 .menu .menu-intro {
-  height: 100vh;
-  border: 1px solid #000;
+  height: 95vh;
+  border: 3px solid #000;
   background-image: url("../imgs/hero1-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -671,13 +670,13 @@
   transition-delay: 0.6s;
 }
 .menu .menu-intro .menu-title.active-box ul li:nth-child(2) {
-  transition-delay: 0.8s;
+  transition-delay: 0.65s;
 }
 .menu .menu-intro .menu-title.active-box ul li:nth-child(3) {
-  transition-delay: 1s;
+  transition-delay: 0.7s;
 }
 .menu .menu-intro .menu-title.active-box ul li:nth-child(4) {
-  transition-delay: 1.2s;
+  transition-delay: 0.75s;
 }
 .menu .menu-intro .menu-title.active-box ul li:hover {
   color: #ddd;
@@ -691,6 +690,7 @@
   overflow: hidden;
   position: sticky;
   top: 0vh;
+  border: 2px solid #0005;
 }
 .menu .hero-pad.pad-img-3 img {
   object-position: left;
