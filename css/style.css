@@ -1933,6 +1933,11 @@
   background-color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
+@media (min-width: 768px) {
+  .products .products-container .box .info .sub-info {
+    padding: 1rem;
+  }
+}
 .products .products-container .box .info .sub-info .price {
   font-family: "Ubuntu", sans-serif;
   color: #f4f4f4;

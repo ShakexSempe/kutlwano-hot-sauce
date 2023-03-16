@@ -99,7 +99,9 @@
                     padding: .5rem;
                     background-color: #000;
                     border-top: 1px solid rgba(0,0,0,.3);
-
+                    @include md {
+                        padding: 1rem;
+                    }
                     .price {
                         font-family: $font-ubuntu;
                         color: #f4f4f4;
