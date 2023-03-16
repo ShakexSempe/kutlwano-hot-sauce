@@ -51,12 +51,13 @@
         .box {
             @media (max-width: 768px) {
                 margin: 5vh auto;
-                border: none;
+                // border: none;
             }
             width: 100%;
             background: $span-gold;
+            background: #ffff;
             // border: 1px solid $brand;
-            // border: 1px solid #000;
+            border: 2px solid #000;
             position: relative;
             overflow: hidden;
             margin: 1.5rem 0;

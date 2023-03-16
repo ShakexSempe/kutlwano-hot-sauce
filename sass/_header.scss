@@ -1,8 +1,8 @@
 @import 'variables';
 
 #header {
-    background-color: transparent;
-    background-color: $brand-gold;
+    // background-color: transparent;
+    // background-color: $brand-gold;
     height: 7vh;
     padding: 0 5vw;
     display: flex;
@@ -14,6 +14,11 @@
     z-index: 10;
     transition: .5s;
     isolation: isolate;
+    // border: 2px solid #000;
+    @include lg {
+        height: 9vh;
+    }
+    
     // PSEUDO HEADER BG 
     &::after {
         content: '';
@@ -22,162 +27,69 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: $brand-gold;
+        background-color: $brand-gold;
+        background-color: #f4f4f4;
         z-index: -1;
         transition: .25s;
+        box-shadow: .025rem .025rem 1rem #0003;
     }
-
-    // IO STYLE
     &.hero-header {
+        height: 20vh;
         &::after {
-            opacity: 0;
+            background-color: transparent;
         }
     }
-    &.index-header {
-    background-color: #161616a4;
-    background-color: transparent;
-        &.scroll {
-            background-color: $header;
-            background-color: $brand-gold;
-            // .logo {
-            //     opacity: 1;
-            //     transform: translateY(0);
-            // }
-            &.active {
-                background: $header-active;
-                // background: $brand-gold;
+    // SKIP LINK
+    .skip-link {
+        @media (max-width: 768px){
+            display: none;
+        }
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem 5vw;
+        background: #000;
+        color: #fff;
+        z-index: 99;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        transform: translateY(-10vh);
+        transition: .5s;
 
-                .hamburger {
-                    // border: 2px solid #000;
-                    // border: 2px solid $brand-gold;
-                    .bar {
-                        background: #000;
-                        background: $brand-gold;
-                        &::after, &::before {
-                            background: $brand-gold;
-                        }
-                    }
-                }
-            }
-            .hamburger {
-                transition: .5s;
-                // border: 2px solid #ead2a1;
-                // border: 2px solid #000;
-                .bar {
-                    transition: .5s;
-
-                    background: #ead2a1;
-                    background: #000;
-
-                    &::after,
-                    &::before {
-                        transition: .5s;
-
-                        background: #ead2a1;
-                        background: #000;
-                    }
-                }
-            }
-            .desktop-nav {
-                ul {
-                    transition: .2s;
-
-                    li {
-                        transition: .3s;
-                        a {
-                            color: #000;
-                        }
-                    }
-
-                    &:hover {
-
-                        li {
-                            a {
-                                color: #000;
-                                
-                                &::after {
-                                    background-color: #000;
-                                }
-                            }
-                            &:hover {
-                                // transform: scale(1.05);
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
+        &:focus-visible {
+            transform: translateY(0);
+            text-decoration: underline;
         }
     }
 
-    
     // LOGO / BRAND
     .logo {
-        // border: 1px solid #000;
+        // border: 2px solid #000;
         width: 10rem;
-        height: 6vh;
-        // overflow: hidden;
-        display: grid;
-        align-items: center;
+        height: 100%;
+        overflow: hidden;
         cursor: pointer;
         transition: .5s;
         position: relative;
-        h1 {
-            font-size: 1.3rem;
-            color: #ead2a1;
-            a {
-                color: #ead2a1;
-                    font-family: $font-header;
-                text-decoration: none;
-
-                i {
-                    color: #ead2a1; 
-                    margin-right: .2rem;
-                    transition: .2s;
-                    // background: linear-gradient(30deg, orange,  orangered);
-                    // background-clip: text;
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
-
-                }
-            }
-        }
-        img {
-            width: auto;
-            // border: 1px solid blue;
+            img {
+            // border: 1px solid #000;
+            width: 100%;
             height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: .5rem;
+            object-fit: contain;
+            object-position: left;
+            // top: 0;
+            // left: 0;
+            // border-radius: .5rem;
             transition: .5s;
-            transform: translateY(0) translateX(0) scale(1);
+            // transform: translateY(0) translateX(0) scale(1);
 
             
         }
-
-        &.active-logo {
-            img {
-                transform: translateY(30vh) translateX(35vw) scale(5);
-                @media(min-width:1024px) {
-                    transform: translateY(40vh) translateX(45vw) scale(7);
-                }
-            }
+        @include lg {
+            width: 10rem;
         }
-        // DESKTOP LOGO
-        // @media (min-width: 768px) {
-        //     width: 13rem;
-        //     height: 100%;
-        //     figure {
-        //         width: 100%;
-        //         height: 100%;
-        //         img {
-        //             object-fit: cover;
-        //             width: 100%;
-        //             height: 100%;
-        //         }
-        //     }
-        // }
     }
 
     nav {

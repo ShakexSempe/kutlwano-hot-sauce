@@ -1,4 +1,6 @@
 
+@import 'variables';
+@import 'mixin';
 @import 'header';
 @import 'hero';
 @import 'sectionPads';
@@ -7,7 +9,6 @@
 @import 'products';
 @import 'services';
 @import 'utilities';
-@import 'variables';
 @import 'footer';
 
 // @font-face{
@@ -23,11 +24,7 @@
     @media (min-width: 768px){
         scroll-padding-top: 6vh;
     }
-    // font-family: $font-header;
-    // font-family: $font-header;
-    // font-family: $font-brand;
-    font-family: $font-content;
-    font-family: $font-title;
+    // font-family: 'Montserrat', sans-serif;
     font-family: $font-ubuntu;
 }
 

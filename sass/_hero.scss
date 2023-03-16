@@ -3,239 +3,63 @@
     // border: 1px solid #000;
     border: none;
     margin: 0;
-    padding: 5vh 0;
+    padding: 5vh 5vw;
     width: 100%;
     height: 95vh;
     background: $brand-gold;
     position: relative;
     isolation: isolate;
-    
-    .hero-title {
-        // border: 1px solid red;
-        font-size: 1.25rem;
-        padding: 1rem 0;
-        position: absolute;
-        width: 99%;
-        margin: 0 auto;
-        bottom: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        text-transform: capitalize;
-        line-height: 1.5;
-        font-weight: 600;
-        // font-family: $font-content;
-        background: $brand-gold;
-        // background: red;
-        @media (max-width: 768px) {
-            bottom: 20vh;
-        }
-        a {
-            color: #000;
-            text-decoration: none;
-        }
-        span {
-            display: block;
-            font-weight: 300;
-            font-size: 1rem;
-        }
+
+    background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;  
+    @include lg {
+        background-attachment: fixed;
+        background-position: right;
+        background-size: 50%;
     }
     // HERO DECORATION
-    &::after {
-        position: absolute;
-        content: '';
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%) rotate(45deg);
-        width: 15rem;
-        height: 15rem;
-        border: 2px solid rgba(0, 0,0, .05);
-        background: rgba(0, 0, 0, 0.015);
-        z-index: -1;
-        @media (min-width: 768px) {
-            width: 20rem;
-            height: 20rem;
-        }
-    }
-    // MOBILE HERO FLEX
-    @media (max-width: 1024px) {
-        display: grid;
-        place-items: center;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-around;
-    }
-    // DESKTOP HERO
-    @media (min-width:1024px) {
-        background-attachment: fixed;
-        background-size: 50%;
-        background-position: left;
-        background-position: center;
-        background-color: #f3e1a5;
-    }
-    
-    
-    
-    // CTA 
-    #cta {
-        // border: 2px solid #fff;
-        text-align: center;
-        position: absolute;
-        bottom: 10vh;
-        left: 50%;
-        transform: translateX(-50%);
-        @media (min-width: 1024px) {
-            position: absolute;
-            width: 40%;
-            left: 5vw;
-            bottom: 30vh;
-            transform: none;
+    // &::after {
+    //     position: absolute;
+    //     content: '';
+    //     top: 15%;
+    //     left: 50%;
+    //     transform: translateX(-50%) rotate(45deg);
+    //     width: 15rem;
+    //     height: 15rem;
+    //     border: 2px solid rgba(0, 0,0, .05);
+    //     background: rgba(0, 0, 0, 0.015);
+    //     z-index: -1;
+    //     @media (min-width: 768px) {
+    //         width: 20rem;
+    //         height: 20rem;
+    //     }
+    // }
+    .hero-content {
+        // border: 2px solid #000;
+        margin-top: 20vh;
+        text-transform: capitalize;
+        padding: 1rem 0;
+
+        .hero-title {
+            font-weight: 500;
+            font-size: 1rem;
+            font-size: clamp(1rem, 2vw, 1.15rem);
         }
 
-        a {
-            font-family: $font-ubuntu;
-            display: block;
-            position: relative;
-            // border: 2px solid green;
-            border-radius: 30px;
-            margin: 1rem auto;
-            width: 15rem;
-            color: #fff;
-            color: #ead2a1;
-            padding: .5rem;
-            text-align: center;
-            text-decoration: none;
-            border: none;
-            text-transform: uppercase;
-            font-size: 1.3rem;
-            transition: .2s;
-            letter-spacing: .05rem;
-            isolation: isolate;
-            z-index: 1;
+        .hero-headline {
+            font-weight: 600;
+            font-size: 1.5rem;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin: .5rem 0 1rem;
 
-            @media (min-width: 1024px) {
-                padding: 1rem;
-                font-size: 1.5rem;
+            span {
+                display: block;
+                font-size: 1rem;
+                font-size: clamp(1rem, 2vw, 1.15rem);
+                font-weight: 400;
             }
-
-
-            &::before,
-            &::after {
-                position: absolute;
-                content: '';
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: .2s;
-                border-radius: 30px;
-                z-index: -1;
-            }
-
-            &::before {
-                background: $btn;
-                // box-shadow: $box-shadow;
-            }
-
-            &::after {
-                opacity: 0;
-                background: $btn-hover;
-                // box-shadow: $box-shadow-hover;
-            }
-
-            &:hover {
-                transform: scale(.98);
-                letter-spacing: normal;
-
-                &::before {
-                    opacity: 0;
-                }
-
-                &::after {
-                    opacity: 1;
-                }
-            }
-
-        }
-
-    }
-    .hero-img {
-        overflow: hidden;
-        position: relative;
-        // border: 1px solid yellow;
-        margin: 0 auto;
-        height: 50%;
-        img {
-            width: 100%;
-            isolation: isolate;
-            z-index: 1;
-            display: none;
-        }
-        &:before, &::after {
-            content: '';
-            position: absolute;
-            object-fit: contain;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: 2s ease;
-        }
-        &::before {
-            
-            background: url(../imgs/hero-sm.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            z-index: 2;
-        }
-        &::after {
-            object-fit: contain;
-            background: url(../imgs/hero3-md.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 40%;
-            @media (min-width: 1024px) {
-                background-size: 80%;
-            }
-            @media (max-width: 440px) {
-                background-size: 80%;
-            }
-            
-            z-index: 2;
-            opacity: 0;
-        } 
-        
-        @media (max-width: 1024px) {
-            width: 95%;
-            img {
-                object-fit: cover;
-            }
-            .hero-img-md {
-                display: none;
-            }
-        }
-        @media (min-width: 1024px) {
-            // border: 1px solid red;
-            width: 30%;
-            height: 70%;
-            float: right;
-            position: sticky;
-            right: 5vw;
-            top: 25vh;
-            .hero-img-sm {
-                display: none;
-            }
-        }
-
-        &.active {
-                &::before {
-                    opacity: 0;
-                }
-                &::after {
-                    opacity: 1;
-                }
-            
         }
     }
     

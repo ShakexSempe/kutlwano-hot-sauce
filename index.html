@@ -57,15 +57,11 @@
     <div id="container" class="container">
         <!-- HEADER = NAVBAR: LOGO & PAGE NAVIGATION -->
         <header id="header" data-header class="header index-header">
-            <a href="#hero-pad" class="skip-link">skip to main content</a>
+            <a href="#main" class="skip-link">skip to main content</a>
             <!-- LOGO -->
-            <div class="logo">
-                <figure>
-                    <a href="#">
-                        <img src="imgs/gold-logo-sm-min.jpg" alt="K'Sauce logo">
-                    </a>
-                </figure>
-            </div>
+            <a class="logo" href="#">
+                <img src="imgs/gold-logo-sm-min.jpg" alt="K'Sauce logo">
+            </a>
             <!-- NAVIGATION -->
             <!-- HAMBURGER = MOBILE NAV LIST -->
             <nav>
@@ -107,10 +103,17 @@
         </header>
 
         <div class="hero">
-            <h1 class="hero-title">hot sauce & kitchen accessories <span>est. 2020</span></h1>
+            <div class="hero-content">
+                <h1 class="hero-title">hot sauce & kitchen accessories</h1>
+                <p class="hero-headline">simply enjoy food <span>est . 2020</span></p>
+                <div id="#hero-cta" class="cta">
+                    <a class="cta-btn" href="#main">get started<i class="fas fa-angles-right"></i></a>
+                </div>
+            </div>
+            <!-- <h1 class="hero-title">hot sauce & kitchen accessories <span>est. 2020</span></h1>
             <div class="arrow">
                 <a href="#menu" class="fas fa-arrow-down"></a>
-            </div>
+            </div> -->
         </div>
         <!-- IMAGES AFTER HERO -->
         <div id="menu" class="mobile-hero-pad menu">
@@ -410,9 +413,9 @@
             <div class="footer-item">
                 <h3 class="footer-item-title">browse</h3>
                 <ul class="footer-item-list browse-list">
-                    <li><a href="pages/about.html">about</a><i class="fa-solid fa-up-right-from-square"></i></li>
-                    <li><a href="pages/products.html">products</a><i class="fa-solid fa-up-right-from-square"></i></li>
-                    <li><a href="pages/contact.html">order</a><i class="fa-solid fa-up-right-from-square"></i></li>
+                    <li><i class="fa-solid fa-up-right-from-square"></i><a href="pages/about.html">about</a></li>
+                    <li><i class="fa-solid fa-up-right-from-square"></i><a href="pages/products.html">products</a></li>
+                    <li><i class="fa-solid fa-up-right-from-square"></i><a href="pages/contact.html">order</a></li>
                 </ul>
             </div>
             <div class="footer-item">

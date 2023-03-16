@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Raleway:wght@100;300;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Reggae+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 // @font-face{
 //     font-family: bodoni-hand;
 //     src:url(../fonts/Bodoni_Hand.otf);
@@ -23,7 +23,8 @@ $brand: #ead2a1;
 $brand-dark: maroon;
 $brand-dark: #161417;
 $brand-light: orange;
-$brand-gold: #f3e1a5;
+$brand-gold: hwb(46 65% 5%);
+$brand-gold: #fafafa;
 
 // TEXT
 $text-main: #f4f4f4;
@@ -63,8 +64,8 @@ $bar: #000;
 $bar-active: #ead2a1;
 
 // BORDER RADIUS
-$border-radius-brand: .5rem;
-$border-radius-sm: .25rem;
+$border-radius-brand: .25rem;
+$border-radius-sm: .5rem;
 $border-radius-md: 1rem;
 
 // BOX SHADOWS

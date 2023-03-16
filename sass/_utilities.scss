@@ -478,24 +478,3 @@
     }
 }
 
-// SKIP LINK
-.skip-link {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 5vw;
-    background: #000;
-    color: #fff;
-    z-index: 99;
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: none;
-    transform: translateY(-10vh);
-    transition: .5s;
-
-    &:focus-visible {
-        transform: translateY(0);
-        text-decoration: underline;
-    }
-}

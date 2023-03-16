@@ -20,8 +20,10 @@ hamburger.addEventListener("click", () => {
     header.classList.toggle("active");
     container.classList.toggle("active-overlay");
     if(!logo.classList.contains("active-logo")){
+        header.classList.remove("hero-header");
         logo.classList.remove("active-logo");
     } else {
+        header.classList.add("hero-header");
         logo.classList.toggle("active-logo");
     }
 })
@@ -101,14 +103,14 @@ const heroObserver = new IntersectionObserver(
             if(!entry.isIntersecting) {
                 console.log('HERO NOT intersecting');
                 header.classList.remove("hero-header");
-                logo.classList.remove("active-logo");
+                // logo.classList.remove("active-logo");
                 // footerNav.classList.add("active-footer");
                 // header.style.backgroundColor = "yellow";
             } else {
                 console.log('HERO intersecting')
                 header.classList.add("hero-header");
                 // heroTitle.classList.remove("active-title");
-                logo.classList.add("active-logo");
+                // logo.classList.add("active-logo");
                 // footerNav.classList.remove("active-footer");
 
                 // header.style.backgroundColor = "green";
