@@ -94,16 +94,16 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fafafa;
   background-color: #f4f4f4;
   z-index: -1;
   transition: background-color 0.25s, box-shadow 1s;
 }
 #header.hero-header {
-  height: 15vh;
+  height: 20vh;
 }
 #header.hero-header::after {
   background-color: transparent;
+  mix-blend-mode: lighten;
   box-shadow: 0.025rem 0.025rem 1rem transparent;
 }
 @media (min-width: 768px) {
@@ -144,9 +144,10 @@
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  mix-blend-mode: darken;
+  background-color: #f4f4f4;
 }
 #header .logo img {
+  mix-blend-mode: darken;
   width: 100%;
   width: 10rem;
   height: 100%;
@@ -157,6 +158,7 @@
 @media (min-width: 820px) {
   #header .logo {
     width: 10rem;
+    background: none;
   }
   #header .logo img {
     width: 100%;
@@ -347,7 +349,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   position: relative;
   isolation: isolate;
 }
@@ -355,7 +357,7 @@
   text-transform: capitalize;
   padding: 1rem 0;
   position: relative;
-  top: 15vh;
+  top: 20vh;
 }
 @media (min-width: 768px) {
   .hero .hero-content {
@@ -390,7 +392,7 @@
   display: block;
   font-size: 1rem;
   font-size: clamp(1rem, 2vw, 1.15rem);
-  font-weight: 400;
+  font-weight: 200;
   margin-top: 0.25rem;
 }
 .hero .hero-bg {
@@ -399,11 +401,12 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background: #f4f4f4;
 }
 .hero .hero-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: bottom;
 }
 @media (min-width: 768px) {
@@ -958,8 +961,7 @@
 
 .about#about {
   padding: 10vh 5vw 5vh;
-  background: #000;
-  background: #fafafa;
+  background: #f4f4f4;
 }
 @media (min-width: 768px) {
   .about#about {
@@ -1497,6 +1499,8 @@
   justify-content: space-between;
   align-items: center;
   min-height: unset;
+  background: linear-gradient(0deg, #f4f4f4, #eee, #f4f4f4);
+  background: #000;
 }
 @media (max-width: 1024px) {
   .contact .container {
@@ -1658,6 +1662,7 @@
 .contact .contact-form {
   width: 55%;
   padding: 40px;
+  background: #111111;
   border-radius: 5px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -1666,6 +1671,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 10vh 0.2rem 5vh;
+    padding: 1rem 0.5rem;
     margin: 5vh auto;
     overflow: hidden;
   }
@@ -1740,7 +1746,7 @@
 }
 .contact .contact-form .input-box input:invalid,
 .contact .contact-form .input-box textarea:invalid {
-  outline-color: #ddd;
+  outline-color: transparent;
 }
 .contact .contact-form .input-box input:invalid:focus,
 .contact .contact-form .input-box textarea:invalid:focus {
@@ -2508,12 +2514,12 @@ footer .footer-item .date {
 }
 
 body {
-  background: #eee;
   width: 100%;
 }
 
 .container {
-  background: #eee;
+  background: #f4f4f4;
+  background: #fff000;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;

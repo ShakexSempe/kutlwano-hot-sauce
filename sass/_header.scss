@@ -14,6 +14,7 @@
     z-index: 10;
     transition: .5s;
     isolation: isolate;
+    // mix-blend-mode: darken;
     // border: 2px solid #000;
     @include lg {
         height: 9vh;
@@ -27,17 +28,20 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: $brand-gold;
-        background-color: #f4f4f4;
+        background-color: $brand-bg;
+
         z-index: -1;
         transition: background-color .25s, box-shadow 1s;
         // box-shadow: .015rem .015rem .1rem hsl(46, 75%, 85%),
         //             .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
     }
     &.hero-header {
-        height: 15vh;
+        height: 20vh;
         &::after {
             background-color: transparent;
+            // background-color: $brand-bg;
+            mix-blend-mode: lighten;
+            // background-color: #fafafa;
             // background-color: hsla(0, 0%, 98%, .8);
             box-shadow: .025rem .025rem 1rem transparent;
         }
@@ -84,22 +88,23 @@
         cursor: pointer;
         transition: .5s;
         position: relative;
-        mix-blend-mode: darken;
-            img {
+        background-color: $brand-bg;
+        img {
+                mix-blend-mode: darken;
             // border: 1px solid #000;
             width: 100%;
             width: 10rem;
             height: 100%;
             object-fit: contain;
             object-position: left;
-            transition: .5s;
-
-            
+            transition: .5s       
         }
         @include lg {
             width: 10rem;
+            background: none;
             img {
                 width: 100%;
+                // mix-blend-mode: normal;
             }
         }
     }

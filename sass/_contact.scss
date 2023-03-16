@@ -279,6 +279,8 @@
         // height: auto;
         // margin: 5vh auto;
         // border: 2px solid green;
+        background: $brand-bg-gradient;
+        background: #000;
         @media (max-width: 1024px) {
             flex-direction: column;
             .contact-info {
@@ -477,13 +479,14 @@
             width: 100%;
             min-height: 100vh;
             padding: 10vh .2rem 5vh;
+            padding: 1rem .5rem;
             margin: 5vh auto;
             overflow: hidden;
             // border: 1px solid $brand;
         }
         width: 55%;
         padding: 40px;
-        // background: #111111;
+        background: #111111;
         border-radius: 5px;
         font-family: $font-ubuntu;
 
@@ -560,7 +563,7 @@
                     transition: .5s;
                 }
                 &:invalid {
-                    outline-color: $text-light;
+                    outline-color: transparent;
                     &:focus {
                         outline-color: $brand;
                     }
