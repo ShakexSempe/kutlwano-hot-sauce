@@ -94,11 +94,24 @@ $screen-xlg-min: 1024px;
         opacity: 0;
     }
 
-    &:hover {
-        a {
-            color: #000;
+    @media (min-width: 768px){
+
+        &:hover {
+            a {
+                color: #000;
+            }
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
         }
-        &::before {opacity: 0;}
-        &::after {opacity: 1;}
+    }
+    @media (max-width: 768px){
+
+        &:active {
+            a {
+                color: #000;
+            }
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
     }
 }

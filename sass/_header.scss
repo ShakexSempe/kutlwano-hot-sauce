@@ -30,13 +30,14 @@
         background-color: $brand-gold;
         background-color: #f4f4f4;
         z-index: -1;
-        transition: .25s;
+        transition: background-color .25s, box-shadow 1s;
         box-shadow: .025rem .025rem 1rem #0003;
     }
     &.hero-header {
         height: 20vh;
         &::after {
             background-color: transparent;
+            box-shadow: .025rem .025rem 1rem transparent;
         }
     }
     // SKIP LINK
