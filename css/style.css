@@ -337,7 +337,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background: #fafafa;
+  background-color: #fafafa;
   position: relative;
   isolation: isolate;
   background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
@@ -355,7 +355,18 @@
 .hero .hero-content {
   margin-top: 20vh;
   text-transform: capitalize;
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
+  position: relative;
+}
+.hero .hero-content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 45%;
+  width: 0.2rem;
+  background-color: #0003;
 }
 .hero .hero-content .hero-title {
   font-weight: 500;
@@ -2470,7 +2481,6 @@ footer .footer-item .date {
 
 body {
   background: #f4f4f4;
-  background: #000;
   background: #fafafa;
   width: 100%;
 }
