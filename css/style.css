@@ -99,7 +99,7 @@
   transition: background-color 0.25s, box-shadow 1s;
 }
 #header.hero-header {
-  height: 20vh;
+  height: 15vh;
 }
 #header.hero-header::after {
   background-color: transparent;
@@ -357,7 +357,7 @@
   text-transform: capitalize;
   padding: 1rem 0;
   position: relative;
-  top: 22vh;
+  top: 18vh;
 }
 @media (min-width: 768px) {
   .hero .hero-content {

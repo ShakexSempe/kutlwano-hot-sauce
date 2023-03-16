@@ -43,7 +43,7 @@
         padding: 1rem 0;
         // padding: 1rem .5rem;
         position: relative;
-        top: 22vh;
+        top: 18vh;
         @include md {
             top: 50%;
             transform: translateY(-50%);
@@ -96,6 +96,7 @@
             object-fit: contain;
             object-position: bottom;
             mix-blend-mode: darken;
+            // border: 2px solid red;
             @include md {
                 display: none;
             }
