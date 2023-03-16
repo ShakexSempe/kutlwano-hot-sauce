@@ -17,7 +17,7 @@
 .cta .cta-btn {
   display: block;
   width: 100%;
-  padding: 0.7rem 1rem;
+  padding: 1rem;
   text-decoration: none;
   color: #fff;
   transition: 0.5s;
@@ -2520,7 +2520,6 @@ body {
 
 .container {
   background: #f4f4f4;
-  background: #fff000;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;
