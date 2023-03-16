@@ -99,7 +99,7 @@
   transition: background-color 0.25s, box-shadow 1s;
 }
 #header.hero-header {
-  height: 15vh;
+  height: 20vh;
 }
 #header.hero-header::after {
   background-color: transparent;
