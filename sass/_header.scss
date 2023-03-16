@@ -31,9 +31,9 @@
         background-color: $brand-bg;
 
         z-index: -1;
-        transition: background-color .25s, box-shadow 1s;
-        // box-shadow: .015rem .015rem .1rem hsl(46, 75%, 85%),
-        //             .25rem .25rem 1.5rem rgba(0, 0, 0, .05);
+        transition: background-color .25s, box-shadow 1.5s;
+        box-shadow: .015rem .015rem .5rem hsl(0, 0%, 80%),
+                    .25rem .25rem 1rem rgba(0, 0, 0, .05);
     }
     &.hero-header {
         height: 20vh;
@@ -43,7 +43,8 @@
             mix-blend-mode: lighten;
             // background-color: #fafafa;
             // background-color: hsla(0, 0%, 98%, .8);
-            box-shadow: .025rem .025rem 1rem transparent;
+            box-shadow: .05rem .05rem 1rem transparent;
+            transition: background-color .15s, box-shadow .5s;
         }
         @include md {
         height: 20vh;

@@ -63,6 +63,7 @@ $screen-xlg-min: 1024px;
     isolation: isolate;
     display: grid;
     place-items: center;
+    transition: .25s;
     .cta-btn {
         display: block;
         width: 100%;
@@ -75,7 +76,13 @@ $screen-xlg-min: 1024px;
         display: flex;
         justify-content: space-between;
         i {
-            
+            animation: cta-icon 1.5s ease infinite;
+            @keyframes cta-icon {
+                50% {
+                    transform: translateX(-.125rem);
+                    opacity: .5;
+                }
+            }
         }
     }
     
@@ -91,10 +98,10 @@ $screen-xlg-min: 1024px;
         transition: .25s;
     }
     &::before {
-        background: linear-gradient(0deg, #000, #222);
+        background: linear-gradient(0deg, #000, #333);
     }
     &::after {
-        background: linear-gradient(0deg, #222, #000);
+        background: linear-gradient(0deg, #333, #000);
         opacity: 0;
     }
 
@@ -113,8 +120,10 @@ $screen-xlg-min: 1024px;
     @media (max-width: 768px){
 
         &:active {
-            a {
-                color: #000;
+            transform: scale(.98);
+            i {
+                animation: none;
+                opacity: .8;
             }
             &::before {opacity: 0;}
             &::after {opacity: 1;}

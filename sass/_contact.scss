@@ -581,18 +581,17 @@
 
         // SUBMIT BUTTON
         .submit-btn {
-            font-family: $font-ubuntu;
             display: block;
-            width: max-content;
-            padding: .5rem 1rem;
+            width: 11rem;
+            padding: 1rem;
             // margin: .5rem auto;
             background: $brand-dark;
             border: none;
             cursor: pointer;
-            font-size: 1.3rem;
+            font-size: 1.025rem;
+            font-weight: 500;
             text-transform: capitalize;
             border-radius: $border-radius-brand;
-            letter-spacing: .13rem;
             color: #000;
             transition: .2s;
             position: relative;
@@ -612,19 +611,19 @@
                 z-index: -1;
             }
             &::before {
-                background: $btn-gold;
-                box-shadow: $box-shadow;
+                background: linear-gradient(0deg, #ddd, #fafafa);
+                // box-shadow: $box-shadow;
             }
             &::after {
                 opacity: 0;
-                background: $btn-gold-hover;
+                background: linear-gradient(0deg, #fafafa, #ddd);
                 box-shadow: $box-shadow-hover;
             }
 
             @media (min-width: 1024px) {
                 &:hover {
                     transform: scale(.98);
-                    letter-spacing: .05rem;
+                    // letter-spacing: .05rem;
 
                     &::before {
                         opacity: 0;
@@ -642,7 +641,7 @@
             @media (max-width: 1024px) {
                 &:active {
                     transform: scale(.95);
-                    letter-spacing: .05rem;
+                    // letter-spacing: .05rem;
 
                     &::before {
                         opacity: 0;

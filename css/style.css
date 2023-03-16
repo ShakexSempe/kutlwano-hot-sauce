@@ -13,6 +13,7 @@
   isolation: isolate;
   display: grid;
   place-items: center;
+  transition: 0.25s;
 }
 .cta .cta-btn {
   display: block;
@@ -26,6 +27,15 @@
   display: flex;
   justify-content: space-between;
 }
+.cta .cta-btn i {
+  animation: cta-icon 1.5s ease infinite;
+}
+@keyframes cta-icon {
+  50% {
+    transform: translateX(-0.125rem);
+    opacity: 0.5;
+  }
+}
 .cta::before, .cta::after {
   content: "";
   position: absolute;
@@ -38,10 +48,10 @@
   transition: 0.25s;
 }
 .cta::before {
-  background: linear-gradient(0deg, #000, #222);
+  background: linear-gradient(0deg, #000, #333);
 }
 .cta::after {
-  background: linear-gradient(0deg, #222, #000);
+  background: linear-gradient(0deg, #333, #000);
   opacity: 0;
 }
 @media (min-width: 768px) {
@@ -57,8 +67,12 @@
   }
 }
 @media (max-width: 768px) {
-  .cta:active a {
-    color: #000;
+  .cta:active {
+    transform: scale(0.98);
+  }
+  .cta:active i {
+    animation: none;
+    opacity: 0.8;
   }
   .cta:active::before {
     opacity: 0;
@@ -94,9 +108,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   z-index: -1;
-  transition: background-color 0.25s, box-shadow 1s;
+  transition: background-color 0.25s, box-shadow 1.5s;
+  box-shadow: 0.015rem 0.015rem 0.5rem #cccccc, 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
 }
 #header.hero-header {
   height: 20vh;
@@ -104,7 +119,8 @@
 #header.hero-header::after {
   background-color: transparent;
   mix-blend-mode: lighten;
-  box-shadow: 0.025rem 0.025rem 1rem transparent;
+  box-shadow: 0.05rem 0.05rem 1rem transparent;
+  transition: background-color 0.15s, box-shadow 0.5s;
 }
 @media (min-width: 768px) {
   #header.hero-header {
@@ -144,7 +160,7 @@
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
 #header .logo img {
   mix-blend-mode: darken;
@@ -349,7 +365,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
   position: relative;
   isolation: isolate;
 }
@@ -401,7 +417,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #f4f4f4;
+  background: #fafafa;
 }
 .hero .hero-bg img {
   width: 100%;
@@ -962,7 +978,7 @@
 
 .about#about {
   padding: 10vh 5vw 5vh;
-  background: #f4f4f4;
+  background: #fafafa;
 }
 @media (min-width: 768px) {
   .about#about {
@@ -1764,17 +1780,16 @@
   letter-spacing: normal;
 }
 .contact .contact-form .submit-btn {
-  font-family: "Ubuntu", sans-serif;
   display: block;
-  width: max-content;
-  padding: 0.5rem 1rem;
+  width: 11rem;
+  padding: 1rem;
   background: #161417;
   border: none;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.025rem;
+  font-weight: 500;
   text-transform: capitalize;
   border-radius: 0.25rem;
-  letter-spacing: 0.13rem;
   color: #000;
   transition: 0.2s;
   position: relative;
@@ -1795,18 +1810,16 @@
   z-index: -1;
 }
 .contact .contact-form .submit-btn::before {
-  background: linear-gradient(0deg, #9a7223, #e3c382);
-  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.15), inset -2px -2px 2px rgba(0, 0, 0, 0.15), 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(0deg, #ddd, #fafafa);
 }
 .contact .contact-form .submit-btn::after {
   opacity: 0;
-  background: linear-gradient(0deg, #e3c382, #9a7223);
+  background: linear-gradient(0deg, #fafafa, #ddd);
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.3), inset -2px -2px 2px rgba(255, 255, 255, 0.3), 2px 3px 3px rgba(0, 0, 0, 0.35);
 }
 @media (min-width: 1024px) {
   .contact .contact-form .submit-btn:hover {
     transform: scale(0.98);
-    letter-spacing: 0.05rem;
   }
   .contact .contact-form .submit-btn:hover::before {
     opacity: 0;
@@ -1821,7 +1834,6 @@
 @media (max-width: 1024px) {
   .contact .contact-form .submit-btn:active {
     transform: scale(0.95);
-    letter-spacing: 0.05rem;
   }
   .contact .contact-form .submit-btn:active::before {
     opacity: 0;
@@ -1897,7 +1909,7 @@
   }
 }
 .products .products-container .box .image {
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
   overflow: hidden;
 }
@@ -1905,7 +1917,7 @@
   height: 200px;
   width: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
   transition: 0.5s;
   opacity: 0;
   transform: scale(0.75);
@@ -1918,16 +1930,16 @@
 }
 .products .products-container .box .info .sub-info {
   padding: 0.5rem;
+  background-color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 .products .products-container .box .info .sub-info .price {
   font-family: "Ubuntu", sans-serif;
-  color: #333;
+  color: #f4f4f4;
   font-size: 1.1rem;
 }
 .products .products-container .box .info .sub-info .price span {
-  font-size: 1rem;
-  color: #666;
+  color: #fffa;
 }
 .products .products-container .box .info .sub-info .stars {
   display: none;
@@ -2443,6 +2455,7 @@ footer .footer-logo {
   height: auto;
   overflow: hidden;
   isolation: isolate;
+  mix-blend-mode: darken;
 }
 footer .footer-logo img {
   width: 100%;
@@ -2519,7 +2532,7 @@ body {
 }
 
 .container {
-  background: #f4f4f4;
+  background: #fafafa;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;
