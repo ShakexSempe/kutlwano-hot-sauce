@@ -30,16 +30,13 @@
 
 // BODY 
 body {
-    background: #f4f4f4;
-    background: $brand-gold;
+    background: $brand-bg;
     width: 100%;
     
 }
 
 .container {
-    background: hsl(0, 0%, 96%);
-    background: $brand-dark-overlay;
-    background: #000;
+    background: $brand-bg;
     max-width: 100vw;
     // overflow-x: hidden;
     width: 100%;

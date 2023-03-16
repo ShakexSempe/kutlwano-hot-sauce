@@ -56,7 +56,8 @@ $screen-xlg-min: 1024px;
 
 
 .cta {
-    border: 2px solid transparent;
+    border: 2px solid #000;
+    border: none;
     width: 10rem;
     position: relative;
     isolation: isolate;
@@ -69,14 +70,17 @@ $screen-xlg-min: 1024px;
         text-decoration: none;
         color: #fff;
         transition: .5s;
+        border: 2px solid #000;
+        border: none;
+        display: flex;
+        justify-content: space-between;
         i {
-            margin-left: .5rem;
+            
         }
     }
     
     &::before, &::after {
         content: '';
-        border: 2px solid #000;
         position: absolute;
         top: 0;
         left: 0;
@@ -87,18 +91,20 @@ $screen-xlg-min: 1024px;
         transition: .25s;
     }
     &::before {
-        background-color: #000;
+        background: linear-gradient(0deg, #000, #222);
     }
     &::after {
-        background-color: #f4f4f4;
+        background: linear-gradient(0deg, #222, #000);
         opacity: 0;
     }
 
     @media (min-width: 768px){
 
         &:hover {
+            transform: scale(.95);
+            transition: .25s;
             a {
-                color: #000;
+                // color: #000;
             }
             &::before {opacity: 0;}
             &::after {opacity: 1;}

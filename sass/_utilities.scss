@@ -38,16 +38,16 @@
     }
 
     &.active {
-        border-color: $toggle-active;
+        // border-color: $toggle-active;
         .bar {
-            background: $toggle-active;
+            // background: $toggle-active;
             &::before {
                 transform: translateX(.25rem);
-                background: #fff7;
+                // background: #fff7;
             }
             &::after {
                 transform: translateX(-.25rem);
-                background: #fff7;
+                // background: #fff7;
             }
         }
     }
