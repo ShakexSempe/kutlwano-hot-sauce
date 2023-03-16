@@ -95,7 +95,7 @@ box.forEach(box => {
 // HERO INTERSECTION OBSERVER
 const menuTitle = document.querySelector('.menu-title');
 const heroOptions = {
-    rootMargin: "-90% 0px 0px 0px"
+    rootMargin: "-95% 0px 0px 0px"
 };
 const heroObserver = new IntersectionObserver(
     function(entries, heroObserver) {
