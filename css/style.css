@@ -1774,7 +1774,7 @@
   opacity: 0;
 }
 .contact .contact-form {
-  box-shadow: 0.25rem 0.5rem 0.5rem #000a;
+  box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   width: 55%;
   padding: 40px;
   background: #000;
@@ -2013,19 +2013,19 @@
   height: 200px;
   width: 100%;
   object-fit: contain;
-  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.2));
   transition: 0.5s;
   opacity: 0;
   transform: scale(0.75);
 }
 .products .products-container .box .info .title {
-  padding: 0.5rem;
+  padding: 1rem;
   color: #000;
   font-size: 1.2rem;
   font-family: "Ubuntu", sans-serif;
 }
 .products .products-container .box .info .sub-info {
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
