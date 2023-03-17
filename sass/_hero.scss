@@ -116,6 +116,12 @@
 .menu {
     // border: 2px solid red;
     padding: 10vh 5vw;
+    @include sm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5vw;
+        grid-template-rows: auto;
+    }
     .menu-item {
         // border: 1px solid red;
         margin: 5vh 0;
@@ -126,14 +132,15 @@
     h2 {
         background: #000;
         text-align: center;
+        text-transform: capitalize;
         padding: 2rem 1rem;
         border-top-right-radius: .25rem;
         border-top-left-radius: .25rem;
         &.jd {
-            background-color: purple;
+            background-color: $span-purple
         }
         &.am {
-            background-color: #dc143c;
+            background-color: $span-red;
         }
     }
     .menu-content {
@@ -147,7 +154,7 @@
             list-style: none;
             padding: 1rem;
             position: relative;
-            &::after {
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -157,6 +164,18 @@
                 width: .2rem;
                 background: #000;
             }
+            
+            &.purple-list {
+                &::before {
+                    background: $span-purple;
+                }
+            }
+            &.red-list {
+                &::before {
+                    background: $span-red;
+                }
+            }
+
 
         }
         .menu-item-flex-list {
@@ -165,12 +184,30 @@
             background-color: #000;
             color: #fff;
             border-bottom-left-radius: .25rem;
-        border-bottom-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+
             li {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 padding: .25rem 1rem;
+                border-bottom: 1px solid transparent;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+            }
+            &.red-flex-list {
+                li {
+                    border-bottom-color: $span-red;
+                }
+            }
+            &.purple-flex-list {
+                li {
+                    border-bottom-color: $span-purple;
+                }
             }
         }
     }
+
 }

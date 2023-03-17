@@ -35,7 +35,9 @@ $text-second: #161616;
 $text-light: #ddd;
 $text-dark: #333;
 
-$span-crimson: #dc143c;
+$span-purple: hsl(300, 100%, 35%);
+$span-red: hsl(0, 100%, 35%);
+$span-crimson: #dc134c;
 $span-gold: #ead2a1;
 // OVERLAY
 $overlay: linear-gradient(0deg, #29323c 0%, #485563 100%);

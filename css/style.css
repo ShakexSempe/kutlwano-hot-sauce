@@ -444,6 +444,14 @@
 .menu {
   padding: 10vh 5vw;
 }
+@media (min-width: 576px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    grid-template-rows: auto;
+  }
+}
 .menu .menu-item {
   margin: 5vh 0;
 }
@@ -455,15 +463,16 @@
 .menu h2 {
   background: #000;
   text-align: center;
+  text-transform: capitalize;
   padding: 2rem 1rem;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
 }
 .menu h2.jd {
-  background-color: purple;
+  background-color: #b300b3;
 }
 .menu h2.am {
-  background-color: #dc143c;
+  background-color: #b30000;
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -474,7 +483,7 @@
   padding: 1rem;
   position: relative;
 }
-.menu .menu-content .menu-item-list::after {
+.menu .menu-content .menu-item-list::before {
   content: "";
   position: absolute;
   left: 0;
@@ -483,6 +492,12 @@
   height: 70%;
   width: 0.2rem;
   background: #000;
+}
+.menu .menu-content .menu-item-list.purple-list::before {
+  background: #b300b3;
+}
+.menu .menu-content .menu-item-list.red-list::before {
+  background: #b30000;
 }
 .menu .menu-content .menu-item-flex-list {
   padding: 0.5rem 0;
@@ -494,7 +509,18 @@
 .menu .menu-content .menu-item-flex-list li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.25rem 1rem;
+  border-bottom: 1px solid transparent;
+}
+.menu .menu-content .menu-item-flex-list li:last-of-type {
+  border-bottom: none;
+}
+.menu .menu-content .menu-item-flex-list.red-flex-list li {
+  border-bottom-color: #b30000;
+}
+.menu .menu-content .menu-item-flex-list.purple-flex-list li {
+  border-bottom-color: #b300b3;
 }
 
 .menu-1 {
