@@ -361,7 +361,6 @@
 .hero {
   border: 1px solid #000;
   border: none;
-  margin: 0;
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
@@ -443,7 +442,15 @@
 }
 
 .menu {
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
+}
+.menu .menu-item {
+  margin: 5vh 0;
+}
+@media (min-width: 768px) {
+  .menu .menu-item {
+    margin: 10vh 0;
+  }
 }
 .menu h2 {
   background: #000;
@@ -480,6 +487,8 @@
 .menu .menu-content .menu-item-flex-list {
   background-color: #000;
   color: #fff;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 .menu .menu-content .menu-item-flex-list li {
   display: flex;
