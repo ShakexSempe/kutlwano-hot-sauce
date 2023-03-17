@@ -442,31 +442,27 @@
 }
 
 .menu {
-  padding: 10vh 5vw;
+  padding: 10vh 5vw 5vh;
+  display: grid;
+  gap: 5vh;
 }
 @media (min-width: 576px) {
   .menu {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5vw;
     grid-template-rows: auto;
   }
 }
 .menu .menu-item {
-  margin: 5vh 0;
-}
-@media (min-width: 768px) {
-  .menu .menu-item {
-    margin: 10vh 0;
-  }
+  text-transform: capitalize;
 }
 .menu h2 {
   background: #000;
   text-align: center;
-  text-transform: capitalize;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
+  text-transform: uppercase;
 }
 .menu h2.jd {
   background-color: #b300b3;
@@ -477,13 +473,14 @@
 .menu .menu-content {
   line-height: 1.6;
   margin-bottom: 10vh;
+  padding: 0.1rem 0;
 }
-.menu .menu-content .menu-item-list {
-  list-style: none;
-  padding: 1rem;
+.menu .menu-content .menu-description {
+  padding: 1rem 1rem;
+  font-weight: 500;
   position: relative;
 }
-.menu .menu-content .menu-item-list::before {
+.menu .menu-content .menu-description::before {
   content: "";
   position: absolute;
   left: 0;
@@ -493,14 +490,29 @@
   width: 0.2rem;
   background: #000;
 }
+.menu .menu-content .menu-description.purple-desc::before {
+  background-color: #b300b3;
+}
+.menu .menu-content .menu-description.red-desc::before {
+  background-color: #b30000;
+}
+.menu .menu-content .menu-item-list {
+  padding: 0 1rem 1rem;
+}
+.menu .menu-content .menu-item-list.purple-list li::marker {
+  color: #b300b3;
+}
 .menu .menu-content .menu-item-list.purple-list::before {
   background: #b300b3;
+}
+.menu .menu-content .menu-item-list.red-list li::marker {
+  color: #b30000;
 }
 .menu .menu-content .menu-item-list.red-list::before {
   background: #b30000;
 }
 .menu .menu-content .menu-item-flex-list {
-  padding: 0.5rem 0;
+  padding: 1rem;
   background-color: #000;
   color: #fff;
   border-bottom-left-radius: 0.25rem;
@@ -510,7 +522,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0;
   border-bottom: 1px solid transparent;
 }
 .menu .menu-content .menu-item-flex-list li:last-of-type {

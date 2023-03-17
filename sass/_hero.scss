@@ -115,27 +115,25 @@
 
 .menu {
     // border: 2px solid red;
-    padding: 10vh 5vw;
+    padding: 10vh 5vw 5vh;
+    display: grid;
+    gap: 5vh;
     @include sm {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5vw;
         grid-template-rows: auto;
     }
     .menu-item {
         // border: 1px solid red;
-        margin: 5vh 0;
-        @include md {
-            margin: 10vh 0;
-        }
+        text-transform: capitalize;
     }
     h2 {
         background: #000;
         text-align: center;
-        text-transform: capitalize;
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         border-top-right-radius: .25rem;
         border-top-left-radius: .25rem;
+        text-transform: uppercase;
         &.jd {
             background-color: $span-purple
         }
@@ -147,12 +145,11 @@
         // border: 2px solid blue;
         line-height: 1.6;
         margin-bottom: 10vh;
+        padding: .1rem 0;
         
-        
-        .menu-item-list {
-            // border: 2px solid yellow;
-            list-style: none;
-            padding: 1rem;
+        .menu-description {
+            padding: 1rem 1rem;
+            font-weight: 500;
             position: relative;
             &::before {
                 content: '';
@@ -164,13 +161,38 @@
                 width: .2rem;
                 background: #000;
             }
+            &.purple-desc {
+                &::before {
+                    background-color: $span-purple;
+                }
+            }
+            &.red-desc {
+                &::before {
+                    background-color: $span-red;
+                }
+            }
+        }
+        .menu-item-list {
+            // border: 2px solid yellow;
+            // list-style: none;
+            padding: 0 1rem 1rem;
             
             &.purple-list {
+                li {
+                    &::marker {
+                        color: $span-purple;
+                    }
+                }
                 &::before {
                     background: $span-purple;
                 }
             }
             &.red-list {
+                li {
+                    &::marker {
+                        color: $span-red;
+                    }
+                }
                 &::before {
                     background: $span-red;
                 }
@@ -180,7 +202,7 @@
         }
         .menu-item-flex-list {
             // border: 2px solid red;
-            padding: .5rem 0;
+            padding: 1rem;
             background-color: #000;
             color: #fff;
             border-bottom-left-radius: .25rem;
@@ -190,7 +212,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: .25rem 1rem;
+                padding: .25rem 0;
                 border-bottom: 1px solid transparent;
                 &:last-of-type {
                     border-bottom: none;
