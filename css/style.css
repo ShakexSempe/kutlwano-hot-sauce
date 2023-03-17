@@ -118,7 +118,6 @@
 }
 #header.hero-header::after {
   background-color: transparent;
-  mix-blend-mode: lighten;
   box-shadow: 0.05rem 0.05rem 1rem transparent;
   transition: background-color 0.15s, box-shadow 0.5s;
 }
@@ -465,10 +464,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, #b300b3, #cc00cc);
+  background: linear-gradient(0deg, #cc00cc, #e600e6);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, #b30000, #cc0000);
+  background: linear-gradient(0deg, #cc0000, #e60000);
 }
 .menu .menu-content {
   line-height: 1.6;
