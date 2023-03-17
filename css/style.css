@@ -108,7 +108,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fcf9ed;
+  background-color: #fafafa;
   z-index: -1;
   transition: background-color 0.25s, box-shadow 1.5s;
   box-shadow: 0.015rem 0.015rem 0.5rem #cccccc, 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
@@ -160,7 +160,7 @@
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  background-color: #fcf9ed;
+  background-color: #fefcf6;
 }
 #header .logo img {
   mix-blend-mode: darken;
@@ -364,7 +364,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background-color: #fcf9ed;
+  background-color: #fefcf6;
   position: relative;
   isolation: isolate;
 }
@@ -416,7 +416,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fcf9ed;
+  background: #fefcf6;
 }
 .hero .hero-bg img {
   width: 100%;
@@ -446,7 +446,7 @@
   display: grid;
   gap: 5vh;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .menu {
     grid-template-columns: 1fr 1fr;
     gap: 5vw;
@@ -465,10 +465,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background-color: #b300b3;
+  background: linear-gradient(0deg, purple, #b300b3);
 }
 .menu h2.am {
-  background-color: #b30000;
+  background: linear-gradient(0deg, maroon, #b30000);
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -1071,7 +1071,7 @@
 
 .about#about {
   padding: 10vh 5vw 5vh;
-  background: #fcf9ed;
+  background: #fefcf6;
 }
 @media (min-width: 768px) {
   .about#about {
@@ -2544,7 +2544,7 @@
 
 footer {
   background: linear-gradient(0deg, #000, #222);
-  background: #fcf9ed;
+  background: #fefcf6;
   padding: 5vh 5vw 10vh;
   position: relative;
   display: flex;
@@ -2645,7 +2645,7 @@ body {
 }
 
 .container {
-  background: #fcf9ed;
+  background: #fefcf6;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;

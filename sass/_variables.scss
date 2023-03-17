@@ -25,8 +25,8 @@ $brand-dark: #161417;
 $brand-light: orange;
 $brand-gold: #f2e0a6;
 $brand-gold: #fafafa;
-$brand-bg: #fafafa;
-$brand-bg: hsl(46, 75%, 96%);
+$grey-bg: #fafafa;
+$brand-bg: hsl(46, 75%, 98%);
 $brand-bg-gradient: linear-gradient(0deg, #f4f4f4, #eee, #f4f4f4);
 
 // TEXT
@@ -39,6 +39,9 @@ $span-purple: hsl(300, 100%, 35%);
 $span-red: hsl(0, 100%, 35%);
 $span-crimson: #dc134c;
 $span-gold: #ead2a1;
+
+$red-gradient: linear-gradient(0deg, hsl(0, 100%, 25%), hsl(0, 100%, 35%) );
+$purple-gradient: linear-gradient(0deg, hsl(300, 100%, 25%),hsl(300, 100%, 35%));
 // OVERLAY
 $overlay: linear-gradient(0deg, #29323c 0%, #485563 100%);
 $overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsl(212, 19%, 25%) 70%);

@@ -118,7 +118,7 @@
     padding: 10vh 5vw 5vh;
     display: grid;
     gap: 5vh;
-    @include sm {
+    @include md {
         grid-template-columns: 1fr 1fr;
         gap: 5vw;
         grid-template-rows: auto;
@@ -135,10 +135,10 @@
         border-top-left-radius: .25rem;
         text-transform: uppercase;
         &.jd {
-            background-color: $span-purple
+            background: $purple-gradient;
         }
         &.am {
-            background-color: $span-red;
+            background: $red-gradient;
         }
     }
     .menu-content {
