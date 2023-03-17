@@ -148,9 +148,10 @@
         padding: .1rem 0;
         
         .menu-description {
-            padding: 1rem 1rem;
+            padding: 1rem .25rem 1rem 1rem;
             font-weight: 500;
             position: relative;
+            // border: 2px solid red;
             &::before {
                 content: '';
                 position: absolute;
