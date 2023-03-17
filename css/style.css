@@ -108,7 +108,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fafafa;
+  background-color: #fcf9ed;
   z-index: -1;
   transition: background-color 0.25s, box-shadow 1.5s;
   box-shadow: 0.015rem 0.015rem 0.5rem #cccccc, 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
@@ -160,7 +160,7 @@
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  background-color: #fafafa;
+  background-color: #fcf9ed;
 }
 #header .logo img {
   mix-blend-mode: darken;
@@ -365,7 +365,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background-color: #fafafa;
+  background-color: #fcf9ed;
   position: relative;
   isolation: isolate;
 }
@@ -417,7 +417,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fafafa;
+  background: #fcf9ed;
 }
 .hero .hero-bg img {
   width: 100%;
@@ -978,7 +978,7 @@
 
 .about#about {
   padding: 10vh 5vw 5vh;
-  background: #fafafa;
+  background: #fcf9ed;
 }
 @media (min-width: 768px) {
   .about#about {
@@ -2436,7 +2436,7 @@
 
 footer {
   background: linear-gradient(0deg, #000, #222);
-  background: #fafafa;
+  background: #fcf9ed;
   padding: 5vh 5vw 10vh;
   position: relative;
   display: flex;
@@ -2537,7 +2537,7 @@ body {
 }
 
 .container {
-  background: #fafafa;
+  background: #fcf9ed;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;
