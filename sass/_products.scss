@@ -177,20 +177,20 @@
                 }
             }
 
-            &:hover {
-                .overlay {
-                    transform: scale(1);
-                    a {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
+            // &:hover {
+            //     .overlay {
+            //         transform: scale(1);
+            //         a {
+            //             opacity: 1;
+            //             transform: translateY(0);
+            //         }
 
-                    p {
-                        transform: translateY(0);
-                        opacity: 1;
-                    }
-                }
-            }
+            //         p {
+            //             transform: translateY(0);
+            //             opacity: 1;
+            //         }
+            //     }
+            // }
 
             // IO ACTIVE STYLE
             &.active-box {

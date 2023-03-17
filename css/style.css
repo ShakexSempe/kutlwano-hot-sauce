@@ -457,6 +457,7 @@
 }
 .menu h2 {
   background: #000;
+  color: #fff;
   text-align: center;
   padding: 1rem 1rem;
   border-top-right-radius: 0.25rem;
@@ -464,10 +465,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, #b300b3, #e600e6);
+  background: linear-gradient(0deg, #b300b3, #cc00cc);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, #b30000, #e60000);
+  background: linear-gradient(0deg, #b30000, #cc0000);
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -1400,7 +1401,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #000a;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 @media (min-width: 768px) {
   .contact {
@@ -2105,17 +2106,6 @@
 .products .products-container .box .overlay a:hover {
   color: #ead2a1;
   transition: color 0.2s;
-}
-.products .products-container .box:hover .overlay {
-  transform: scale(1);
-}
-.products .products-container .box:hover .overlay a {
-  opacity: 1;
-  transform: translateY(0);
-}
-.products .products-container .box:hover .overlay p {
-  transform: translateY(0);
-  opacity: 1;
 }
 .products .products-container .box.active-box .image img {
   transition: 1s ease;
