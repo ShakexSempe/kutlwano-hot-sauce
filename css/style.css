@@ -465,10 +465,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, purple, #b300b3);
+  background: linear-gradient(0deg, #b300b3, #cc00cc);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, maroon, #b30000);
+  background: linear-gradient(0deg, #b30000, #cc0000);
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -1620,7 +1620,7 @@
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   min-height: unset;
   border-radius: 0.5rem;
   background: linear-gradient(0deg, #f4f4f4, #eee, #f4f4f4);
@@ -1643,7 +1643,7 @@
   flex-direction: column;
   background: radial-gradient(#111, #161417);
   background: #000;
-  box-shadow: 0.25rem 0.5rem 0.5rem #000a;
+  box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.35);
 }
 @media (max-width: 1024px) {
   .contact .container .contact-info {
@@ -1786,7 +1786,7 @@
   opacity: 0;
 }
 .contact .contact-form {
-  box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
   width: 55%;
   padding: 40px;
   background: #000;
@@ -2600,6 +2600,12 @@ footer .footer-item ul li a {
   color: #000;
   text-decoration: none;
 }
+footer .footer-item ul li i {
+  transition: 0.25s;
+}
+footer .footer-item ul li:hover i {
+  transform: translateX(0.25rem);
+}
 footer .footer-item ul.browse-list li a {
   text-transform: capitalize;
   flex-basis: 20%;
@@ -2611,6 +2617,11 @@ footer .footer-item ul.browse-list li a {
 }
 footer .footer-item ul.browse-list li i {
   width: 1.5rem;
+}
+@media (min-width: 768px) {
+  footer .footer-item ul.browse-list li i {
+    width: 2rem;
+  }
 }
 footer .footer-item ul.contact-list li i {
   width: 1rem;

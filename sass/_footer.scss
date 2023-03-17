@@ -57,6 +57,15 @@ footer {
                     color: #000;
                     text-decoration: none;
                 }
+                i {
+                    transition: .25s;
+                }
+
+                &:hover {
+                    i {
+                        transform: translateX(.25rem);
+                    }
+                }
             }
 
             &.browse-list {
@@ -73,6 +82,7 @@ footer {
                     i {
                         width: 1.5rem;
                         @media (min-width: 768px){
+                            width: 2rem;
                         }
                         // border: 2px solid blue;
                     }
