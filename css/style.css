@@ -485,6 +485,7 @@
   background: #000;
 }
 .menu .menu-content .menu-item-flex-list {
+  padding: 0.5rem 0;
   background-color: #000;
   color: #fff;
   border-bottom-left-radius: 0.25rem;
