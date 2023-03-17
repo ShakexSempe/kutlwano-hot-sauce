@@ -115,8 +115,52 @@
 }
 
 .menu {
-    border: 2px solid red;
+    // border: 2px solid red;
     padding: 5vh 5vw;
-
     
+    h2 {
+        background: #000;
+        text-align: center;
+        padding: 2rem 1rem;
+        &.jd {
+            background-color: purple;
+        }
+        &.am {
+            background-color: #dc143c;
+        }
+    }
+    .menu-content {
+        // border: 2px solid blue;
+        line-height: 1.6;
+        margin-bottom: 10vh;
+        
+        .menu-item-list {
+            // border: 2px solid yellow;
+            list-style: none;
+            padding: 1rem;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 70%;
+                width: .2rem;
+                background: #000;
+            }
+
+        }
+        .menu-item-flex-list {
+            // border: 2px solid red;
+            background-color: #000;
+            color: #fff;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                padding: .25rem 1rem;
+            }
+        }
+    }
 }

@@ -443,8 +443,46 @@
 }
 
 .menu {
-  border: 2px solid red;
   padding: 5vh 5vw;
+}
+.menu h2 {
+  background: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.menu h2.jd {
+  background-color: purple;
+}
+.menu h2.am {
+  background-color: #dc143c;
+}
+.menu .menu-content {
+  line-height: 1.6;
+  margin-bottom: 10vh;
+}
+.menu .menu-content .menu-item-list {
+  list-style: none;
+  padding: 1rem;
+  position: relative;
+}
+.menu .menu-content .menu-item-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 0.2rem;
+  background: #000;
+}
+.menu .menu-content .menu-item-flex-list {
+  background-color: #000;
+  color: #fff;
+}
+.menu .menu-content .menu-item-flex-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
 }
 
 .menu-1 {
