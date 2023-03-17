@@ -122,6 +122,8 @@
         background: #000;
         text-align: center;
         padding: 2rem 1rem;
+        border-top-right-radius: .25rem;
+        border-top-left-radius: .25rem;
         &.jd {
             background-color: purple;
         }
