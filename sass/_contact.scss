@@ -19,7 +19,7 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0, 0, 0, .85);
     }
     @media (min-width: 768px){
         padding: 15vh 5vw;
@@ -565,7 +565,7 @@
                 padding: .5rem .5rem;
                 font-size: 1rem;
                 margin: 1rem 0;
-                background: #fff3;
+                background: #333;
                 color: #ead2a1;
                 resize: none;
                 border: none;
