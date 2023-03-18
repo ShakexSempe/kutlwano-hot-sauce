@@ -98,7 +98,8 @@ $screen-xlg-min: 1024px;
         transition: .25s;
     }
     &::before {
-        background: linear-gradient(0deg, #000, #333);
+        background: linear-gradient(0deg, #000, #161616);
+        // background: $purple-gradient;
     }
     &::after {
         background: linear-gradient(0deg, #333, #000);

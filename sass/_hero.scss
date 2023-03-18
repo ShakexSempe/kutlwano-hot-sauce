@@ -48,6 +48,7 @@
             transform: translateY(-50%);
         }
         .hero-title {
+            // color: $brand-dark;
             font-weight: 500;
             font-size: 1rem;
             font-size: clamp(1.025rem, 2vw, 1.25rem);
@@ -70,6 +71,7 @@
                 height: 90%;
                 width: .2rem;
                 background-color: #0003;
+                // background-color: hsla(300, 100%, 25%, .3);
             }
 
             span {
@@ -110,6 +112,14 @@
             background-position: right;
             background-color: #fafafa;
             // mix-blend-mode: color;
+        }
+    }
+
+    #hero-cta {
+        .cta-btn {
+            i {
+                color: purple;
+            }
         }
     }
 }
@@ -160,9 +170,10 @@
                 left: 0;
                 top: 50%;
                 transform: translateY(-50%);
-                height: 70%;
+                height: 60%;
                 width: .2rem;
                 background: #000;
+                transition: 1s;
             }
             &.purple-desc {
                 &::before {
@@ -172,6 +183,17 @@
             &.red-desc {
                 &::before {
                     background-color: $span-red;
+                }
+            }
+            // IO CLASSES
+            &.box {
+                &::before {
+                    transform: translateY(-50%) scaleY(0);
+                }
+            }
+            &.active-box {
+                &::before {
+                    transform: translateY(-50%) scaleY(1);
                 }
             }
         }
@@ -200,7 +222,44 @@
                     background: $span-red;
                 }
             }
-
+            // MENU LIST IO CLASSES
+            &.box {
+                ul {
+                    li {
+                        &::marker {
+                            color: transparent;
+                        }
+                    }
+                }
+            }
+            &.active-box {
+                // TRANSITION LIST MARKER COLORS
+                ul {
+                    li {
+                        &::marker {
+                            transition: calc(.5s + .5s * var(--li));
+                            
+                        }
+                        
+                    }
+                    // PURPLE UL LIST COLOR
+                    &.purple-ul {
+                        li {
+                            &::marker {
+                                color: $span-purple;
+                            }
+                        }
+                    }
+                    // RED UL LIST COLOR
+                    &.red-ul {
+                        li {
+                            &::marker {
+                                color: $span-red;
+                            }
+                        }
+                    }
+                }
+            }
 
         }
         .menu-item-flex-list {

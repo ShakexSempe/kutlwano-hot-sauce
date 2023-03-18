@@ -48,7 +48,7 @@
   transition: 0.25s;
 }
 .cta::before {
-  background: linear-gradient(0deg, #000, #333);
+  background: linear-gradient(0deg, #000, #161616);
 }
 .cta::after {
   background: linear-gradient(0deg, #333, #000);
@@ -439,6 +439,9 @@
     background-color: #fafafa;
   }
 }
+.hero #hero-cta .cta-btn i {
+  color: purple;
+}
 
 .menu {
   padding: 10vh 5vw 5vh;
@@ -465,10 +468,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, #b300b3, #cc00cc);
+  background: linear-gradient(0deg, #990099, #b300b3);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, #b30000, #cc0000);
+  background: linear-gradient(0deg, #990000, #b30000);
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -486,15 +489,22 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 70%;
+  height: 60%;
   width: 0.2rem;
   background: #000;
+  transition: 1s;
 }
 .menu .menu-content .menu-description.purple-desc::before {
   background-color: #b300b3;
 }
 .menu .menu-content .menu-description.red-desc::before {
   background-color: #b30000;
+}
+.menu .menu-content .menu-description.box::before {
+  transform: translateY(-50%) scaleY(0);
+}
+.menu .menu-content .menu-description.active-box::before {
+  transform: translateY(-50%) scaleY(1);
 }
 .menu .menu-content .menu-item-list {
   padding: 0 1rem 1rem;
@@ -510,6 +520,18 @@
 }
 .menu .menu-content .menu-item-list.red-list::before {
   background: #b30000;
+}
+.menu .menu-content .menu-item-list.box ul li::marker {
+  color: transparent;
+}
+.menu .menu-content .menu-item-list.active-box ul li::marker {
+  transition: calc(.5s + .5s * var(--li));
+}
+.menu .menu-content .menu-item-list.active-box ul.purple-ul li::marker {
+  color: #b300b3;
+}
+.menu .menu-content .menu-item-list.active-box ul.red-ul li::marker {
+  color: #b30000;
 }
 .menu .menu-content .menu-item-flex-list {
   padding: 1rem;
@@ -1641,7 +1663,7 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(#111, #161417);
+  background: radial-gradient(#111, #4d004d);
   background: #000;
   box-shadow: 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.35);
 }
@@ -1891,7 +1913,7 @@
   display: block;
   width: 11rem;
   padding: 1rem;
-  background: #161417;
+  background: #4d004d;
   border: none;
   cursor: pointer;
   font-size: 1.025rem;
@@ -2661,7 +2683,7 @@ body {
     width: 100%;
     height: 100%;
     transition: 0.3s;
-    background: radial-gradient(#111, #161417);
+    background: radial-gradient(#111, #4d004d);
     opacity: 0.6;
     display: none;
   }
