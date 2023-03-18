@@ -1830,7 +1830,7 @@
 @media (max-width: 1024px) {
   .contact .contact-form {
     width: 100%;
-    padding: 2rem 0.5rem;
+    padding: 0;
     margin: 5vh auto;
     overflow: hidden;
   }
@@ -2148,7 +2148,7 @@
 }
 .products .page-link {
   display: block;
-  width: max-content;
+  width: 12rem;
   background: linear-gradient(0deg, #000, #161616);
   margin: 5vh 0;
   padding: 0.8rem;
