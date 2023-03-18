@@ -94,37 +94,42 @@ body {
             // }
 
             .section-title {
-                text-align: center;
                 text-transform: uppercase;
-                color: $brand;
-                color: $text-light;
-                // font-family: $font-bodoni-mutant;
-                // font-family: $font-bodoni-hand;
-                // font-family: $font-title;
-                // letter-spacing: .15rem;
                 font-weight: 600;
-                font-size: 2rem;
-                &.box {
-                    letter-spacing: .05rem;
-                    text-transform: uppercase;
+                font-size: 1.5rem;
+                font-size: clamp(1.5rem, 4vw, 1.8rem);
+                position: relative;
+                // border-left: .2rem solid #0003;
+                // padding-left: .5rem;
+                position: relative;
+                
+                h2 {
                     color: #000;
-                    opacity: 0;
-                    transition: 1.5s;
+                    padding: 0 .5rem;
                 }
-                &.active-box {
-                    opacity: 1;
-                    letter-spacing: normal;
-                    &.light-title {
-                        color: #fff;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 70%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: .2rem;
+                    background: #0004;
+                    border-radius: 1rem;
+                    transition: 1s ease;
+                }
+                &.box {
+                    transition: 1.5s;
+                    &::before {
+                        transform: translateY(-50%) scale(0);
                     }
                 }
-
-            }
-            // DESKTOP SECTION STYLE
-            @media (min-width: 768px) {
-                .section-title {
-                    // font-size: 1.5rem;
+                &.active-box {
+                    &::before {
+                        transform: translateY(-50%) scale(1);
+                    }
                 }
+            
             }
         }
 

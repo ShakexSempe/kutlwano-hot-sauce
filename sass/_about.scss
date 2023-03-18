@@ -236,40 +236,31 @@
 
         // IO CLASS
         &.box {
-            .title {
-                opacity: 0;
-                letter-spacing: .5rem;
-                transition: 1.5s;
-            }
             .content {
                 .content-description {
                     opacity: 0;
                     transform: translateY(-1.5rem);
-                    transition: 1.5s;
+                    transition: 1s;
                 }
                 p {
                     opacity: 0;
                     transform: translateY(1rem);
-                    transition: 1.5s;
+                    transition: 1s;
                 }
             }
         }
 
         &.active-box {
-            .title {
-                opacity: 1;
-                letter-spacing: normal;
-            }
             .content {
                 .content-description {
                     opacity: 1;
                     transform: translateY(0);
-                    transition-delay: .5s;
+                    // transition-delay: .5s;
                 }
                 p {
                     opacity: 1;
                     transform: translateY(0);
-                    transition-delay: 1s;
+                    transition-delay: .25s;
                 }
             }
         }
@@ -381,7 +372,7 @@
         .content-section {
             .title {
                 h2 {
-                    letter-spacing: normal;
+                    // letter-spacing: normal;
                     opacity: 1;
                 }
             }
@@ -389,7 +380,7 @@
 
         .content {
             .content-description {
-                transition-delay: .6s;
+                transition-delay: .25s;
                 opacity: 1;
                 transform: translateY(0);
             }
