@@ -71,7 +71,7 @@
                 height: 90%;
                 width: .2rem;
                 background-color: #0003;
-                // background-color: hsla(300, 100%, 25%, .3);
+                background-color: hsla(300, 100%, 25%, .3);
             }
 
             span {
@@ -115,13 +115,6 @@
         }
     }
 
-    #hero-cta {
-        .cta-btn {
-            i {
-                color: purple;
-            }
-        }
-    }
 }
 
 .menu {

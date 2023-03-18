@@ -401,6 +401,7 @@
   height: 90%;
   width: 0.2rem;
   background-color: #0003;
+  background-color: rgba(128, 0, 128, 0.3);
 }
 .hero .hero-content .hero-headline span {
   display: block;
@@ -439,9 +440,6 @@
     background-color: #fafafa;
   }
 }
-.hero #hero-cta .cta-btn i {
-  color: purple;
-}
 
 .menu {
   padding: 10vh 5vw 5vh;
@@ -468,10 +466,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, #990099, #b300b3);
+  background: linear-gradient(0deg, #660066, purple);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, #990000, #b30000);
+  background: linear-gradient(0deg, #660000, maroon);
 }
 .menu .menu-content {
   line-height: 1.6;
@@ -1348,7 +1346,7 @@
   overflow: hidden;
   width: 100%;
   height: 50vh;
-  border-radius: 10px;
+  border-radius: 0.25rem;
   position: relative;
 }
 .about .image-section figure figcaption {
@@ -1424,8 +1422,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #000;
   margin: 0;
-  background: url(../img/card.jpg);
   position: relative;
   isolation: isolate;
 }
