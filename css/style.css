@@ -2632,7 +2632,7 @@ body {
     width: 100%;
     height: 100%;
     transition: 0.3s;
-    background: radial-gradient(#111, #4d004d);
+    background: #000;
     opacity: 0.6;
     display: none;
   }
