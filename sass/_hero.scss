@@ -238,7 +238,6 @@
                     li {
                         &::marker {
                             transition: calc(.5s + .5s * var(--li));
-                            
                         }
                         
                     }
@@ -279,7 +278,11 @@
                 &:last-of-type {
                     border-bottom: none;
                 }
-
+                
+                &:hover {
+                    border-bottom-color: green;
+                    transition: 2;
+                }
             }
             &.red-flex-list {
                 li {
@@ -289,6 +292,28 @@
             &.purple-flex-list {
                 li {
                     border-bottom-color: $span-purple;
+                }
+            }
+
+            // LIST IO CLASSES
+            &.box {
+                ul {
+                    li {
+                        border-bottom-color: transparent;
+                        transition: calc(.5s + .5s * var(--li));
+                    }
+                }
+            }
+            &.active-box {
+                &.red-flex-list {
+                    li {
+                        border-bottom-color: $span-red;
+                    }
+                }
+                &.purple-flex-list {
+                    li {
+                        border-bottom-color: $span-purple;
+                    }
                 }
             }
         }

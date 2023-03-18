@@ -550,10 +550,24 @@
 .menu .menu-content .menu-item-flex-list li:last-of-type {
   border-bottom: none;
 }
+.menu .menu-content .menu-item-flex-list li:hover {
+  border-bottom-color: green;
+  transition: 2;
+}
 .menu .menu-content .menu-item-flex-list.red-flex-list li {
   border-bottom-color: #b30000;
 }
 .menu .menu-content .menu-item-flex-list.purple-flex-list li {
+  border-bottom-color: #b300b3;
+}
+.menu .menu-content .menu-item-flex-list.box ul li {
+  border-bottom-color: transparent;
+  transition: calc(.5s + .5s * var(--li));
+}
+.menu .menu-content .menu-item-flex-list.active-box.red-flex-list li {
+  border-bottom-color: #b30000;
+}
+.menu .menu-content .menu-item-flex-list.active-box.purple-flex-list li {
   border-bottom-color: #b300b3;
 }
 
