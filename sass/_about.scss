@@ -284,6 +284,7 @@
             float: none;
             width: 100%;
             display: block;
+            // border: 1px solid red;
         }
         figure {
             // border: 2px solid blue;
@@ -294,6 +295,9 @@
             // mix-blend-mode: darken;
             // border: 2px solid green;
             position: relative;
+            @media (max-width: 768px){
+                height: 60vh;
+            }
             // VIEW PRODUCTS BUTTON
             figcaption {
                 border: 2px solid #000;

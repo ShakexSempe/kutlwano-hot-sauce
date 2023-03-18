@@ -1349,6 +1349,11 @@
   border-radius: 0.25rem;
   position: relative;
 }
+@media (max-width: 768px) {
+  .about .image-section figure {
+    height: 60vh;
+  }
+}
 .about .image-section figure figcaption {
   border: 2px solid #000;
   outline: 2px solid #ead2a1;
