@@ -466,10 +466,10 @@
   text-transform: uppercase;
 }
 .menu h2.jd {
-  background: linear-gradient(0deg, #660066, purple);
+  background: linear-gradient(0deg, #4d004d, purple);
 }
 .menu h2.am {
-  background: linear-gradient(0deg, #660000, maroon);
+  background: linear-gradient(0deg, #4d0000, maroon);
 }
 .menu .menu-content {
   line-height: 1.6;
