@@ -128,6 +128,9 @@
   #header.hero-header::after {
     background-color: transparent;
   }
+  #header.hero-header nav .desktop-nav {
+    transform: translateY(-0.5rem);
+  }
 }
 #header .skip-link {
   position: fixed;
@@ -304,6 +307,7 @@
     background-color: transparent;
   }
   #header nav .desktop-nav {
+    transition: 0.5s ease;
     padding: 0.2rem 0;
   }
   #header nav .desktop-nav .desktop-nav-links {

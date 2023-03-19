@@ -53,6 +53,12 @@
                 background-color: transparent;
 
             }
+
+        nav {
+            .desktop-nav {
+                transform: translateY(-.5rem);
+            }
+        }
     }
     }
     // SKIP LINK
@@ -280,8 +286,8 @@
             .desktop-nav {
                 // border: 1px solid #000;
                 // width: 25rem;
+                transition: .5s ease;
                 padding: .2rem 0;
-
                 .desktop-nav-links {
                     display: flex;
                     justify-content: space-between;
