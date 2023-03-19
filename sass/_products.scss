@@ -152,10 +152,15 @@
             margin: 1rem auto;
             width: 10rem;
             padding: .5rem 1rem;
+            // display: flex;
             a {
                 text-decoration: none;
                 color: #fff;
                 text-transform: uppercase;
+
+                i {
+                    padding-left: .5rem;
+                }
             }
         }
 
@@ -267,9 +272,6 @@
                 
             }
             .cta {
-                a {
-                    // color: #000;
-                }
                 &::before {
                     background: $blue-gradient;
                 }

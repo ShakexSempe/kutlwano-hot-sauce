@@ -2590,6 +2590,9 @@ footer .footer-item .date {
   color: #fff;
   text-transform: uppercase;
 }
+.products .product-item .cta a i {
+  padding-left: 0.5rem;
+}
 .products .product-item .overlay {
   position: absolute;
   top: 0;
