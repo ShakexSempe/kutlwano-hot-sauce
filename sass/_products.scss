@@ -77,15 +77,16 @@
             // overflow: hidden;
             position: relative;
             isolation: isolate;
+            margin-bottom: 1rem;
             &::after {
                 position: absolute;
                 content: '';
-                top: 0;
+                top: 0rem;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 10rem;
-                height: 10rem;
-                border-radius: 50%;
+                width: 70%;
+                height: 100%;
+                border-radius: 250%;
                 background: #ddd;
                 z-index: -1;
             }
@@ -207,6 +208,75 @@
             }
         }
 
+        &.purple-item {
+            background: hsla(300, 100%, 25%, .1);
+            .product-image {
+                &::after {
+                    background: $purple-gradient;
+                    background: hsla(300, 100%, 25%, .6);
+                }
+            }
+            .info {
+                .title {
+                    // color: purple;
+                }
+            }
+            .cta {
+                &::before {
+                    background: $purple-gradient;
+                }
+                &::after {
+                    background: purple;
+                }
+            }
+        }
+        &.red-item {
+            background: hsla(0, 100%, 25%, 0.1);
+            .product-image {
+                &::after {
+                    background: $red-gradient;
+                    background: hsla(0, 100%, 25%, .6);
+                }
+            }
+            .info {
+                .title {
+                    // color: purple;
+                }
+            }
+            .cta {
+                &::before {
+                    background: $red-gradient;
+                }
+                &::after {
+                    background: maroon;
+                }
+            }
+        }
+        &.yellow-item {
+            background: hsla(60, 100%, 50%, .1);
+            .product-image {
+                &::after {
+                    background: $red-gradient;
+                    background: hsla(60, 100%, 50%, .6);
+                }
+            }
+            .info {
+                .title {
+                    // color: purple;
+                }
+            }
+            .cta {
+                a {
+                    color: #000;
+                }
+                &::before {
+                    background: $yellow-gradient;
+                }
+                &::after {
+                    background: hsl(60, 100%, 50%);
+                }
+            }
+        }
         // &:hover {
         //     .overlay {
         //         transform: scale(1);

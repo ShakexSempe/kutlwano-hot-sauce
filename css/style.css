@@ -2519,16 +2519,17 @@ footer .footer-item .date {
   text-align: center;
   position: relative;
   isolation: isolate;
+  margin-bottom: 1rem;
 }
 .products .product-item .product-image::after {
   position: absolute;
   content: "";
-  top: 0;
+  top: 0rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  width: 70%;
+  height: 100%;
+  border-radius: 250%;
   background: #ddd;
   z-index: -1;
 }
@@ -2614,6 +2615,48 @@ footer .footer-item .date {
 .products .product-item .overlay a:hover {
   color: #ead2a1;
   transition: color 0.2s;
+}
+.products .product-item.purple-item {
+  background: rgba(128, 0, 128, 0.1);
+}
+.products .product-item.purple-item .product-image::after {
+  background: linear-gradient(0deg, #4d004d, purple);
+  background: rgba(128, 0, 128, 0.6);
+}
+.products .product-item.purple-item .cta::before {
+  background: linear-gradient(0deg, #4d004d, purple);
+}
+.products .product-item.purple-item .cta::after {
+  background: purple;
+}
+.products .product-item.red-item {
+  background: rgba(128, 0, 0, 0.1);
+}
+.products .product-item.red-item .product-image::after {
+  background: linear-gradient(0deg, #4d0000, maroon);
+  background: rgba(128, 0, 0, 0.6);
+}
+.products .product-item.red-item .cta::before {
+  background: linear-gradient(0deg, #4d0000, maroon);
+}
+.products .product-item.red-item .cta::after {
+  background: maroon;
+}
+.products .product-item.yellow-item {
+  background: rgba(255, 255, 0, 0.1);
+}
+.products .product-item.yellow-item .product-image::after {
+  background: linear-gradient(0deg, #4d0000, maroon);
+  background: rgba(255, 255, 0, 0.6);
+}
+.products .product-item.yellow-item .cta a {
+  color: #000;
+}
+.products .product-item.yellow-item .cta::before {
+  background: linear-gradient(0deg, #ffff1a, #e6e600);
+}
+.products .product-item.yellow-item .cta::after {
+  background: yellow;
 }
 .products .page-link {
   display: block;
