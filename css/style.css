@@ -2532,12 +2532,14 @@ footer .footer-item .date {
   border-radius: 250%;
   background: #ddd;
   z-index: -1;
+  transition: 1s;
 }
 .products .product-item .product-image img {
   position: relative;
   height: 200px;
   width: 100%;
   object-fit: contain;
+  transform: translateY(0) scale(0.95);
   filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.2));
   transition: 0.5s;
 }
@@ -2567,6 +2569,7 @@ footer .footer-item .date {
 .products .product-item .cta a {
   text-decoration: none;
   color: #fff;
+  text-transform: uppercase;
 }
 .products .product-item .overlay {
   position: absolute;
@@ -2623,6 +2626,9 @@ footer .footer-item .date {
   background: linear-gradient(0deg, #4d004d, purple);
   background: rgba(128, 0, 128, 0.6);
 }
+.products .product-item.purple-item .info .title {
+  color: purple;
+}
 .products .product-item.purple-item .cta::before {
   background: linear-gradient(0deg, #4d004d, purple);
 }
@@ -2636,6 +2642,9 @@ footer .footer-item .date {
   background: linear-gradient(0deg, #4d0000, maroon);
   background: rgba(128, 0, 0, 0.6);
 }
+.products .product-item.red-item .info .title {
+  color: maroon;
+}
 .products .product-item.red-item .cta::before {
   background: linear-gradient(0deg, #4d0000, maroon);
 }
@@ -2643,7 +2652,7 @@ footer .footer-item .date {
   background: maroon;
 }
 .products .product-item.yellow-item {
-  background: rgba(255, 255, 0, 0.1);
+  background: rgba(255, 255, 0, 0.2);
 }
 .products .product-item.yellow-item .product-image::after {
   background: linear-gradient(0deg, #4d0000, maroon);
@@ -2653,10 +2662,20 @@ footer .footer-item .date {
   color: #000;
 }
 .products .product-item.yellow-item .cta::before {
-  background: linear-gradient(0deg, #ffff1a, #e6e600);
+  background: linear-gradient(0deg, #e6e600, yellow);
 }
 .products .product-item.yellow-item .cta::after {
   background: yellow;
+}
+.products .product-item:hover .product-image img {
+  transform: translateY(-10vh) scale(1);
+  transition: 1s;
+}
+.products .product-item:hover .product-image::after {
+  opacity: 0.5;
+}
+.products .product-item:hover .info .title {
+  color: #000;
 }
 .products .page-link {
   display: block;
