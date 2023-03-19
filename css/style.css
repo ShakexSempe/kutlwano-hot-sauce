@@ -162,7 +162,7 @@
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-  background-color: #fefcf6;
+  background-color: #fafafa;
 }
 #header .logo img {
   mix-blend-mode: darken;
@@ -368,7 +368,7 @@
   padding: 5vh 5vw;
   width: 100%;
   height: 95vh;
-  background-color: #fefcf6;
+  background-color: #fafafa;
   position: relative;
   isolation: isolate;
 }
@@ -421,7 +421,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fefcf6;
+  background: #fafafa;
 }
 .hero .hero-bg img {
   width: 100%;
@@ -437,6 +437,40 @@
 }
 @media (min-width: 768px) {
   .hero .hero-bg {
+    background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fafafa;
+  }
+}
+.hero.about-hero .hero-bg {
+  background: #fafafa;
+}
+.hero.about-hero .hero-bg::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #fafafa 50%, transparent);
+}
+.hero.about-hero .hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: darken;
+}
+@media (min-width: 768px) {
+  .hero.about-hero .hero-bg img {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hero.about-hero .hero-bg {
     background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
     background-attachment: fixed;
     background-size: contain;
@@ -1110,7 +1144,7 @@
 
 .about#about {
   padding: 10vh 5vw 5vh;
-  background: #fefcf6;
+  background: #fafafa;
 }
 @media (min-width: 768px) {
   .about#about {
@@ -2509,7 +2543,7 @@
 
 footer {
   background: linear-gradient(0deg, #000, #222);
-  background: #fefcf6;
+  background: #fafafa;
   padding: 5vh 5vw 12vh;
   position: relative;
   display: flex;
@@ -2621,7 +2655,7 @@ body {
 }
 
 .container {
-  background: #fefcf6;
+  background: #fafafa;
   max-width: 100vw;
   width: 100%;
   min-height: 100vh;

@@ -8,15 +8,7 @@
     background-color: $brand-bg;
     position: relative;
     isolation: isolate;
-
-    // background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
-    // background-repeat: no-repeat;  
-    // background-size: cover;
-    // background-position: center; 
     @include lg {
-        // background-attachment: fixed;
-        // background-position: right;
-        // background-size: 50%;
     }
     // HERO DECORATION
     // &::after {
@@ -115,6 +107,48 @@
         }
     }
 
+    // ABOUT PAGE HERO SECTION 
+    &.about-hero {
+        // border: 2px solid red;
+
+        .hero-bg {
+                background: $brand-bg;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(90deg, $brand-bg 50%, transparent);
+                    // opacity: .4;
+                    @include lg {
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    mix-blend-mode: darken;
+                    // border: 2px solid red;
+                    @include md {
+                        display: none;
+                    }
+                }
+        
+                @include md {
+                    background-image: url(../img/bobby-donald-KikhsHzIO9o-unsplash.jpg);
+                    background-attachment: fixed;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-color: #fafafa;
+                    // mix-blend-mode: color;
+                }
+            
+        }
+    }
 }
 
 .menu {
