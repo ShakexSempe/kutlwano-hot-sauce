@@ -75,6 +75,17 @@
                 // text-transform: none;
             }
         }
+
+        &.purple-content {
+            .hero-title {
+                color: purple;
+            }
+            .hero-headline {
+                &::after {
+                    background: purple;
+                }
+            }
+        }
     }
     .hero-bg {
         // border: 2px solid red;

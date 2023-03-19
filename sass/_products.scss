@@ -1,16 +1,12 @@
 .products {
     // PAGE STYLE
     &.products-page {
-        margin: 5vh 3vw;
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 10vh;
-            font-family: $font-title;
-        }
+        // margin: 5vh 3vw;
+        
         .products-container {
-            border: 2px solid #000a;
+            // border: 2px solid #000a;
             border-radius: 5px;
-            padding: 10vh .5rem 1rem;
+            padding: 10vh 0 1rem;
             position: relative;
             .container-title {
                 font-family: $font-ubuntu;
@@ -18,7 +14,7 @@
                 font-size: 1rem;
                 // border: 1px solid red;
                 width: 100%;
-                text-align: center;
+                // text-align: center;
                 position: absolute;
                 top: 1rem;
                 left: 50%;
@@ -26,7 +22,7 @@
             }
         }
     }
-    padding: 15vh 5vw 0;
+    padding: 10vh 5vw 0;
     background: $brand-gold;
     overflow: hidden;
     // border: 2px solid red;
