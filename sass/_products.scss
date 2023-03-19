@@ -87,11 +87,11 @@
                 transform: translateX(-50%);
                 width: 70%;
                 height: 100%;
-                border-radius: 250%;
-                background: #ddd;
+                border-radius: 50%;
+                background: #000;
+                opacity: .2;
                 z-index: -1;
                 transition: 1s;
-                opacity: .2;
             }
             
             
@@ -130,7 +130,7 @@
                 }
                 .price {
                     font-family: $font-ubuntu;
-                    // color: #f4f4f4;
+                    color: #000;
                     font-size: 1.1rem;
 
                     span {
@@ -255,33 +255,34 @@
                 }
             }
         }
-        &.yellow-item {
-            background: hsla(60, 100%, 50%, .2);
+        &.blue-item {
+            background: hsla(240, 100%, 25%, .1);
             .product-image {
                 &::after {
-                    background: $red-gradient;
-                    background: hsla(60, 100%, 50%, .6);
+                    background: $blue-gradient;
                 }
             }
             .info {
-                color: rgb(121, 121, 1); 
+                color: navy; 
                 
             }
             .cta {
                 a {
-                    color: #000;
+                    // color: #000;
                 }
                 &::before {
-                    background: $yellow-gradient;
+                    background: $blue-gradient;
                 }
                 &::after {
-                    background: hsl(60, 100%, 50%);
+                    background: navy;
                 }
             }
         }
         
         &:hover {
-            transform: scale(1.05);
+            @include md {
+                transform: scale(1.05);     
+            }
             .product-image {
                 img {
                     transform: translateY(-5vh) scale(1);

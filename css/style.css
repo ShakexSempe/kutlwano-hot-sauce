@@ -50,9 +50,11 @@
 }
 .cta::before {
   background: linear-gradient(0deg, #000, #161616);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .cta::after {
   background: linear-gradient(0deg, #333, #000);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.35);
   opacity: 0;
 }
 @media (min-width: 768px) {
@@ -2545,11 +2547,11 @@ footer .footer-item .date {
   transform: translateX(-50%);
   width: 70%;
   height: 100%;
-  border-radius: 250%;
-  background: #ddd;
+  border-radius: 50%;
+  background: #000;
+  opacity: 0.2;
   z-index: -1;
   transition: 1s;
-  opacity: 0.2;
 }
 .products .product-item .product-image img {
   position: relative;
@@ -2570,6 +2572,7 @@ footer .footer-item .date {
 }
 .products .product-item .info .sub-info .price {
   font-family: "Ubuntu", sans-serif;
+  color: #000;
   font-size: 1.1rem;
 }
 .products .product-item .info .sub-info .stars {
@@ -2667,27 +2670,25 @@ footer .footer-item .date {
 .products .product-item.red-item .cta::after {
   background: maroon;
 }
-.products .product-item.yellow-item {
-  background: rgba(255, 255, 0, 0.2);
+.products .product-item.blue-item {
+  background: rgba(0, 0, 128, 0.1);
 }
-.products .product-item.yellow-item .product-image::after {
-  background: linear-gradient(0deg, #4d0000, maroon);
-  background: rgba(255, 255, 0, 0.6);
+.products .product-item.blue-item .product-image::after {
+  background: linear-gradient(0deg, #00004d, navy);
 }
-.products .product-item.yellow-item .info {
-  color: #797901;
+.products .product-item.blue-item .info {
+  color: navy;
 }
-.products .product-item.yellow-item .cta a {
-  color: #000;
+.products .product-item.blue-item .cta::before {
+  background: linear-gradient(0deg, #00004d, navy);
 }
-.products .product-item.yellow-item .cta::before {
-  background: linear-gradient(0deg, #e6e600, yellow);
+.products .product-item.blue-item .cta::after {
+  background: navy;
 }
-.products .product-item.yellow-item .cta::after {
-  background: yellow;
-}
-.products .product-item:hover {
-  transform: scale(1.05);
+@media (min-width: 768px) {
+  .products .product-item:hover {
+    transform: scale(1.05);
+  }
 }
 .products .product-item:hover .product-image img {
   transform: translateY(-5vh) scale(1);

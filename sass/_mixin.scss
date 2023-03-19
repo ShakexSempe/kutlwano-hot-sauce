@@ -100,10 +100,11 @@ $screen-xlg-min: 1024px;
     }
     &::before {
         background: linear-gradient(0deg, #000, #161616);
-        // background: $purple-gradient;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0,.250);
     }
     &::after {
         background: linear-gradient(0deg, #333, #000);
+        box-shadow: 2px 5px 5px rgba(0, 0, 0,.350);
         opacity: 0;
     }
 
