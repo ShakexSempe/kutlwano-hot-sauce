@@ -64,6 +64,7 @@ $screen-xlg-min: 1024px;
     display: grid;
     place-items: center;
     transition: .25s;
+    cursor: pointer;
     .cta-btn {
         display: block;
         width: 100%;

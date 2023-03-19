@@ -23,7 +23,7 @@
             }
         }
     }
-    padding: 10vh 5vw 0;
+    padding: 10vh 5vw 5vh;
     background: $brand-gold;
     background: #f4f4f4;
     overflow: hidden;
@@ -31,7 +31,7 @@
 
     .products-container {
         // border: 2px solid blue;
-        margin-top: 15vh;
+        margin-top: 10vh;
         // padding-top: 10vh;
     }
     .product-items-grid {
@@ -46,7 +46,7 @@
             // grid-template-rows: 20rem;
         }
         @media (min-width: 1024px) {
-            gap: 1rem;
+            gap: 5vw;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
@@ -67,6 +67,7 @@
         border-radius: 5px;
         text-align: center;
         padding: 1rem .5rem;
+        transition: .5s;
         // padding: 1rem.25rem;
 
         .product-image {
@@ -90,6 +91,7 @@
                 background: #ddd;
                 z-index: -1;
                 transition: 1s;
+                opacity: .2;
             }
             
             
@@ -107,9 +109,10 @@
 
         .info {
             // border: 1px solid blue;
+            transition: .5s;
             .title {
                 // padding: 1rem;
-                color: #000;
+                // color: #000;
                 font-size: 1.2rem;
                 font-family: $font-ubuntu;
                 padding: 1rem;
@@ -121,7 +124,7 @@
                 // align-items: center;
                 // justify-content: space-between;
                 // background-color: #000;
-                color: #000;
+                // color: #000;
                 // border-top: 1px solid rgba(0,0,0,.3);
                 @include md {
                 }
@@ -220,9 +223,8 @@
                 }
             }
             .info {
-                .title {
-                    color: purple;
-                }
+                color: purple;
+                
             }
             .cta {
                 &::before {
@@ -242,9 +244,7 @@
                 }
             }
             .info {
-                .title {
-                    color: maroon;
-                }
+                color: maroon;
             }
             .cta {
                 &::before {
@@ -264,9 +264,8 @@
                 }
             }
             .info {
-                .title {
-                    // color: purple;
-                }
+                color: rgb(121, 121, 1); 
+                
             }
             .cta {
                 a {
@@ -282,19 +281,19 @@
         }
         
         &:hover {
+            transform: scale(1.05);
             .product-image {
                 img {
-                    transform: translateY(-10vh) scale(1);
-                    transition: 1s;
+                    transform: translateY(-5vh) scale(1);
+                    transition: .5s;
                 }
                 &::after {
-                    opacity: .5;
+                    opacity: .4;
                 }
             }
             .info {
-                .title {
-                    color: #000;
-                }
+                color: #000;
+                
             }
         }
 
