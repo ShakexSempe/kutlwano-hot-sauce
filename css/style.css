@@ -1043,6 +1043,9 @@ footer .footer-item .date {
 }
 .menu .menu-content .menu-item-list {
   padding: 0 1rem 1rem;
+  position: relative;
+  isolation: isolate;
+  background: #fafafa;
 }
 .menu .menu-content .menu-item-list.purple-list li::marker {
   color: #b300b3;
@@ -1067,6 +1070,17 @@ footer .footer-item .date {
 }
 .menu .menu-content .menu-item-list.active-box ul.red-ul li::marker {
   color: #b30000;
+}
+.menu .menu-content .menu-item-list img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right;
+  z-index: -1;
+  mix-blend-mode: darken;
 }
 .menu .menu-content .menu-item-flex-list {
   padding: 1rem;
