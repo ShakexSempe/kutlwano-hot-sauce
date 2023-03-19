@@ -2699,7 +2699,7 @@ footer .footer-item .date {
   transition: 0.5s;
 }
 .products .product-item:hover .product-image::after {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 .products .product-item:hover .info {
   color: #000;
