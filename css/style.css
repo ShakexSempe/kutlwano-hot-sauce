@@ -2237,9 +2237,6 @@ footer .footer-item .date {
     flex-direction: column;
     gap: 5vh;
   }
-  .contact .container .contact-info {
-    margin-bottom: 40px;
-  }
 }
 .contact .contact-title {
   font-size: 1.5rem;
@@ -2279,7 +2276,6 @@ footer .footer-item .date {
 }
 .contact .contact-info {
   padding: 1rem 0;
-  border-radius: 0.5rem;
   width: 40%;
   background: radial-gradient(#111, #4d004d);
   background: #000;
@@ -2292,7 +2288,7 @@ footer .footer-item .date {
 }
 .contact .contact-info .contact-item {
   position: relative;
-  padding: 1rem 0;
+  padding: 0 0 5vh;
   display: flex;
   overflow: hidden;
 }
@@ -2426,14 +2422,14 @@ footer .footer-item .date {
 .contact .contact-form .input-box textarea {
   font-family: "Ubuntu", sans-serif;
   width: 100%;
-  padding: 0.5rem 0.5rem;
+  padding: 0.7rem 0.5rem;
   font-size: 1rem;
   margin: 1rem 0;
   background: #333;
   color: #ead2a1;
   resize: none;
   border: none;
-  outline: 1px solid rgba(234, 210, 161, 0.5);
+  outline: 1px solid #ead2a1;
   border-radius: 0.25rem;
   transition: 0.25s;
 }
@@ -2449,7 +2445,7 @@ footer .footer-item .date {
 }
 .contact .contact-form .input-box input:invalid:focus,
 .contact .contact-form .input-box textarea:invalid:focus {
-  outline-color: #ead2a1;
+  outline-color: #fff7;
 }
 .contact .contact-form .input-box input:focus,
 .contact .contact-form .input-box textarea:focus {

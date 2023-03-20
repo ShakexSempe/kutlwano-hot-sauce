@@ -302,7 +302,7 @@
             flex-direction: column;
             gap: 5vh;
             .contact-info {
-                margin-bottom: 40px;
+                // margin-bottom: 40px;
             }
         }
         
@@ -355,7 +355,6 @@
         // border: 1px solid #ead2a1;
         // border: 1px solid #fff3;
         padding: 1rem 0;
-        border-radius: .5rem;
         width: 40%;
         background: $brand-dark-overlay;
         background: #000;
@@ -368,7 +367,7 @@
         .contact-item {
             // border: 2px solid red;
             position: relative;
-            padding: 1rem 0;
+            padding: 0 0 5vh;
             display: flex;
             overflow: hidden;
 
@@ -529,14 +528,14 @@
             textarea {
                 font-family: $font-ubuntu;
                 width: 100%;
-                padding: .5rem .5rem;
+                padding: .7rem .5rem;
                 font-size: 1rem;
                 margin: 1rem 0;
                 background: #333;
                 color: #ead2a1;
                 resize: none;
                 border: none;
-                outline: 1px solid rgba(234, 210, 161, .5);
+                outline: 1px solid rgba(234, 210, 161, 1);
                 border-radius: $border-radius-brand;
                 transition: .25s;
                 // resize: none;
@@ -548,7 +547,7 @@
                 &:invalid {
                     outline-color: transparent;
                     &:focus {
-                        outline-color: $brand;
+                        outline-color: #fff7;
                     }
                 }
                 &:focus {
