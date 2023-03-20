@@ -1922,13 +1922,17 @@ footer .footer-item .date {
 .about .image-section figure {
   overflow: hidden;
   width: 100%;
-  height: 50vh;
   border-radius: 0.25rem;
   mix-blend-mode: darken;
 }
 @media (max-width: 768px) {
   .about .image-section figure {
     height: 65vh;
+  }
+}
+@media (min-width: 820px) {
+  .about .image-section figure {
+    height: 75vh;
   }
 }
 .about .image-section figure figcaption {
@@ -1974,6 +1978,11 @@ footer .footer-item .date {
   object-position: center;
   border-radius: 0.25rem;
   transition: 1.8s;
+}
+@media (min-width: 820px) {
+  .about .image-section figure img {
+    object-position: center;
+  }
 }
 .about .image-section figure:hover img {
   transition: 0.5s;
