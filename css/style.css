@@ -1082,7 +1082,7 @@ footer .footer-item .date {
   position: relative;
   isolation: isolate;
   background: #fafafa;
-  background: #f4f4f4;
+  background: #eee;
 }
 .menu .menu-content .menu-item-list.purple-list li::marker {
   color: #b300b3;
