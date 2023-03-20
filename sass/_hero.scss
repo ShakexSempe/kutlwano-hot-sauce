@@ -166,6 +166,7 @@
     padding: 10vh 5vw 5vh;
     display: grid;
     gap: 5vh;
+    background: $brand-bg-darker;
     @include md {
         grid-template-columns: 1fr 1fr;
         gap: 5vw;
@@ -241,6 +242,7 @@
             position: relative;
             isolation: isolate;
             background: $brand-bg;
+            background: $brand-bg-dark;
             
             &.purple-list {
                 li {
@@ -314,15 +316,6 @@
                 mix-blend-mode: darken;
 
             }
-
-            // .flex-container {
-            //     border: 2px solid red;
-            //     width: 100%;
-            //     display: flex;
-            //     img {
-            //         width: 5rem;
-            //     }
-            // }
 
         }
         .menu-item-flex-list {
