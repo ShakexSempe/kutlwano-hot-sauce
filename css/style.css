@@ -2554,6 +2554,7 @@ footer .footer-item .date {
   padding: 1rem 0.5rem;
   transition: 0.5s;
   transform-style: preserve-3d;
+  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
   .products .product-item {
@@ -2705,6 +2706,11 @@ footer .footer-item .date {
 }
 .products .product-item.blue-item .cta::after {
   background: navy;
+}
+.products .product-item:hover {
+  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  transform: scale(0.985);
+  transition: box-shadow 0.5s ease, transform 0.25s;
 }
 @media (min-width: 768px) {
   .products .product-item:hover {
