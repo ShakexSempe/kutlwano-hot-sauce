@@ -68,6 +68,7 @@
         text-align: center;
         padding: 1rem .5rem;
         transition: .5s;
+        transform-style: preserve-3d;
         // padding: 1rem.25rem;
 
         .product-image {
@@ -220,7 +221,7 @@
         }
 
         &.purple-item {
-            background: hsla(300, 100%, 25%, .1);
+            // background: hsla(300, 100%, 25%, .1);
             .product-image {
                 &::after {
                     background: $purple-gradient;
@@ -241,7 +242,7 @@
             }
         }
         &.red-item {
-            background: hsla(0, 100%, 25%, 0.1);
+            // background: hsla(0, 100%, 25%, 0.1);
             .product-image {
                 &::after {
                     background: $red-gradient;
@@ -261,7 +262,7 @@
             }
         }
         &.blue-item {
-            background: hsla(240, 100%, 25%, .1);
+            // background: hsla(240, 100%, 25%, .1);
             .product-image {
                 &::after {
                     background: $blue-gradient;
@@ -342,6 +343,10 @@
             &:hover {
                 transform: scale(.98);
             }
+    }
+    #products-cta {
+        margin: 5vh 0;
+        width: 11rem;
     }
     &.active-products {
         &#products {

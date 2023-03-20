@@ -21,6 +21,7 @@
   width: 100%;
   padding: 1rem;
   text-decoration: none;
+  text-transform: capitalize;
   color: #fff;
   transition: 0.5s;
   border: 2px solid #000;
@@ -2537,6 +2538,7 @@ footer .footer-item .date {
   text-align: center;
   padding: 1rem 0.5rem;
   transition: 0.5s;
+  transform-style: preserve-3d;
 }
 @media (max-width: 768px) {
   .products .product-item {
@@ -2651,9 +2653,6 @@ footer .footer-item .date {
   color: #ead2a1;
   transition: color 0.2s;
 }
-.products .product-item.purple-item {
-  background: rgba(128, 0, 128, 0.1);
-}
 .products .product-item.purple-item .product-image::after {
   background: linear-gradient(0deg, #4d004d, purple);
   background: rgba(128, 0, 128, 0.6);
@@ -2667,9 +2666,6 @@ footer .footer-item .date {
 .products .product-item.purple-item .cta::after {
   background: purple;
 }
-.products .product-item.red-item {
-  background: rgba(128, 0, 0, 0.1);
-}
 .products .product-item.red-item .product-image::after {
   background: linear-gradient(0deg, #4d0000, maroon);
   background: rgba(128, 0, 0, 0.6);
@@ -2682,9 +2678,6 @@ footer .footer-item .date {
 }
 .products .product-item.red-item .cta::after {
   background: maroon;
-}
-.products .product-item.blue-item {
-  background: rgba(0, 0, 128, 0.1);
 }
 .products .product-item.blue-item .product-image::after {
   background: linear-gradient(0deg, #00004d, navy);
@@ -2732,6 +2725,10 @@ footer .footer-item .date {
 }
 .products .page-link:hover {
   transform: scale(0.98);
+}
+.products #products-cta {
+  margin: 5vh 0;
+  width: 11rem;
 }
 .products.active-products#products .section-title {
   opacity: 1;
