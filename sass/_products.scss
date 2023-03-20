@@ -129,6 +129,7 @@
         .info {
             // border: 1px solid blue;
             transition: .5s;
+            color: #000;
             .title {
                 // padding: 1rem;
                 // color: #000;
@@ -246,10 +247,9 @@
                     background: hsla(300, 100%, 25%, .6);
                 }
             }
-            .info {
-                color: purple;
-                
-            }
+            // .info {
+            //     color: purple;
+            // }
             .cta {
                 &::before {
                     background: $purple-gradient;
@@ -267,9 +267,9 @@
                     background: hsla(0, 100%, 25%, .6);
                 }
             }
-            .info {
-                color: maroon;
-            }
+            // .info {
+            //     color: maroon;
+            // }
             .cta {
                 &::before {
                     background: $red-gradient;
@@ -286,10 +286,9 @@
                     background: $blue-gradient;
                 }
             }
-            .info {
-                color: navy; 
-                
-            }
+            // .info {
+            //     color: navy; 
+            // }
             .cta {
                 &::before {
                     background: $blue-gradient;
@@ -318,9 +317,22 @@
                     opacity: .3;
                 }
             }
-            .info {
-                color: #000;
-                
+            
+            // COLORS
+            &.purple-item {
+                .info {
+                    color: purple;
+                }
+            }
+            &.red-item {
+                .info {
+                    color: maroon;
+                }
+            }
+            &.blue-item {
+                .info {
+                    color: navy;
+                }
             }
         }
 

@@ -2631,6 +2631,7 @@ footer .footer-item .date {
 }
 .products .product-item .info {
   transition: 0.5s;
+  color: #000;
 }
 .products .product-item .info .title {
   font-size: 1.2rem;
@@ -2712,9 +2713,6 @@ footer .footer-item .date {
   background: linear-gradient(0deg, #4d004d, purple);
   background: rgba(128, 0, 128, 0.6);
 }
-.products .product-item.purple-item .info {
-  color: purple;
-}
 .products .product-item.purple-item .cta::before {
   background: linear-gradient(0deg, #4d004d, purple);
 }
@@ -2725,9 +2723,6 @@ footer .footer-item .date {
   background: linear-gradient(0deg, #4d0000, maroon);
   background: rgba(128, 0, 0, 0.6);
 }
-.products .product-item.red-item .info {
-  color: maroon;
-}
 .products .product-item.red-item .cta::before {
   background: linear-gradient(0deg, #4d0000, maroon);
 }
@@ -2736,9 +2731,6 @@ footer .footer-item .date {
 }
 .products .product-item.blue-item .product-image::after {
   background: linear-gradient(0deg, #00004d, navy);
-}
-.products .product-item.blue-item .info {
-  color: navy;
 }
 .products .product-item.blue-item .cta::before {
   background: linear-gradient(0deg, #00004d, navy);
@@ -2769,8 +2761,14 @@ footer .footer-item .date {
 .products .product-item:hover .product-image::after {
   opacity: 0.3;
 }
-.products .product-item:hover .info {
-  color: #000;
+.products .product-item:hover.purple-item .info {
+  color: purple;
+}
+.products .product-item:hover.red-item .info {
+  color: maroon;
+}
+.products .product-item:hover.blue-item .info {
+  color: navy;
 }
 .products .page-link {
   display: block;
