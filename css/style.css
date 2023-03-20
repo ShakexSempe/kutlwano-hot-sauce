@@ -1925,11 +1925,10 @@ footer .footer-item .date {
   height: 50vh;
   border-radius: 0.25rem;
   mix-blend-mode: darken;
-  position: relative;
 }
 @media (max-width: 768px) {
   .about .image-section figure {
-    height: 60vh;
+    height: 65vh;
   }
 }
 .about .image-section figure figcaption {
@@ -1972,8 +1971,8 @@ footer .footer-item .date {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  -o-object-fit: top;
-  border-radius: 10px;
+  object-position: center;
+  border-radius: 0.25rem;
   transition: 1.8s;
 }
 .about .image-section figure:hover img {
@@ -2592,11 +2591,11 @@ footer .footer-item .date {
   z-index: -1;
 }
 .products .product-item::before {
-  box-shadow: 0.25rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
 }
 .products .product-item::after {
   opacity: 0;
-  box-shadow: 0.2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0.15rem 0.7rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .products .product-item .product-image {
   text-align: center;

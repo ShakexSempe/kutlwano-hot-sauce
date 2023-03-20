@@ -287,10 +287,8 @@
             height: 50vh;
             border-radius: $border-radius-brand;
             mix-blend-mode: darken;
-            // border: 2px solid green;
-            position: relative;
             @media (max-width: 768px){
-                height: 60vh;
+                height: 65vh;
             }
             // VIEW PRODUCTS BUTTON
             figcaption {
@@ -338,8 +336,8 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                -o-object-fit: top;
-                border-radius: 10px;
+                object-position: center;
+                border-radius: $border-radius-brand;
                 transition: 1.8s;
                 // border: 2px solid #000;
 
