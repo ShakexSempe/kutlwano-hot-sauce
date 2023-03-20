@@ -148,4 +148,9 @@ $screen-xlg-min: 1024px;
         background-color: #0004;
         transition: 1s ease;
     }
+    &.light-bar {
+        &::before {
+        background-color: #fff7;
+        }
+    }
 }

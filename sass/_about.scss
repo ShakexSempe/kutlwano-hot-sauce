@@ -31,28 +31,25 @@
                 margin-bottom: 10vh;
                 // border: 2px solid red;
                 &.content-2 {
-                    padding: 1rem .3rem;
+                    padding: 1rem 1rem;
                     // border: 2px solid blue;
                     background-color: #000;
                     h3 {
                         color: #fff;
+                        padding-left: .5rem;
+                        position: relative;
+                        font-size: 1.5rem;
                     }
                     p {
                         color: #f4f4f4;
-                        padding: .2rem;
-                        margin: 0;
-                        
-                        strong {
-                            color: $span-gold;
-                        }
 
-                        a {
-                            color: $span-gold;
-                            display: block;
-                            margin: 5vh 0;
-                            text-decoration: none;
-                            text-transform: capitalize;
-                        }
+                    }
+                    a {
+                        color: $span-gold;
+                        display: block;
+                        margin: 5vh 0;
+                        text-decoration: none;
+                        text-transform: capitalize;
                     }
                 }
             }
@@ -64,7 +61,7 @@
                 figure {
                     overflow: hidden;
                     width: 100%;
-                    border-radius: 5px;
+                    border-radius: $border-radius-brand;
                     height: 60vh;
                     opacity: 0;
                     transition: 1.5s;
@@ -72,7 +69,7 @@
                     img {
                         width: 100%;
                         height: 100%;
-                        border-radius: 5px;
+                        border-radius: $border-radius-brand;
                         object-fit: cover;
                     }
                     @media (min-width: 768px){
@@ -200,12 +197,16 @@
             // FOUNDER STATEMENT
             &.content-2 {
                 border-radius: $border-radius-brand;
-                .content-description {
+                .article-title {
+                    margin-bottom: 1rem;
+                    color: yellow;
                     transform: none;
                     opacity: 1;
-                    
                 }
                 
+                p {
+
+                }
             }
             
         }
@@ -284,8 +285,8 @@
             overflow: hidden;
             width: 100%;
             height: 50vh;
-            border-radius: .25rem;
-            // mix-blend-mode: darken;
+            border-radius: $border-radius-brand;
+            mix-blend-mode: darken;
             // border: 2px solid green;
             position: relative;
             @media (max-width: 768px){
