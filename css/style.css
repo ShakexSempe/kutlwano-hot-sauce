@@ -827,6 +827,7 @@ footer .footer-logo img {
   height: 100%;
   object-fit: contain;
   object-position: left;
+  border-left: 0.2rem solid #0003;
 }
 @media (min-width: 768px) {
   footer .footer-logo {
@@ -1046,7 +1047,7 @@ footer .footer-item .date {
 }
 .menu .menu-content {
   line-height: 1.6;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
   padding: 0.1rem 0;
 }
 .menu .menu-content .menu-description {
@@ -1691,8 +1692,15 @@ footer .footer-item .date {
   }
 }
 
-.about {
+.about#about {
+  padding: 10vh 5vw;
   background: #fafafa;
+}
+@media (min-width: 768px) {
+  .about#about {
+    padding: 15vh 5vw 10vh;
+    margin-bottom: 10vh;
+  }
 }
 .about.about-page {
   padding: 15vh 5vw;
@@ -2844,6 +2852,9 @@ main {
   padding: 0;
   min-height: 200vh;
   background: #fafafa;
+}
+main section {
+  min-height: 100vh;
 }
 @media (max-width: 768px) {
   main section {

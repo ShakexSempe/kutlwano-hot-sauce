@@ -1,11 +1,13 @@
 .about {
-    background: $brand-bg;
-    // &#about {
-    //     padding: 10vh 5vw 5vh;
-    //     @media (min-width: 768px) {
-    //         padding: 15vh 5vw 5vh;
-    //     } 
-    // }
+    &#about {
+        // border: 2px solid red;
+        padding: 10vh 5vw;
+        background: $brand-bg;
+        @media (min-width: 768px) {
+            padding: 15vh 5vw 10vh;
+            margin-bottom: 10vh;
+        } 
+    }
     &.about-page {
         @media (min-width: 768px){
         display: flex;
