@@ -1698,7 +1698,7 @@ footer .footer-item .date {
 }
 @media (min-width: 768px) {
   .about#about {
-    padding: 15vh 5vw 10vh;
+    padding: 10vh 5vw 10vh;
     margin-bottom: 10vh;
   }
 }
