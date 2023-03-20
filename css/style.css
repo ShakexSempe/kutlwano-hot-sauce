@@ -87,6 +87,18 @@
   }
 }
 
+.title-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+  width: 0.2rem;
+  background-color: #0004;
+  transition: 1s ease;
+}
+
 #header {
   background-color: transparent;
   height: 7vh;
@@ -918,7 +930,6 @@ footer .footer-item .date {
   transform: translateY(-50%);
   height: 90%;
   width: 0.2rem;
-  background-color: rgba(128, 0, 128, 0.3);
   background-color: #0004;
 }
 .hero .hero-content .hero-headline span {
@@ -1730,7 +1741,8 @@ footer .footer-item .date {
 }
 .about.about-page .content-section .about-article-pad {
   width: 100%;
-  margin: 5vh 0;
+  margin: 10vh 0;
+  padding: 5vh 0 0;
 }
 .about.about-page .content-section .about-article-pad figure {
   overflow: hidden;
@@ -1848,7 +1860,7 @@ footer .footer-item .date {
   color: #ead2a1;
 }
 .about .content-section .content.content-2 {
-  border-radius: 5px;
+  border-radius: 0.25rem;
 }
 .about .content-section .content.content-2 .content-description {
   transform: none;
@@ -2849,22 +2861,11 @@ main section .section-title {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 4vw, 1.8rem);
   position: relative;
-  position: relative;
 }
 main section .section-title h2 {
   text-transform: uppercase;
   color: #000;
   padding: 0 0.5rem;
-}
-main section .section-title::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0.2rem;
-  background: #0004;
-  transition: 1s ease;
 }
 main section .section-title.box {
   transition: 1.5s;

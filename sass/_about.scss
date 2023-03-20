@@ -59,7 +59,8 @@
             .about-article-pad {
                 // border: 2px solid #000;
                 width: 100%;
-                margin: 5vh 0;
+                margin: 10vh 0;
+                padding: 5vh 0 0;
                 figure {
                     overflow: hidden;
                     width: 100%;
@@ -198,10 +199,11 @@
             }
             // FOUNDER STATEMENT
             &.content-2 {
-                border-radius: 5px;
+                border-radius: $border-radius-brand;
                 .content-description {
                     transform: none;
                     opacity: 1;
+                    
                 }
                 
             }

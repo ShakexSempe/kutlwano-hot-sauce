@@ -100,26 +100,22 @@ main {
             font-size: 1.5rem;
             font-size: clamp(1.5rem, 4vw, 1.8rem);
             position: relative;
-            // border-left: .2rem solid #0003;
-            // padding-left: .5rem;
-            position: relative;
             
             h2 {
                 text-transform: uppercase;
                 color: #000;
                 padding: 0 .5rem;
             }
-            
-            &::before {
-                content: '';
-                position: absolute;
-                height: 100%;
-                top: 50%;
-                transform: translateY(-50%);
-                width: .2rem;
-                background: #0004;
-                transition: 1s ease;
-            }
+            // &::before {
+            //     content: '';
+            //     position: absolute;
+            //     height: 100%;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     width: .2rem;
+            //     background: #0004;
+            //     transition: 1s ease;
+            // }
             &.box {
                 transition: 1.5s;
                 &::before {
