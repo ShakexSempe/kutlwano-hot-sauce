@@ -61,10 +61,10 @@
                     <div class="bar"></div>
                     <div class="mobile-links">
                         <ul>
-                            <li><a href="../index.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                            <li><a href="contact.html#order-form">order form</a></li>
+                            <li><a href="../index.html" data-after="home">home</a></li>
+                            <li><a href="about.html" data-after="about">about</a></li>
+                            <li><a href="contact.html" data-after="contact">contact</a></li>
+                            <li><a href="contact.html#order-form" data-after="order">order form</a></li>
                         </ul>
                         <div class="contact-links">
                             <div class="contact-link">
@@ -382,14 +382,33 @@
         <!-- FOOTER -->
         <footer id="footer">
             <figure class="footer-logo">
-                <a href="#">
-                    <img src="../imgs/gold-logo-sm-min.jpg" alt="K'Sauce logo">
-                </a>
+                <img src="../imgs/white-logo-sm-min.jpg" alt="K'Sauce logo">
             </figure>
-            <div class="copyright">
+            <div class="footer-item copyright">
+                <h3 class="footer-item-title">All rights reserved</h3>
                 <p>copyright&copy; K'Sauce : Hot Sauce </p>
-                <p class="shakex-link">web design: <a href="http://shakexsempe.netlify.app/" target="_blank">shakex sempe</a></p>
+                <p class="shakex-link">web design: <a href="https://shakexsempe.netlify.app/" target="_blank">shakex
+                        sempe</a></p>
                 <span class="date"></span>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-title">browse</h3>
+                <ul class="footer-item-list browse-list">
+                    <li><a href="../index.html">home</a></li>
+                    <!-- <li><i class="fa-solid fa-up-right-from-square"></i><a href="../index.html">home</a></li> -->
+                    <li><i class="fa-solid fa-up-right-from-square"></i><a href="about.html">about</a>
+                    </li>
+                    <li><i class="fa-solid fa-up-right-from-square"></i><a href="contact.html">order</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-title">contact</h3>
+                <ul class="footer-item-list contact-list">
+                    <li><a href="tel:+27742314776"><i class="fas fa-phone"></i>+27742314776</a></li>
+                    <li><a href="mailto:k.hotsauce808@gmail.com"><i
+                                class="fas fa-envelope"></i>k.hotsauce808@gmail.com</a></li>
+                    <li><a href="tel:+27742314776"><i class="fas fa-location-dot"></i>Gauteng, South Africa</a></li>
+                </ul>
             </div>
         </footer>
         <!-- FOOTER-NAVIGATION -->
