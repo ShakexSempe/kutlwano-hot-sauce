@@ -269,6 +269,8 @@
 }
 #header nav .hamburger .mobile-links .contact-links {
   margin-top: 1rem;
+  background: #161616;
+  padding: 0.5rem;
 }
 #header nav .hamburger .mobile-links .contact-links .contact-link {
   transform: translateY(-5vh);
@@ -288,7 +290,7 @@
   width: 100%;
 }
 #header nav .hamburger .mobile-links.active {
-  height: 65vh;
+  height: 70vh;
 }
 #header nav .hamburger .mobile-links.active li a {
   transform: translateY(0);

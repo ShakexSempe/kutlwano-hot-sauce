@@ -225,6 +225,8 @@
                 .contact-links {
                     // border: 2px solid yellow;
                     margin-top: 1rem;
+                    background: #161616;
+                    padding: .5rem;
                     .contact-link {
                         // border: 1px solid pink;
                         transform: translateY(-5vh);
@@ -248,7 +250,7 @@
                     }
                 }
                 &.active {
-                    height: 65vh;
+                    height: 70vh;
                     li {
                         a {
                             transform: translateY(0);
