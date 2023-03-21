@@ -2549,6 +2549,12 @@ footer .footer-item .date {
   color: #fff;
   margin-bottom: 10vh;
 }
+.products.products-page .products-container .products-cta .cta-btn {
+  padding: 0.5rem;
+}
+.products.products-page .products-container .products-cta .cta-btn i {
+  animation: none;
+}
 .products .products-container {
   margin-top: 10vh;
 }

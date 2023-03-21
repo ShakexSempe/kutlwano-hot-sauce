@@ -14,12 +14,19 @@
                 font-size: 1rem;
                 // border: 1px solid red;
                 width: 100%;
-                // text-align: center;
-                
                 background: #000;
                 padding: 1rem;
                 color: #fff;
                 margin-bottom: 10vh;
+            }
+            .products-cta {
+                // border: 2px solid red;
+                .cta-btn {
+                    padding: .5rem;
+                    i {
+                        animation: none;
+                    }
+                }
             }
         }
     }
