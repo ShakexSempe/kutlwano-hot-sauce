@@ -1150,7 +1150,8 @@ footer .footer-item .date {
 }
 .menu .menu-content .menu-item-flex-list.box ul li {
   border-bottom-color: transparent;
-  transition: calc(.5s + .5s * var(--li));
+  border-bottom-color: #000;
+  transition: calc(.5s + 1s * var(--li));
 }
 .menu .menu-content .menu-item-flex-list.active-box.red-flex-list li {
   border-bottom-color: #b30000;

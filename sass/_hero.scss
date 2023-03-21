@@ -357,7 +357,8 @@
                 ul {
                     li {
                         border-bottom-color: transparent;
-                        transition: calc(.5s + .5s * var(--li));
+                        border-bottom-color: #000;
+                        transition: calc(.5s + 1s * var(--li));
                     }
                 }
             }
