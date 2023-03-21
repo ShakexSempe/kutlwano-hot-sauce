@@ -2540,14 +2540,16 @@ footer .footer-item .date {
   position: relative;
 }
 .products.products-page .products-container .container-title {
-  font-family: "Ubuntu", sans-serif;
-  text-transform: capitalize;
-  font-size: 1rem;
-  width: 100%;
-  background: #000;
-  padding: 1rem;
-  color: #fff;
   margin-bottom: 10vh;
+  width: 100%;
+  padding: 1rem;
+  background: #000;
+}
+.products.products-page .products-container .container-title h2 {
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
 }
 .products.products-page .products-container .products-cta .cta-btn {
   padding: 0.5rem;
