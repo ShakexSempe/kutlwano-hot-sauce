@@ -1995,7 +1995,6 @@ footer .footer-item .date {
   transform: scale(1.1);
 }
 .about .image-section.box figure img {
-  opacity: 0;
   transform: scale(1.1);
 }
 .about .image-section.active-box figure img {
@@ -2599,11 +2598,11 @@ footer .footer-item .date {
   z-index: -1;
 }
 .products .product-item::before {
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0.25rem 1rem 1rem rgba(0, 0, 0, 0.05);
 }
 .products .product-item::after {
   opacity: 0;
-  box-shadow: 0.15rem 0.7rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.15rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 .products .product-item .product-image {
   text-align: center;
