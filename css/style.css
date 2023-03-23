@@ -201,7 +201,7 @@
 }
 #header .logo img {
   mix-blend-mode: darken;
-  border-left: 0.125rem solid #0002;
+  border-left: 0.15rem solid #0002;
   width: 100%;
   width: 10rem;
   height: 100%;
