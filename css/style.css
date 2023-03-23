@@ -139,6 +139,9 @@
 #header.hero-header {
   height: 20vh;
 }
+#header.hero-header .logo img {
+  border-left-color: transparent;
+}
 #header.hero-header::after {
   background-color: transparent;
   box-shadow: 0.05rem 0.05rem 1rem transparent;
@@ -189,6 +192,7 @@
 }
 #header .logo img {
   mix-blend-mode: darken;
+  border-left: 0.125rem solid #0001;
   width: 100%;
   width: 10rem;
   height: 100%;
