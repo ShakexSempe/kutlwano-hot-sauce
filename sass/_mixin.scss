@@ -137,6 +137,7 @@ $screen-xlg-min: 1024px;
 }
 
 .title-bar {
+    position: relative;
     &::before {
         content: '';
         position: absolute;

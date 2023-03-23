@@ -87,6 +87,9 @@
   }
 }
 
+.title-bar {
+  position: relative;
+}
 .title-bar::before {
   content: "";
   position: absolute;
@@ -1016,22 +1019,25 @@ footer .footer-item .date {
 }
 
 .menu {
-  padding: 10vh 5vw 5vh;
+  background: #eee;
+  padding: 5vh 0 0;
+}
+.menu .menu-items-container {
   display: grid;
   gap: 5vh;
-  background: #eee;
+  padding: 5vh 5vw 5vh;
 }
 @media (min-width: 768px) {
-  .menu {
+  .menu .menu-items-container {
     grid-template-columns: 1fr 1fr;
-    gap: 5vw;
+    gap: 10vw;
     grid-template-rows: auto;
   }
 }
-.menu .menu-item {
+.menu .menu-items-container .menu-item {
   text-transform: capitalize;
 }
-.menu h2 {
+.menu .menu-items-container .menu-item-title {
   background: #000;
   color: #fff;
   text-align: center;
@@ -1040,23 +1046,23 @@ footer .footer-item .date {
   border-top-left-radius: 0.25rem;
   text-transform: uppercase;
 }
-.menu h2.jd {
+.menu .menu-items-container .menu-item-title.purple-title {
   background: linear-gradient(0deg, #4d004d, purple);
 }
-.menu h2.am {
+.menu .menu-items-container .menu-item-title.red-title {
   background: linear-gradient(0deg, #4d0000, maroon);
 }
-.menu .menu-content {
+.menu .menu-items-container .menu-content {
   line-height: 1.6;
   margin-bottom: 5vh;
   padding: 0.1rem 0;
 }
-.menu .menu-content .menu-description {
+.menu .menu-items-container .menu-content .menu-description {
   padding: 1rem 0.25rem 1rem 1rem;
   font-weight: 500;
   position: relative;
 }
-.menu .menu-content .menu-description::before {
+.menu .menu-items-container .menu-content .menu-description::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1067,50 +1073,50 @@ footer .footer-item .date {
   background: #000;
   transition: 1s;
 }
-.menu .menu-content .menu-description.purple-desc::before {
+.menu .menu-items-container .menu-content .menu-description.purple-desc::before {
   background-color: #b300b3;
 }
-.menu .menu-content .menu-description.red-desc::before {
+.menu .menu-items-container .menu-content .menu-description.red-desc::before {
   background-color: #b30000;
 }
-.menu .menu-content .menu-description.box::before {
+.menu .menu-items-container .menu-content .menu-description.box::before {
   transform: translateY(-50%) scaleY(0);
 }
-.menu .menu-content .menu-description.active-box::before {
+.menu .menu-items-container .menu-content .menu-description.active-box::before {
   transform: translateY(-50%) scaleY(1);
 }
-.menu .menu-content .menu-item-list {
+.menu .menu-items-container .menu-content .menu-item-list {
   padding: 0 1rem 1rem;
   position: relative;
   isolation: isolate;
   background: #fafafa;
   background: #eee;
 }
-.menu .menu-content .menu-item-list.purple-list li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.purple-list li::marker {
   color: #b300b3;
 }
-.menu .menu-content .menu-item-list.purple-list::before {
+.menu .menu-items-container .menu-content .menu-item-list.purple-list::before {
   background: #b300b3;
 }
-.menu .menu-content .menu-item-list.red-list li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.red-list li::marker {
   color: #b30000;
 }
-.menu .menu-content .menu-item-list.red-list::before {
+.menu .menu-items-container .menu-content .menu-item-list.red-list::before {
   background: #b30000;
 }
-.menu .menu-content .menu-item-list.box ul li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.box ul li::marker {
   color: transparent;
 }
-.menu .menu-content .menu-item-list.active-box ul li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.active-box ul li::marker {
   transition: calc(.5s + .5s * var(--li));
 }
-.menu .menu-content .menu-item-list.active-box ul.purple-ul li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.active-box ul.purple-ul li::marker {
   color: #b300b3;
 }
-.menu .menu-content .menu-item-list.active-box ul.red-ul li::marker {
+.menu .menu-items-container .menu-content .menu-item-list.active-box ul.red-ul li::marker {
   color: #b30000;
 }
-.menu .menu-content .menu-item-list img {
+.menu .menu-items-container .menu-content .menu-item-list img {
   position: absolute;
   top: 0;
   right: 0;
@@ -1121,43 +1127,77 @@ footer .footer-item .date {
   z-index: -1;
   mix-blend-mode: darken;
 }
-.menu .menu-content .menu-item-flex-list {
+.menu .menu-items-container .menu-content .menu-item-flex-list {
   padding: 1rem;
   background-color: #000;
   color: #fff;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 }
-.menu .menu-content .menu-item-flex-list li {
+.menu .menu-items-container .menu-content .menu-item-flex-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.25rem 0;
   border-bottom: 1px solid transparent;
 }
-.menu .menu-content .menu-item-flex-list li:last-of-type {
+.menu .menu-items-container .menu-content .menu-item-flex-list li:last-of-type {
   border-bottom: none;
 }
-.menu .menu-content .menu-item-flex-list li:hover {
+.menu .menu-items-container .menu-content .menu-item-flex-list li:hover {
   border-bottom-color: green;
   transition: 2;
 }
-.menu .menu-content .menu-item-flex-list.red-flex-list li {
+.menu .menu-items-container .menu-content .menu-item-flex-list.red-flex-list li {
   border-bottom-color: #b30000;
 }
-.menu .menu-content .menu-item-flex-list.purple-flex-list li {
+.menu .menu-items-container .menu-content .menu-item-flex-list.purple-flex-list li {
   border-bottom-color: #b300b3;
 }
-.menu .menu-content .menu-item-flex-list.box ul li {
+.menu .menu-items-container .menu-content .menu-item-flex-list.box ul li {
   border-bottom-color: transparent;
   border-bottom-color: #000;
   transition: calc(.5s + 1s * var(--li));
 }
-.menu .menu-content .menu-item-flex-list.active-box.red-flex-list li {
+.menu .menu-items-container .menu-content .menu-item-flex-list.active-box.red-flex-list li {
   border-bottom-color: #b30000;
 }
-.menu .menu-content .menu-item-flex-list.active-box.purple-flex-list li {
+.menu .menu-items-container .menu-content .menu-item-flex-list.active-box.purple-flex-list li {
   border-bottom-color: #b300b3;
+}
+.menu .menu-contact {
+  padding: 5vh 5vw;
+  background-image: url("../img/bobby-donald-KikhsHzIO9o-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: darken;
+  height: 70vh;
+}
+.menu .menu-contact .menu-contact-title {
+  margin-bottom: 5vh;
+  padding-left: 0.5rem;
+}
+.menu .menu-contact .menu-contact-title h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+.menu .menu-contact .menu-contact-title p {
+  font-family: 300;
+}
+.menu .menu-contact .menu-contact-list {
+  list-style-type: none;
+}
+.menu .menu-contact .menu-contact-list li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.menu .menu-contact .menu-contact-list li i {
+  width: 1.5rem;
+}
+.menu .menu-contact .menu-contact-list li a {
+  color: #000;
+  text-decoration: none;
 }
 
 .menu-1 {
