@@ -104,6 +104,15 @@
 .title-bar.light-bar::before {
   background-color: #fff7;
 }
+.title-bar.box {
+  transition: 1.5s;
+}
+.title-bar.box::before {
+  transform: translateY(-50%) scale(0);
+}
+.title-bar.active-box::before {
+  transform: translateY(-50%) scale(1);
+}
 
 #header {
   background-color: transparent;
@@ -2955,15 +2964,6 @@ main section .section-title h2 {
   text-transform: uppercase;
   color: #000;
   padding: 0 0.5rem;
-}
-main section .section-title.box {
-  transition: 1.5s;
-}
-main section .section-title.box::before {
-  transform: translateY(-50%) scale(0);
-}
-main section .section-title.active-box::before {
-  transform: translateY(-50%) scale(1);
 }
 main section .section-title.light-title h2 {
   color: #fff;

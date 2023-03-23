@@ -154,4 +154,16 @@ $screen-xlg-min: 1024px;
         background-color: #fff7;
         }
     }
+
+    &.box {
+        transition: 1.5s;
+        &::before {
+            transform: translateY(-50%) scale(0);
+        }
+    }
+    &.active-box {
+        &::before {
+            transform: translateY(-50%) scale(1);
+        }
+    }
 }

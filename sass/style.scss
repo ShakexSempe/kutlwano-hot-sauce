@@ -90,17 +90,17 @@ main {
                 color: #000;
                 padding: 0 .5rem;
             }
-            &.box {
-                transition: 1.5s;
-                &::before {
-                    transform: translateY(-50%) scale(0);
-                }
-            }
-            &.active-box {
-                &::before {
-                    transform: translateY(-50%) scale(1);
-                }
-            }
+            // &.box {
+            //     transition: 1.5s;
+            //     &::before {
+            //         transform: translateY(-50%) scale(0);
+            //     }
+            // }
+            // &.active-box {
+            //     &::before {
+            //         transform: translateY(-50%) scale(1);
+            //     }
+            // }
             // LIGHT TITLE
             &.light-title {
                 h2 {
